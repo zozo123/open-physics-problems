@@ -1,18 +1,35 @@
 # From open math publications → open physics publications
 
-## Motivation
+## Motivation (the *last few* papers — not abstract culture)
 
-People solving **open math problems** do not “vibe a proof in chat.” They:
+This is not a vague nod to “math is rigorous.” It is a direct response to **recent publications** where AI systems closed real open math:
 
-1. **Fix a statement** (conjecture, prize problem, formal goal)
-2. **Produce an artifact** (proof, formalization, counterexample)
-3. **Expose a kill condition** (a gap kills the claim)
-4. **Publish** (arXiv → peer review → community status update)
-5. Accept **partial credit** (lemmas, barriers, special cases)
+1. **AlphaProof / AlphaGeometry** — IMO 2024 silver; formal Lean proofs  
+   - Blog: [deepmind.google/…/ai-solves-imo-problems…](https://deepmind.google/blog/ai-solves-imo-problems-at-silver-medal-level/)  
+   - Nature (2025): [Olympiad-level formal mathematical reasoning…](https://www.nature.com/articles/s41586-025-09833-y)
 
-That culture is why Millennium problems, Polymath, Lean formalizations, and crypto reductions *work* as a social machine for progress.
+2. **AlphaProof Nexus** (arXiv:2605.22763, May 2026) — research-level opens  
+   - **9/353** open Erdős problems (some open ~56 years)  
+   - **44/492** OEIS conjectures  
+   - Hilbert functions, optimization, Green’s list, quantum optics  
+   - Paper: [arxiv.org/abs/2605.22763](https://arxiv.org/abs/2605.22763)  
+   - Proofs: [alphaproof-nexus-results](https://github.com/google-deepmind/alphaproof-nexus-results)
 
-**Physics deserves the same machine** — but physics is not only math. Nature often votes. Many “problems” are programs, not tickets. Foundations can be underdetermined.
+Full writeup: [`recent-ai-math-publications.md`](recent-ai-math-publications.md).
+
+Those papers show a working machine:
+
+> **public open-problem catalog → formal/checkable claim → agentic search → verified artifact → public log**
+
+People solving open math that way do not “vibe a proof in chat.” They:
+
+1. **Fix a statement** (Erdős formalization, IMO formal claim, OEIS conjecture)
+2. **Produce an artifact** (Lean proof that compiles)
+3. **Expose a kill condition** (sorry / type error / wrong formalization)
+4. **Publish** (arXiv, GitHub, erdosproblems threads, Tao wiki)
+5. Accept **partial credit** (variants, misformalization fixes, bounds)
+
+**Physics deserves the same machine** — but physics is not only Lean. Nature often votes. Many “problems” are programs, not tickets. Foundations can be underdetermined.
 
 This repository encodes that honesty for **all 112 problems**.
 

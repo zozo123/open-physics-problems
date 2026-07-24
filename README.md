@@ -1,6 +1,6 @@
 # Open Physics Problems Map
 
-**v1.0** — A publication-grade, machine-readable map of **112 open problems in physics**, built the way open **math** actually gets solved: fixed claims, public artifacts, kill-checks, partial credit — adapted for the fact that **nature often votes**.
+**v1.0** — A publication-grade map of **112 open problems in physics**, built for the same game that recent AI–math papers just won: **close open claims with checkable artifacts**.
 
 ### Live board
 
@@ -11,17 +11,34 @@
 
 ---
 
-## Why this exists
+## Why this exists (the last few publications)
 
-| Open math culture | This project for physics |
-|-------------------|---------------------------|
-| Fixed conjecture statement | Pre-registered success criterion + weak/strong wins |
-| Proof / formalization | Proof **or** reanalysis **or** mechanism discrimination **or** discovery |
-| Polymath / Lean / arXiv | Sprint protocol + ledger + public artifacts |
-| Partial credit (lemmas) | Rungs 0–5; kill-lists count |
-| Status boards | Filterable board + `problems.json` |
+Recent work didn’t “discuss” open math — it **closed** items on public lists with **verified proofs**:
 
-Physics lists are usually **prestige museums**. This is a **race track + courthouse**: what can be published, checked, and closed — including by multi-agent harnesses — without fake trophies.
+| Publication | What closed |
+|-------------|-------------|
+| **AlphaProof + AlphaGeometry** (IMO 2024; [Nature 2025](https://www.nature.com/articles/s41586-025-09833-y)) | 4/6 IMO problems at silver-medal level — formal Lean proofs |
+| **AlphaProof Nexus** ([arXiv:2605.22763](https://arxiv.org/abs/2605.22763), May 2026) | **9/353** open **Erdős** problems (incl. ~56-year opens); **44/492** OEIS conjectures; plus research deploys (Hilbert functions, optimization, Green’s list, quantum optics) |
+
+Recipe those papers share:
+
+```text
+open-problem catalog → formal/checkable claim → agentic search → verified artifact → public log
+```
+
+**This repo is that recipe for physics:** Wikipedia/Baez/Strings/Clay-class opens → success criteria + cultures → sprint protocol → ledger.
+
+Deep dive: [`maps/recent-ai-math-publications.md`](maps/recent-ai-math-publications.md)
+
+| Math (those papers) | Physics (this project) |
+|---------------------|-------------------------|
+| Erdős / OEIS / Formal Conjectures lists | `data/problems.json` (112 problems) |
+| Lean statement + `sorry` | Pre-registered criterion + weak/strong win |
+| Agent + Lean kernel | Agent + proof **or** public data pipeline **or** experiment |
+| erdosproblems / Tao wiki log | Sprint issues + `sprints/LEDGER.md` |
+| Not every problem falls | `not-agentic` / discovery / foundations tags |
+
+Physics lists are usually **prestige museums**. This is a **race track + courthouse**: what can be published and checked — including by multi-agent harnesses — without fake trophies on dark matter or TOE.
 
 ---
 
@@ -65,6 +82,7 @@ make serve          # site at http://localhost:8000
 | [`sprints/PROTOCOL.md`](sprints/PROTOCOL.md) | How to run/close a sprint |
 | [`sprints/BOARD.md`](sprints/BOARD.md) | Sprint + stretch cards |
 | [`sprints/LEDGER.md`](sprints/LEDGER.md) | Closed / notable runs |
+| [`maps/recent-ai-math-publications.md`](maps/recent-ai-math-publications.md) | AlphaProof / Nexus / Erdős motivation |
 | [`maps/open-math-to-physics.md`](maps/open-math-to-physics.md) | Culture manifesto |
 | [`maps/epistemology-full.md`](maps/epistemology-full.md) | All 112 × epistemology |
 | [`problems/INDEX.md`](problems/INDEX.md) | Markdown index by field |
