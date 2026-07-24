@@ -1,37 +1,46 @@
 # Contributing
 
-Thanks for helping map open physics problems.
+Thanks for helping build a **publication-grade** map of open physics problems — in the spirit of how open math problems actually get solved.
 
-## Add or update a problem
-
-1. Edit **`data/problems.json`** (source of truth).
-2. Run:
+## Quick path
 
 ```bash
-python3 scripts/validate.py
-python3 scripts/generate.py
+make build          # validate + regenerate everything
+make serve          # http://localhost:8000  (GitHub Pages tree)
 ```
 
-3. Open a PR describing:
-   - which source list documents the problem
-   - why the AI tractability score fits the [rubric](docs/methodology.md)
+## Edit data (source of truth)
 
-## Schema checklist
+1. Edit **`data/problems.json` only**
+2. Run `make build`
+3. Open a PR (template checklist applies)
 
-- Unique `id` (kebab-case)
-- `field`, `kind`, `status`, `ai_tractability` from allowed enums
-- `difficulty` and `impact` in 1–5
-- `related` only references existing ids
-- Prefer short, neutral summaries (no hype)
+Schema: [`data/schema.md`](data/schema.md)
 
-## What makes a good addition
+## Add a problem
 
-- Named problem with citable source (Wikipedia section, Baez FAQ, Snowmass, review article)
-- Clear open status (not already solved)
-- Distinct from existing ids (extend `related` instead of duplicating)
+- Must appear in a citable source list (Wikipedia, Baez, Strings 2000, Clay, major roadmap, named puzzle with reviews)
+- Unique kebab-case `id`
+- Fill `agentic_10day` **and** `epistemology` (copy a similar problem as template)
+- Prefer short neutral summaries
 
-## What to avoid
+## Close or partially solve a problem
 
-- Inventing problems without sources
-- Personal research programs without community recognition
-- Pure engineering tickets with no physics content
+1. Pre-register via issue template **Sprint registration**
+2. Produce a public artifact
+3. Open **Claim closure** issue
+4. PR: update `status`, `sprints/LEDGER.md`, regenerate
+
+Protocol: [`sprints/PROTOCOL.md`](sprints/PROTOCOL.md)
+
+## Site / docs
+
+- Pages live in `docs/` (GitHub Pages `/docs` on `main`)
+- After JSON changes, `scripts/generate.py` syncs `docs/data/problems.json`
+
+## What we reject
+
+- Invented problems without sources
+- Closure claims without pre-registration + artifact
+- Fabricated experimental results
+- TOE / full QG “solved in chat” PRs

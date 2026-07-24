@@ -115,6 +115,40 @@ function renderStats() {
   set("n-found", cult.foundations);
 }
 
+function renderFeatured() {
+  const row = $("#featured-row");
+  if (!row) return;
+  const sprints = ALL.filter((p) => p.agentic_10day?.score === "sprint").sort(
+    (a, b) => (b.impact || 0) - (a.impact || 0)
+  );
+  const pick = sprints.slice(0, 6);
+  row.innerHTML = pick
+    .map((p) => {
+      const hook = (p.agentic_10day?.viral_hook || p.name).slice(0, 72);
+      return `<div class="feat" data-id="${esc(p.id)}" role="button" tabindex="0">
+        <div class="fh">sprint · ${esc(p.id)}</div>
+        <div class="ft">${esc(hook)}</div>
+      </div>`;
+    })
+    .join("");
+  row.querySelectorAll(".feat").forEach((el) => {
+    const go = () => {
+      $("#score").value = "all";
+      activeFilter = "all";
+      renderCards();
+      showModal(el.dataset.id);
+      document.getElementById("board")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+    el.addEventListener("click", go);
+    el.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        go();
+      }
+    });
+  });
+}
+
 function renderCards() {
   const list = filtered();
   const root = $("#cards");
@@ -257,10 +291,11 @@ async function boot() {
   }
 
   renderStats();
+  renderFeatured();
   setupFilters();
-  $("#score").value = "all";
-  activeFilter = "all";
-  // default: show publishable polymath + sprints energy — all, user filters
+  // Default: sprints first for visitors; full catalog one click away
+  $("#score").value = "sprint";
+  activeFilter = "sprint";
   renderCards();
 
   if (location.hash) {

@@ -1,0 +1,70 @@
+name: Sprint registration
+description: Pre-register an agentic/human sprint against a catalog problem
+title: "sprint: <problem-id>"
+labels: ["sprint"]
+body:
+  - type: input
+    id: problem_id
+    attributes:
+      label: Problem ID
+      description: Exact `id` from data/problems.json
+      placeholder: flyby-anomaly
+    validations:
+      required: true
+  - type: dropdown
+    id: rung
+    attributes:
+      label: Target closure rung
+      options:
+        - "0 — option-space map"
+        - "1 — ranking / kill-list"
+        - "2 — mechanism consensus"
+        - "3 — anomaly closure"
+        - "4 — empirical identification"
+        - "5 — theorem / formal proof"
+    validations:
+      required: true
+  - type: textarea
+    id: criterion
+    attributes:
+      label: Success criterion (falsifiable)
+      description: What must be true on day end for you to claim a win?
+    validations:
+      required: true
+  - type: textarea
+    id: kill
+    attributes:
+      label: Kill condition
+      description: What result would mean you failed?
+    validations:
+      required: true
+  - type: textarea
+    id: harness
+    attributes:
+      label: Harness
+      description: Models, tools, data sources, humans involved
+    validations:
+      required: true
+  - type: input
+    id: window
+    attributes:
+      label: Time window
+      placeholder: "2026-07-24 → 2026-08-03"
+    validations:
+      required: true
+  - type: input
+    id: artifact_url
+    attributes:
+      label: Artifact repo / branch (can be TBD at start)
+      placeholder: https://github.com/...
+  - type: checkboxes
+    id: pledges
+    attributes:
+      label: Pledges
+      options:
+        - label: I will not claim experimental results I did not obtain
+          required: true
+        - label: I will publish code/proofs sufficient for kill-check
+          required: true
+        - label: I pre-register before claiming a board close
+          required: true

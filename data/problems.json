@@ -1,9 +1,9 @@
 {
   "meta": {
     "title": "Open Physics Problems Map",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "generated": "2026-07-24",
-    "description": "Curated, multi-source catalog of open problems in physics with AI tractability estimates, cross-links, and landscape maps.",
+    "description": "Publication-grade map of open problems in physics: open-math culture, agentic 10-day sprints, epistemology, and checkable closure criteria.",
     "primary_sources": [
       {
         "id": "wikipedia",
@@ -177,7 +177,9 @@
         "discovery": "Experimental witness; agents help theory only",
         "foundations": "Constraint maps; refuse unique false trophies"
       }
-    }
+    },
+    "homepage": "https://zozo123.github.io/open-physics-problems/",
+    "repository": "https://github.com/zozo123/open-physics-problems"
   },
   "problems": [
     {

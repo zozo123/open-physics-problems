@@ -28,7 +28,7 @@ ALLOWED_FIELDS = {
 }
 ALLOWED_KIND = {"theoretical", "experimental", "mathematical", "engineering", "foundations"}
 ALLOWED_AI = {"high", "medium", "low", "none"}
-ALLOWED_STATUS = {"open", "partially solved", "controversially open"}
+ALLOWED_STATUS = {"open", "partially solved", "controversially open", "closed"}
 ALLOWED_AGENTIC = {"sprint", "stretch", "multi-sprint", "not-agentic"}
 ALLOWED_CULTURE = {"open-math-like", "polymath-data", "program", "discovery", "foundations"}
 ALLOWED_REFUT = {"formal", "hard", "soft", "gated", "underdetermined"}

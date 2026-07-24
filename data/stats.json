@@ -1,0 +1,72 @@
+{
+  "open_problems": 112,
+  "solved_contrast": 11,
+  "by_field": {
+    "astrophysics": 17,
+    "biophysics": 8,
+    "condensed-matter": 13,
+    "cosmology": 14,
+    "fluid-dynamics": 3,
+    "foundations": 5,
+    "general": 2,
+    "mathematical-physics": 3,
+    "nuclear-physics": 8,
+    "particle-physics": 19,
+    "plasma-physics": 4,
+    "quantum-gravity": 10,
+    "quantum-information": 6
+  },
+  "by_ai_tractability": {
+    "none": 5,
+    "low": 26,
+    "medium": 34,
+    "high": 47
+  },
+  "by_kind": {
+    "theoretical": 60,
+    "foundations": 7,
+    "experimental": 33,
+    "mathematical": 9,
+    "engineering": 3
+  },
+  "by_status": {
+    "open": 104,
+    "controversially open": 7,
+    "partially solved": 1
+  },
+  "by_agentic_10day": {
+    "not-agentic": 36,
+    "multi-sprint": 48,
+    "sprint": 13,
+    "stretch": 15
+  },
+  "by_culture": {
+    "foundations": 11,
+    "program": 52,
+    "discovery": 18,
+    "open-math-like": 10,
+    "polymath-data": 21
+  },
+  "by_refutability": {
+    "underdetermined": 11,
+    "soft": 52,
+    "gated": 18,
+    "formal": 10,
+    "hard": 21
+  },
+  "by_publish_now": {
+    "clarify-only": 22,
+    "program-papers": 44,
+    "theory-only": 18,
+    "yes-scoped": 13,
+    "partial": 15
+  },
+  "by_closure_rung": {
+    "0": 10,
+    "1": 2,
+    "2": 36,
+    "3": 35,
+    "4": 20,
+    "5": 9
+  }
+}

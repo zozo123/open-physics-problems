@@ -1,0 +1,47 @@
+name: Claim closure
+description: Claim a weak or strong win after a pre-registered sprint
+title: "claim: <problem-id>"
+labels: ["claim"]
+body:
+  - type: input
+    id: problem_id
+    attributes:
+      label: Problem ID
+    validations:
+      required: true
+  - type: input
+    id: sprint_issue
+    attributes:
+      label: Pre-registration issue number
+      placeholder: "#12"
+    validations:
+      required: true
+  - type: dropdown
+    id: win_type
+    attributes:
+      label: Win type
+      options:
+        - weak win
+        - strong win
+        - meta-closure (literature already solved)
+        - productive failure (improved criterion)
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What was shown
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Artifact URL (code, paper, notebook, DOI)
+    validations:
+      required: true
+  - type: textarea
+    id: killcheck
+    attributes:
+      label: How others can kill-check
+    validations:
+      required: true
