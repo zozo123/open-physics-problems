@@ -33,6 +33,7 @@ ALLOWED_AGENTIC = {"sprint", "stretch", "multi-sprint", "not-agentic"}
 ALLOWED_CULTURE = {"open-math-like", "polymath-data", "program", "discovery", "foundations"}
 ALLOWED_REFUT = {"formal", "hard", "soft", "gated", "underdetermined"}
 ALLOWED_PUBNOW = {"yes-scoped", "partial", "program-papers", "theory-only", "clarify-only"}
+ALLOWED_CLUSTER = {"fundamental", "cosmic", "matter", "quantum-info", "life", "foundations"}
 REQUIRED = {"id", "name", "field", "summary", "status", "kind", "ai_tractability"}
 
 
@@ -83,6 +84,13 @@ def main() -> int:
                     errors.append(f"{pid}: missing epistemology.{req}")
         else:
             errors.append(f"{pid}: missing epistemology")
+        if p.get("cluster") and p["cluster"] not in ALLOWED_CLUSTER:
+            errors.append(f"{pid}: bad cluster {p.get('cluster')}")
+        if "subfield" in p and not p.get("subfield"):
+            errors.append(f"{pid}: empty subfield")
+        for sf in p.get("fields_secondary") or []:
+            if sf == p.get("field"):
+                errors.append(f"{pid}: secondary field equals primary")
         for rel in p.get("related", []):
             # related may point ahead; check after full load
             pass

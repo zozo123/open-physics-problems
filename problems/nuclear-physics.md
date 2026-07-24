@@ -18,6 +18,8 @@
 
 **ID:** `cgc` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `high-energy-qcd` · **Also:** `particle-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 Do gluons saturate into a color glass condensate? What are decisive experimental signatures?
@@ -42,6 +44,8 @@ Do gluons saturate into a color glass condensate? What are decisive experimental
 <a id="emc-effect"></a>
 
 **ID:** `emc-effect` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `nucleon-in-medium` · **Also:** `particle-physics`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -74,6 +78,8 @@ Why do quark distributions in bound nucleons differ from free nucleons?
 
 **ID:** `heaviest-element` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `superheavy`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 What is the heaviest element that can exist (island of stability limits)?
@@ -99,6 +105,8 @@ What is the heaviest element that can exist (island of stability limits)?
 
 **ID:** `nuclear-force` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `nuclear-structure`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 What is the precise nature of the nuclear force binding nuclei, rooted in QCD?
@@ -123,6 +131,8 @@ What is the precise nature of the nuclear force binding nuclei, rooted in QCD?
 <a id="neutron-stars-eos"></a>
 
 **ID:** `neutron-stars-eos` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `dense-matter` · **Also:** `astrophysics`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -151,6 +161,8 @@ What is the equation of state of ultra-dense nuclear matter in neutron stars?
 
 **ID:** `qcd-vacuum` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `qcd-nonperturbative`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 How does nonperturbative QCD produce complex nuclei and nuclear structure from quarks and gluons?
@@ -178,6 +190,8 @@ How does nonperturbative QCD produce complex nuclei and nuclear structure from q
 
 **ID:** `qgp-onset` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `heavy-ion-qgp` · **Also:** `particle-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 Where is deconfinement onset in T–μ space? Why ideal flow? Flavor equilibration? Perfect statistical hadronization?
@@ -204,6 +218,8 @@ Where is deconfinement onset in T–μ space? Why ideal flow? Flavor equilibrati
 <a id="strange-matter"></a>
 
 **ID:** `strange-matter` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `exotic-dense-matter` · **Also:** `astrophysics`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 

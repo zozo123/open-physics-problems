@@ -18,6 +18,8 @@
 
 **ID:** `abiogenesis` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `life` · **Subfield:** `origin-of-life` · **Also:** `foundations`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 1 · **publish_now:** `clarify-only`
 
 Can life arise from purely physical/chemical processes? What pathway produced life on Earth?
@@ -51,6 +53,8 @@ Can life arise from purely physical/chemical processes? What pathway produced li
 
 **ID:** `biology-from-physics` · **Status:** open · **Kind:** foundations · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `life` · **Subfield:** `theoretical-biology` · **Also:** `foundations`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
 Can biology be expressed via fundamental laws, action principles, and symmetries (robustness, modularity, evolvability)?
@@ -77,6 +81,8 @@ Can biology be expressed via fundamental laws, action principles, and symmetries
 <a id="gene-noise"></a>
 
 **ID:** `gene-noise` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `life` · **Subfield:** `systems-biology`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
@@ -106,6 +112,8 @@ How do genetic networks remain robust under external pressure and internal stoch
 <a id="homochirality"></a>
 
 **ID:** `homochirality` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `life` · **Subfield:** `origin-of-life`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
@@ -138,6 +146,8 @@ Why do biomolecules prefer specific enantiomers?
 
 **ID:** `magnetoreception` · **Status:** open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `life` · **Subfield:** `sensory-biophysics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
 How do animals (e.g. migratory birds) sense Earth's magnetic field?
@@ -168,6 +178,8 @@ How do animals (e.g. migratory birds) sense Earth's magnetic field?
 <a id="protein-folding-physics"></a>
 
 **ID:** `protein-folding-physics` · **Status:** partially solved · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `life` · **Subfield:** `biomolecular-physics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 2 · **publish_now:** `partial`
 
@@ -202,6 +214,8 @@ How do proteins fold so fast? Are native states global free-energy minima? How d
 
 **ID:** `immune-networks` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `life` · **Subfield:** `systems-biology`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
 What are quantitative building blocks and network properties of immune responses?
@@ -230,6 +244,8 @@ What are quantitative building blocks and network properties of immune responses
 <a id="quantum-biology"></a>
 
 **ID:** `quantum-biology` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `life` · **Subfield:** `quantum-in-biology` · **Also:** `quantum-information`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 2 · **publish_now:** `yes-scoped`
 

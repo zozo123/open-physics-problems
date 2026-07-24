@@ -26,6 +26,9 @@
 | `tags` | string[] | no | |
 | `sources` | string[] | no | source list ids |
 | `related` | string[] | no | other problem ids |
+| `cluster` | enum | yes | mega-domain: `fundamental` · `cosmic` · `matter` · `quantum-info` · `life` · `foundations` |
+| `subfield` | string | yes | research-community slice inside primary field |
+| `fields_secondary` | string[] | no | cross-domain field ids (not including primary) |
 | `why_hard` | string | no | |
 | `ai_notes` | string | no | |
 | `notes` | string | no | |

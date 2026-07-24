@@ -499,3 +499,55 @@ footer li { margin: 0.28rem 0; }
   color: var(--muted);
   vertical-align: middle;
 }
+
+/* field clusters */
+.cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 0.85rem;
+}
+.cluster-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1rem 1.05rem;
+}
+.cluster-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+.cluster-card .cblurb {
+  color: var(--muted);
+  font-size: 0.88rem;
+  margin: 0 0 0.75rem;
+  line-height: 1.4;
+}
+.cluster-card .cn {
+  font-size: 0.78rem;
+  color: var(--faint);
+  margin-bottom: 0.55rem;
+}
+.field-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.field-chip {
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.28rem 0.65rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.field-chip:hover, .field-chip.active {
+  border-color: var(--accent);
+  background: rgba(122, 162, 255, 0.12);
+}
+.field-chip b {
+  color: var(--accent);
+  font-weight: 600;
+}

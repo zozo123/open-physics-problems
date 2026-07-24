@@ -83,6 +83,8 @@ make serve          # site at http://localhost:8000
 | [`sprints/BOARD.md`](sprints/BOARD.md) | Sprint + stretch cards |
 | [`sprints/LEDGER.md`](sprints/LEDGER.md) | Closed / notable runs |
 | [`maps/recent-ai-math-publications.md`](maps/recent-ai-math-publications.md) | AlphaProof / Nexus / Erdős motivation |
+| [`maps/by-field.md`](maps/by-field.md) | **Field / cluster split** (13 fields × subfields) |
+| [`maps/fields/`](maps/fields/) | One page per field |
 | [`maps/open-math-to-physics.md`](maps/open-math-to-physics.md) | Culture manifesto |
 | [`maps/epistemology-full.md`](maps/epistemology-full.md) | All 112 × epistemology |
 | [`problems/INDEX.md`](problems/INDEX.md) | Markdown index by field |

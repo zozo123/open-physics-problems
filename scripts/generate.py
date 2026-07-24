@@ -94,6 +94,14 @@ def refresh_counts(meta: dict, problems: list, solved: list) -> dict:
                 ).items()
             )
         }
+    if any("cluster" in p for p in problems):
+        meta["counts"]["by_cluster"] = dict(
+            Counter(p.get("cluster", "unset") for p in problems)
+        )
+    if any("subfield" in p for p in problems):
+        meta["counts"]["by_subfield"] = dict(
+            Counter(p.get("subfield", "unset") for p in problems)
+        )
     return meta
 
 
@@ -118,6 +126,9 @@ def write_csv(problems: list) -> None:
         "strong_win",
         "publish_shape",
         "viral_hook",
+        "cluster",
+        "subfield",
+        "fields_secondary",
         "tags",
         "sources",
     ]
@@ -149,6 +160,9 @@ def write_csv(problems: list) -> None:
                     "strong_win": e.get("strong_win", ""),
                     "publish_shape": e.get("publish_shape", ""),
                     "viral_hook": a.get("viral_hook", ""),
+                    "cluster": p.get("cluster", ""),
+                    "subfield": p.get("subfield", ""),
+                    "fields_secondary": "|".join(p.get("fields_secondary", [])),
                     "tags": "|".join(p.get("tags", [])),
                     "sources": "|".join(p.get("sources", [])),
                 }
@@ -190,6 +204,13 @@ def write_field_pages(problems: list) -> None:
                 "",
                 f"**ID:** `{p['id']}` · **Status:** {p.get('status')} · **Kind:** {p.get('kind')} · "
                 f"**AI:** {badge(p.get('ai_tractability',''))} · **10d:** `{a.get('score','')}`",
+                "",
+                f"**Cluster:** `{p.get('cluster','')}` · **Subfield:** `{p.get('subfield','')}`"
+                + (
+                    f" · **Also:** " + ", ".join(f"`{s}`" for s in p.get("fields_secondary") or [])
+                    if p.get("fields_secondary")
+                    else ""
+                ),
                 "",
                 f"**Culture:** `{e.get('culture','')}` · **Refutability:** `{e.get('refutability','')}` · "
                 f"**Rung:** {e.get('closure_rung','')} · **publish_now:** `{e.get('publish_now','')}`",
@@ -342,6 +363,87 @@ def write_epistemology_table(problems: list) -> None:
     (ROOT / "maps" / "epistemology-full.md").write_text("\n".join(lines))
 
 
+
+def write_field_taxonomy_maps(cat: dict, problems: list) -> None:
+    """Refresh maps/by-field.md and maps/fields/*.md from taxonomy in meta."""
+    tax = (cat.get("meta") or {}).get("field_taxonomy") or {}
+    FT = tax.get("fields") or {}
+    CT = tax.get("clusters") or {}
+    if not FT or not CT:
+        return
+    from collections import defaultdict
+    by_field = defaultdict(list)
+    by_cluster = defaultdict(list)
+    for p in problems:
+        by_field[p["field"]].append(p)
+        by_cluster[p.get("cluster", "")].append(p)
+    overview = [
+        "# Open physics problems by field",
+        "",
+        "Physics is not one Erdős list — it is a **web of fields**. Every problem has:",
+        "",
+        "- **`field`** — primary textbook home",
+        "- **`subfield`** — research-community slice",
+        "- **`fields_secondary`** — cross-domain edges",
+        "- **`cluster`** — mega-domain for navigation",
+        "",
+        "See also [recent AI math publications](recent-ai-math-publications.md) for why catalogs matter.",
+        "",
+        "## Clusters",
+        "",
+    ]
+    for cid, cmeta in sorted(CT.items(), key=lambda x: x[1].get("order", 99)):
+        n = len(by_cluster.get(cid, []))
+        overview += [f"### {cmeta.get('title', cid)} (`{cid}`) — {n} problems", "", cmeta.get("blurb", ""), ""]
+        overview += ["| Field | N | Page |", "|-------|--:|------|"]
+        for f in cmeta.get("fields", []):
+            title = (FT.get(f) or {}).get("title", f)
+            overview.append(f"| {title} | {len(by_field.get(f, []))} | [fields/{f}.md](fields/{f}.md) |")
+        overview.append("")
+    overview += [
+        "## Cross-field intuition",
+        "",
+        "```mermaid",
+        "flowchart LR",
+        "  particle[Particle] --- nuclear[Nuclear]",
+        "  particle --- cosmo[Cosmology]",
+        "  cosmo --- astro[Astrophysics]",
+        "  astro --- plasma[Plasma]",
+        "  QG[Quantum Gravity] --- mathphys[Math Physics]",
+        "  QG --- cosmo",
+        "  CM[Condensed Matter] --- QI[Quantum Info]",
+        "```",
+        "",
+    ]
+    (ROOT / "maps" / "by-field.md").write_text("\n".join(overview))
+    fields_dir = ROOT / "maps" / "fields"
+    fields_dir.mkdir(parents=True, exist_ok=True)
+    for f, plist in by_field.items():
+        meta = FT.get(f) or {"title": f, "blurb": ""}
+        lines = [f"# {meta.get('title', f)}", "", f"**{len(plist)} problems** · cluster `{plist[0].get('cluster','')}`", "", meta.get("blurb", ""), ""]
+        if meta.get("nexus_note"):
+            lines += [f"> **Nexus note:** {meta['nexus_note']}", ""]
+        by_sub = defaultdict(list)
+        for p in plist:
+            by_sub[p.get("subfield", "?")].append(p)
+        lines += ["## Subfields", ""]
+        for sub, items in sorted(by_sub.items(), key=lambda x: -len(x[1])):
+            lines.append(f"- **`{sub}`** ({len(items)}): " + ", ".join(f"`{p['id']}`" for p in sorted(items, key=lambda x: -x.get("impact", 0))))
+        lines += ["", "## Problems", "", "| ID | Name | Subfield | 10d | Culture | Secondary |", "|----|------|----------|-----|---------|-----------|"]
+        for p in sorted(plist, key=lambda x: (-x.get("impact", 0), x["name"])):
+            a = (p.get("agentic_10day") or {}).get("score", "")
+            c = (p.get("epistemology") or {}).get("culture", "")
+            sec = ", ".join(p.get("fields_secondary") or []) or "—"
+            lines.append(f"| `{p['id']}` | {p['name']} | `{p.get('subfield','')}` | {a} | {c} | {sec} |")
+        sprints = [p for p in plist if (p.get("agentic_10day") or {}).get("score") in ("sprint", "stretch")]
+        if sprints:
+            lines += ["", "## Sprint / stretch", ""]
+            for p in sprints:
+                lines.append(f"- **{p['name']}** (`{p['id']}`) — {(p.get('agentic_10day') or {}).get('viral_hook', '')}")
+        lines.append("")
+        (fields_dir / f"{f}.md").write_text("\n".join(lines))
+
+
 def main() -> None:
     cat = json.loads(DATA.read_text())
     problems = cat["problems"]
@@ -359,6 +461,7 @@ def main() -> None:
     (ROOT / "sprints").mkdir(exist_ok=True)
     write_sprint_board(problems)
     write_epistemology_table(problems)
+    write_field_taxonomy_maps(cat, problems)
 
     # GitHub Pages data sync
     pages_data = ROOT / "docs" / "data" / "problems.json"

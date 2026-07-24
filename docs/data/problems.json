@@ -122,6 +122,97 @@
         "3": 35,
         "4": 20,
         "5": 9
+      },
+      "by_cluster": {
+        "fundamental": 34,
+        "foundations": 5,
+        "matter": 28,
+        "cosmic": 31,
+        "quantum-info": 6,
+        "life": 8
+      },
+      "by_subfield": {
+        "unification": 1,
+        "constants-and-fine-tuning": 1,
+        "anthropic-selection": 1,
+        "qg-frameworks": 1,
+        "black-hole-quantum": 2,
+        "gr-math": 2,
+        "holography-duality": 1,
+        "spacetime-structure": 3,
+        "string-m-theory": 1,
+        "gauge-theory-rigor": 2,
+        "qcd-nonperturbative": 2,
+        "mathematical-fluids": 1,
+        "turbulence": 1,
+        "dark-sector": 4,
+        "precision-cosmology": 1,
+        "early-universe": 3,
+        "global-cosmology": 3,
+        "unification-bsm": 2,
+        "large-scale-structure": 2,
+        "bbn-light-elements": 1,
+        "naturalness-bsm": 3,
+        "strong-cp-axions": 1,
+        "neutrinos-flavor": 1,
+        "flavor": 2,
+        "baryon-number": 1,
+        "topological-bsm": 1,
+        "precision-anomalies": 2,
+        "neutrino-anomalies": 2,
+        "nucleon-structure": 1,
+        "hadron-spectroscopy": 2,
+        "exotic-dense-matter": 1,
+        "solar-stellar": 2,
+        "accretion-jets": 1,
+        "ism-chemistry": 1,
+        "compact-objects": 3,
+        "solar-system": 2,
+        "galactic-dynamics": 1,
+        "stellar-death": 1,
+        "nucleosynthesis": 1,
+        "cosmic-rays": 1,
+        "planetary": 1,
+        "transients": 1,
+        "cosmic-magnetism": 1,
+        "galactic-archaeology": 1,
+        "heavy-ion-qgp": 1,
+        "nuclear-structure": 1,
+        "nucleon-in-medium": 1,
+        "dense-matter": 1,
+        "superheavy": 1,
+        "high-energy-qcd": 1,
+        "superconductivity": 1,
+        "disordered-systems": 2,
+        "topological-matter": 2,
+        "nonequilibrium": 1,
+        "materials-reliability": 1,
+        "surfaces-metrology": 1,
+        "critical-phenomena": 1,
+        "surfaces-detectors": 1,
+        "nanoscale": 1,
+        "soft-matter": 1,
+        "qed-casimir": 1,
+        "granular": 1,
+        "fault-tolerance": 1,
+        "topological-qc": 1,
+        "hardware-platforms": 1,
+        "quantum-complexity": 1,
+        "post-quantum-crypto": 1,
+        "quantum-channels": 1,
+        "fusion-energy": 1,
+        "space-plasma": 2,
+        "atmospheric": 1,
+        "origin-of-life": 2,
+        "sensory-biophysics": 1,
+        "systems-biology": 2,
+        "biomolecular-physics": 1,
+        "quantum-in-biology": 1,
+        "theoretical-biology": 1,
+        "quantum-foundations": 2,
+        "time-and-thermo": 1,
+        "mind-and-physics": 1,
+        "geometry-qft-bridge": 1
       }
     },
     "agentic_10day_rubric": {
@@ -179,7 +270,154 @@
       }
     },
     "homepage": "https://zozo123.github.io/open-physics-problems/",
-    "repository": "https://github.com/zozo123/open-physics-problems"
+    "repository": "https://github.com/zozo123/open-physics-problems",
+    "field_taxonomy": {
+      "fields": {
+        "general": {
+          "title": "General / Unification",
+          "cluster": "fundamental",
+          "blurb": "Theory of everything, constants, global structure of laws.",
+          "color": "#b388ff"
+        },
+        "quantum-gravity": {
+          "title": "Quantum Gravity",
+          "cluster": "fundamental",
+          "blurb": "Uniting QM and GR: holography, black holes, spacetime emergence.",
+          "color": "#7aa2ff"
+        },
+        "mathematical-physics": {
+          "title": "Mathematical Physics",
+          "cluster": "fundamental",
+          "blurb": "Theorems that physics needs: Yang\u2013Mills, QFT rigor, Langlands bridges.",
+          "color": "#3dffb5",
+          "nexus_note": "Closest to AlphaProof Nexus territory \u2014 formal claims."
+        },
+        "particle-physics": {
+          "title": "Particle / High-Energy",
+          "cluster": "fundamental",
+          "blurb": "Standard Model gaps, BSM, flavor, precision anomalies.",
+          "color": "#ff6b6b"
+        },
+        "cosmology": {
+          "title": "Cosmology",
+          "cluster": "cosmic",
+          "blurb": "Dark sector, early universe, global geometry, tensions in \u039bCDM.",
+          "color": "#ffd166"
+        },
+        "astrophysics": {
+          "title": "Astrophysics & Astronomy",
+          "cluster": "cosmic",
+          "blurb": "Stars, compact objects, transients, cosmic rays, galactic dynamics.",
+          "color": "#f4a261"
+        },
+        "nuclear-physics": {
+          "title": "Nuclear Physics",
+          "cluster": "matter",
+          "blurb": "From QCD to nuclei, neutron stars, heavy ions.",
+          "color": "#e9c46a"
+        },
+        "condensed-matter": {
+          "title": "Condensed Matter",
+          "cluster": "matter",
+          "blurb": "Emergence in solids and soft matter: SC, glass, topology.",
+          "color": "#2a9d8f"
+        },
+        "fluid-dynamics": {
+          "title": "Fluids & Soft Matter Dynamics",
+          "cluster": "matter",
+          "blurb": "Navier\u2013Stokes, turbulence, granular flow.",
+          "color": "#4cc9f0"
+        },
+        "plasma-physics": {
+          "title": "Plasma Physics",
+          "cluster": "matter",
+          "blurb": "Fusion, space plasmas, atmospheric plasma mysteries.",
+          "color": "#4895ef"
+        },
+        "quantum-information": {
+          "title": "Quantum Information & Computing",
+          "cluster": "quantum-info",
+          "blurb": "Fault tolerance, complexity, capacity, crypto.",
+          "color": "#c77dff",
+          "nexus_note": "High formal content \u2014 capacities, BQP, PQC proofs."
+        },
+        "biophysics": {
+          "title": "Biophysics",
+          "cluster": "life",
+          "blurb": "Life as physical system: folding, origin, networks, quantum biology claims.",
+          "color": "#80ed99"
+        },
+        "foundations": {
+          "title": "Foundations",
+          "cluster": "foundations",
+          "blurb": "Interpretation, time, locality, mind \u2014 often underdetermined.",
+          "color": "#adb5bd"
+        }
+      },
+      "clusters": {
+        "fundamental": {
+          "title": "Fundamental structure",
+          "order": 1,
+          "blurb": "Laws, particles, gravity, mathematical skeleton of QFT/GR.",
+          "fields": [
+            "general",
+            "quantum-gravity",
+            "mathematical-physics",
+            "particle-physics"
+          ]
+        },
+        "cosmic": {
+          "title": "Cosmos",
+          "order": 2,
+          "blurb": "Universe at large: dark sector, early universe, astrophysical engines.",
+          "fields": [
+            "cosmology",
+            "astrophysics"
+          ]
+        },
+        "matter": {
+          "title": "Matter & continuum",
+          "order": 3,
+          "blurb": "Many-body, nuclear, fluids, plasmas \u2014 emergence and engineering physics.",
+          "fields": [
+            "condensed-matter",
+            "nuclear-physics",
+            "fluid-dynamics",
+            "plasma-physics"
+          ]
+        },
+        "quantum-info": {
+          "title": "Quantum information",
+          "order": 4,
+          "blurb": "Information-theoretic quantum physics and devices.",
+          "fields": [
+            "quantum-information"
+          ]
+        },
+        "life": {
+          "title": "Living systems",
+          "order": 5,
+          "blurb": "Physics of biological organization and origin.",
+          "fields": [
+            "biophysics"
+          ]
+        },
+        "foundations": {
+          "title": "Foundations",
+          "order": 6,
+          "blurb": "Conceptual structure of physical theory.",
+          "fields": [
+            "foundations"
+          ]
+        }
+      },
+      "design_notes": [
+        "Primary field = textbook home; secondary fields = cross-domain edges.",
+        "Cluster = navigation mega-domain for the site (Fundamental / Cosmos / Matter / QI / Life / Foundations).",
+        "Subfield = research community slice inside a field.",
+        "Inspired by how Erd\u0151s list is one catalog but physics is naturally multi-field \u2014 Nexus still needs domain routing."
+      ]
+    }
   },
   "problems": [
     {
@@ -233,7 +471,14 @@
         "culture": "foundations",
         "citation_ready": false,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "unification",
+      "fields_secondary": [
+        "quantum-gravity",
+        "particle-physics",
+        "foundations"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -287,7 +532,14 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "constants-and-fine-tuning",
+      "fields_secondary": [
+        "cosmology",
+        "foundations",
+        "particle-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -335,7 +587,13 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "anthropic-selection",
+      "fields_secondary": [
+        "cosmology",
+        "general"
+      ],
+      "cluster": "foundations"
     },
     {
       "status": "open",
@@ -390,7 +648,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "qg-frameworks",
+      "fields_secondary": [
+        "mathematical-physics",
+        "foundations"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -448,7 +712,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "black-hole-quantum",
+      "fields_secondary": [
+        "quantum-information",
+        "mathematical-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -498,7 +768,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "black-hole-quantum",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -550,7 +825,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "gr-math",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -598,7 +878,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "gr-math",
+      "fields_secondary": [
+        "foundations"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -646,7 +931,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "holography-duality",
+      "fields_secondary": [
+        "mathematical-physics",
+        "quantum-information"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -694,7 +985,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "spacetime-structure",
+      "fields_secondary": [
+        "quantum-information",
+        "foundations"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -742,7 +1039,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "spacetime-structure",
+      "fields_secondary": [
+        "foundations"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -790,7 +1092,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "string-m-theory",
+      "fields_secondary": [
+        "mathematical-physics",
+        "particle-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -839,7 +1147,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "spacetime-structure",
+      "fields_secondary": [
+        "foundations",
+        "cosmology"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -898,7 +1212,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "gauge-theory-rigor",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -950,7 +1269,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "gauge-theory-rigor",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -1007,7 +1331,13 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "qcd-nonperturbative",
+      "fields_secondary": [
+        "mathematical-physics",
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -1064,7 +1394,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "mathematical-fluids",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -1121,7 +1456,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "turbulence",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -1178,7 +1518,13 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "dark-sector",
+      "fields_secondary": [
+        "particle-physics",
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1235,7 +1581,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "dark-sector",
+      "fields_secondary": [
+        "quantum-gravity"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1291,7 +1642,13 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "dark-sector",
+      "fields_secondary": [
+        "quantum-gravity",
+        "foundations"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1345,7 +1702,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "precision-cosmology",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1396,7 +1758,12 @@
         "citation_ready": true,
         "publish_now": "theory-only",
         "open_math_parallel": "Experiment provides witness"
-      }
+      },
+      "subfield": "early-universe",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1445,7 +1812,13 @@
         "culture": "discovery",
         "citation_ready": true,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "early-universe",
+      "fields_secondary": [
+        "particle-physics",
+        "quantum-gravity"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1494,7 +1867,10 @@
         "culture": "discovery",
         "citation_ready": true,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "early-universe",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1542,7 +1918,12 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "dark-sector",
+      "fields_secondary": [
+        "foundations"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1591,7 +1972,13 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "global-cosmology",
+      "fields_secondary": [
+        "quantum-gravity",
+        "foundations"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1640,7 +2027,12 @@
         "culture": "discovery",
         "citation_ready": true,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "global-cosmology",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1688,7 +2080,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "global-cosmology",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1738,7 +2135,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "unification-bsm",
+      "fields_secondary": [
+        "quantum-gravity"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "controversially open",
@@ -1786,7 +2188,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "large-scale-structure",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1835,7 +2242,13 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "bbn-light-elements",
+      "fields_secondary": [
+        "nuclear-physics",
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -1888,7 +2301,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "naturalness-bsm",
+      "fields_secondary": [
+        "quantum-gravity"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -1940,7 +2358,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "strong-cp-axions",
+      "fields_secondary": [
+        "cosmology",
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -1994,7 +2418,13 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "neutrinos-flavor",
+      "fields_secondary": [
+        "cosmology",
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2044,7 +2474,10 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "flavor",
+      "fields_secondary": [],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2096,7 +2529,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "flavor",
+      "fields_secondary": [],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2147,7 +2583,13 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "baryon-number",
+      "fields_secondary": [
+        "cosmology",
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2196,7 +2638,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "unification-bsm",
+      "fields_secondary": [
+        "cosmology"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2246,7 +2693,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "naturalness-bsm",
+      "fields_secondary": [
+        "cosmology"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2295,7 +2747,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "topological-bsm",
+      "fields_secondary": [
+        "cosmology"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "controversially open",
@@ -2348,7 +2805,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "precision-anomalies",
+      "fields_secondary": [],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2402,7 +2862,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "precision-anomalies",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "controversially open",
@@ -2455,7 +2920,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "neutrino-anomalies",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "controversially open",
@@ -2506,7 +2976,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "neutrino-anomalies",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2557,7 +3032,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "nucleon-structure",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2609,7 +3089,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "hadron-spectroscopy",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2656,7 +3141,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "hadron-spectroscopy",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2705,7 +3195,12 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "exotic-dense-matter",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -2753,7 +3248,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "qcd-nonperturbative",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -2801,7 +3299,10 @@
         "culture": "discovery",
         "citation_ready": false,
         "publish_now": "theory-only"
-      }
+      },
+      "subfield": "naturalness-bsm",
+      "fields_secondary": [],
+      "cluster": "fundamental"
     },
     {
       "status": "open",
@@ -2853,7 +3354,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "solar-stellar",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -2901,7 +3407,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "solar-stellar",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -2949,7 +3460,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "accretion-jets",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3001,7 +3517,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "ism-chemistry",
+      "fields_secondary": [
+        "biophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3049,7 +3570,12 @@
         "citation_ready": true,
         "publish_now": "program-papers",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "compact-objects",
+      "fields_secondary": [
+        "cosmology"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3098,7 +3624,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "solar-system",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "controversially open",
@@ -3151,7 +3680,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "solar-system",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3201,7 +3733,13 @@
         "citation_ready": true,
         "publish_now": "theory-only",
         "open_math_parallel": "Experiment provides witness"
-      }
+      },
+      "subfield": "galactic-dynamics",
+      "fields_secondary": [
+        "cosmology",
+        "particle-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3249,7 +3787,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "stellar-death",
+      "fields_secondary": [
+        "nuclear-physics",
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3298,7 +3842,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "nucleosynthesis",
+      "fields_secondary": [
+        "nuclear-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3346,7 +3895,13 @@
         "citation_ready": true,
         "publish_now": "program-papers",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "cosmic-rays",
+      "fields_secondary": [
+        "particle-physics",
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3392,7 +3947,10 @@
         "citation_ready": true,
         "publish_now": "program-papers",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "planetary",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3439,7 +3997,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "compact-objects",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "controversially open",
@@ -3487,7 +4050,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "large-scale-structure",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3533,7 +4101,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "compact-objects",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3584,7 +4155,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "transients",
+      "fields_secondary": [
+        "plasma-physics"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3633,7 +4209,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "cosmic-magnetism",
+      "fields_secondary": [
+        "plasma-physics",
+        "cosmology"
+      ],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3683,7 +4265,10 @@
         "citation_ready": true,
         "publish_now": "yes-scoped",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "galactic-archaeology",
+      "fields_secondary": [],
+      "cluster": "cosmic"
     },
     {
       "status": "open",
@@ -3730,7 +4315,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "heavy-ion-qgp",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -3777,7 +4367,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "nuclear-structure",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -3827,7 +4420,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "nucleon-in-medium",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -3875,7 +4473,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "dense-matter",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -3921,7 +4524,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "superheavy",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -3968,7 +4574,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "high-energy-qcd",
+      "fields_secondary": [
+        "particle-physics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4021,7 +4632,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "superconductivity",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4074,7 +4688,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "disordered-systems",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4122,7 +4739,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "disordered-systems",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4173,7 +4793,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "topological-matter",
+      "fields_secondary": [
+        "quantum-information"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4223,7 +4848,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "topological-matter",
+      "fields_secondary": [
+        "quantum-information"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4276,7 +4906,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "nonequilibrium",
+      "fields_secondary": [
+        "plasma-physics",
+        "fluid-dynamics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4326,7 +4962,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "materials-reliability",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4378,7 +5017,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "surfaces-metrology",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4430,7 +5072,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "critical-phenomena",
+      "fields_secondary": [
+        "fluid-dynamics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4481,7 +5128,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "surfaces-detectors",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4531,7 +5181,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "nanoscale",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4581,7 +5234,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "soft-matter",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4632,7 +5288,13 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "qed-casimir",
+      "fields_secondary": [
+        "quantum-gravity",
+        "foundations"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4682,7 +5344,10 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "granular",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -4733,7 +5398,12 @@
         "culture": "program",
         "citation_ready": false,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "fault-tolerance",
+      "fields_secondary": [
+        "condensed-matter"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -4780,7 +5450,12 @@
         "culture": "program",
         "citation_ready": false,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "topological-qc",
+      "fields_secondary": [
+        "condensed-matter"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -4826,7 +5501,12 @@
         "culture": "program",
         "citation_ready": false,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "hardware-platforms",
+      "fields_secondary": [
+        "condensed-matter"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -4876,7 +5556,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "quantum-complexity",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -4927,7 +5612,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "post-quantum-crypto",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -4976,7 +5666,12 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "quantum-channels",
+      "fields_secondary": [
+        "mathematical-physics"
+      ],
+      "cluster": "quantum-info"
     },
     {
       "status": "open",
@@ -5026,7 +5721,12 @@
         "culture": "program",
         "citation_ready": false,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "fusion-energy",
+      "fields_secondary": [
+        "condensed-matter"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -5074,7 +5774,12 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "space-plasma",
+      "fields_secondary": [
+        "astrophysics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -5122,7 +5827,13 @@
         "culture": "program",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "space-plasma",
+      "fields_secondary": [
+        "astrophysics",
+        "fluid-dynamics"
+      ],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -5173,7 +5884,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "atmospheric",
+      "fields_secondary": [],
+      "cluster": "matter"
     },
     {
       "status": "open",
@@ -5223,7 +5937,12 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "origin-of-life",
+      "fields_secondary": [
+        "foundations"
+      ],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5272,7 +5991,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "origin-of-life",
+      "fields_secondary": [],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5322,7 +6044,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "sensory-biophysics",
+      "fields_secondary": [],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5372,7 +6097,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "systems-biology",
+      "fields_secondary": [],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5421,7 +6149,10 @@
         "citation_ready": true,
         "publish_now": "partial",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "systems-biology",
+      "fields_secondary": [],
+      "cluster": "life"
     },
     {
       "status": "partially solved",
@@ -5471,7 +6202,10 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "partial"
-      }
+      },
+      "subfield": "biomolecular-physics",
+      "fields_secondary": [],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5520,7 +6254,12 @@
         "culture": "polymath-data",
         "citation_ready": true,
         "publish_now": "yes-scoped"
-      }
+      },
+      "subfield": "quantum-in-biology",
+      "fields_secondary": [
+        "quantum-information"
+      ],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5568,7 +6307,12 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "theoretical-biology",
+      "fields_secondary": [
+        "foundations"
+      ],
+      "cluster": "life"
     },
     {
       "status": "open",
@@ -5620,7 +6364,12 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "quantum-foundations",
+      "fields_secondary": [
+        "quantum-information"
+      ],
+      "cluster": "foundations"
     },
     {
       "status": "open",
@@ -5670,7 +6419,12 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "time-and-thermo",
+      "fields_secondary": [
+        "cosmology"
+      ],
+      "cluster": "foundations"
     },
     {
       "status": "open",
@@ -5718,7 +6472,13 @@
         "citation_ready": true,
         "publish_now": "program-papers",
         "open_math_parallel": "Multi-paper research program"
-      }
+      },
+      "subfield": "quantum-foundations",
+      "fields_secondary": [
+        "quantum-information",
+        "quantum-gravity"
+      ],
+      "cluster": "foundations"
     },
     {
       "status": "controversially open",
@@ -5766,7 +6526,13 @@
         "culture": "foundations",
         "citation_ready": true,
         "publish_now": "clarify-only"
-      }
+      },
+      "subfield": "mind-and-physics",
+      "fields_secondary": [
+        "biophysics",
+        "quantum-information"
+      ],
+      "cluster": "foundations"
     },
     {
       "status": "open",
@@ -5814,7 +6580,10 @@
         "culture": "open-math-like",
         "citation_ready": true,
         "publish_now": "program-papers"
-      }
+      },
+      "subfield": "geometry-qft-bridge",
+      "fields_secondary": [],
+      "cluster": "fundamental"
     }
   ],
   "recently_solved": [

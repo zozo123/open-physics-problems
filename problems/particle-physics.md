@@ -29,6 +29,8 @@
 
 **ID:** `color-confinement` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `qcd-nonperturbative` · **Also:** `mathematical-physics`, `nuclear-physics`
+
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `clarify-only`
 
 Provide an analytic proof that color-charged particles are confined in non-Abelian gauge theory / QCD.
@@ -64,6 +66,8 @@ Provide an analytic proof that color-charged particles are confined in non-Abeli
 
 **ID:** `exotic-hadrons` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `hadron-spectroscopy` · **Also:** `nuclear-physics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `program-papers`
 
 What combinations of quarks exist (pentaquarks, tetraquarks)? Tightly bound multiquarks or molecules?
@@ -97,6 +101,8 @@ What combinations of quarks exist (pentaquarks, tetraquarks)? Tightly bound mult
 
 **ID:** `extra-dimensions` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `unification-bsm` · **Also:** `quantum-gravity`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Does nature have more than 4 spacetime dimensions? What size? Fundamental or emergent?
@@ -123,6 +129,8 @@ Does nature have more than 4 spacetime dimensions? What size? Fundamental or eme
 <a id="gallium-anomaly"></a>
 
 **ID:** `gallium-anomaly` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `neutrino-anomalies` · **Also:** `nuclear-physics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
@@ -155,6 +163,8 @@ Why do gallium solar-neutrino calibration source experiments see a deficit?
 
 **ID:** `glueballs` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `hadron-spectroscopy` · **Also:** `nuclear-physics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `program-papers`
 
 Do pure-glue bound states (glueballs) exist in nature, and which observed mesons are they?
@@ -182,6 +192,8 @@ Do pure-glue bound states (glueballs) exist in nature, and which observed mesons
 
 **ID:** `gut` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `unification-bsm` · **Also:** `cosmology`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Do EM, weak, and strong forces unify at high energy? Under what symmetry?
@@ -208,6 +220,8 @@ Do EM, weak, and strong forces unify at high energy? Under what symmetry?
 <a id="hierarchy"></a>
 
 **ID:** `hierarchy` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `naturalness-bsm` · **Also:** `quantum-gravity`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
@@ -237,6 +251,8 @@ Why is gravity so weak compared to other forces / why is the electroweak scale f
 <a id="koide"></a>
 
 **ID:** `koide` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `flavor`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 2 · **publish_now:** `yes-scoped`
 
@@ -271,6 +287,8 @@ Why does a simple relation among charged lepton masses hold to high precision (Q
 
 **ID:** `monopoles` · **Status:** open · **Kind:** experimental · **AI:** 🔴 none · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `topological-bsm` · **Also:** `cosmology`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Did magnetic monopoles exist in the early universe? Do any remain? Do they explain charge quantization?
@@ -297,6 +315,8 @@ Did magnetic monopoles exist in the early universe? Do any remain? Do they expla
 <a id="muon-g2"></a>
 
 **ID:** `muon-g2` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `precision-anomalies`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -331,6 +351,8 @@ Why does the experimental muon g−2 differ from some Standard Model predictions
 
 **ID:** `neutrino-mass` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `neutrinos-flavor` · **Also:** `cosmology`, `nuclear-physics`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Absolute neutrino mass scale? Dirac or Majorana? Normal or inverted hierarchy? CP phase? Sterile neutrinos?
@@ -359,6 +381,8 @@ Absolute neutrino mass scale? Dirac or Majorana? Normal or inverted hierarchy? C
 <a id="neutron-lifetime"></a>
 
 **ID:** `neutron-lifetime` · **Status:** open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `fundamental` · **Subfield:** `precision-anomalies` · **Also:** `nuclear-physics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `partial`
 
@@ -393,6 +417,8 @@ Why do bottle and beam measurements of the free neutron lifetime disagree?
 
 **ID:** `proton-decay` · **Status:** open · **Kind:** experimental · **AI:** 🔴 none · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `baryon-number` · **Also:** `cosmology`, `nuclear-physics`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Is the proton stable? If not, what is its lifetime and decay modes (GUT predictions)?
@@ -421,6 +447,8 @@ Is the proton stable? If not, what is its lifetime and decay modes (GUT predicti
 <a id="proton-spin"></a>
 
 **ID:** `proton-spin` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `nucleon-structure` · **Also:** `nuclear-physics`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -455,6 +483,8 @@ How do quarks and gluons fully account for the proton's spin?
 
 **ID:** `reactor-anomaly` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `neutrino-anomalies` · **Also:** `nuclear-physics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
 Why is measured reactor antineutrino flux ~6% below some predictions?
@@ -488,6 +518,8 @@ Why is measured reactor antineutrino flux ~6% below some predictions?
 
 **ID:** `strong-cp` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `strong-cp-axions` · **Also:** `cosmology`, `nuclear-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 Why is the QCD θ angle so tiny? Is Peccei–Quinn / axion the solution?
@@ -519,6 +551,8 @@ Why is the QCD θ angle so tiny? Is Peccei–Quinn / axion the solution?
 
 **ID:** `susy` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `naturalness-bsm` · **Also:** `cosmology`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Is spacetime supersymmetry realized near the TeV scale? How is it broken? Is the LSP dark matter?
@@ -546,6 +580,8 @@ Is spacetime supersymmetry realized near the TeV scale? How is it broken? Is the
 
 **ID:** `generations` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `flavor`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Why three generations of quarks and leptons? Can Yukawa couplings be derived from first principles?
@@ -572,6 +608,8 @@ Why three generations of quarks and leptons? Can Yukawa couplings be derived fro
 <a id="mu-problem"></a>
 
 **ID:** `mu-problem` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `naturalness-bsm`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 

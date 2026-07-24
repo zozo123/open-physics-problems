@@ -10,17 +10,24 @@ const CULTURE_ORDER = {
 };
 
 let ALL = [];
+let META = {};
 let activeFilter = "sprint";
 
 const $ = (sel) => document.querySelector(sel);
 
 function pill(score) {
-  const cls = score === "open-math-like" ? "sprint"
-    : score === "polymath-data" ? "stretch"
-    : score === "discovery" ? "not-agentic"
-    : score === "program" ? "multi-sprint"
-    : score === "foundations" ? "multi-sprint"
-    : String(score).replaceAll(" ", "-");
+  const cls =
+    score === "open-math-like"
+      ? "sprint"
+      : score === "polymath-data"
+        ? "stretch"
+        : score === "discovery"
+          ? "not-agentic"
+          : score === "program"
+            ? "multi-sprint"
+            : score === "foundations"
+              ? "multi-sprint"
+              : String(score).replaceAll(" ", "-");
   const label = String(score).replaceAll("-", " ");
   const known = ["sprint", "stretch", "multi-sprint", "not-agentic"].includes(score);
   return `<span class="pill ${known ? score : cls}">${label}</span>`;
@@ -44,12 +51,16 @@ function filtered() {
   const score = $("#score")?.value || activeFilter || "";
   const culture = $("#culture")?.value || "";
   const refut = $("#refut")?.value || "";
+  const cluster = $("#cluster")?.value || "";
+  const subfield = $("#subfield")?.value || "";
 
   return ALL.filter((p) => {
     const a = p.agentic_10day || {};
     const e = ep(p);
     if (score && score !== "all" && a.score !== score) return false;
     if (field && p.field !== field) return false;
+    if (cluster && p.cluster !== cluster) return false;
+    if (subfield && p.subfield !== subfield) return false;
     if (culture && e.culture !== culture) return false;
     if (refut && e.refutability !== refut) return false;
     if (!q) return true;
@@ -57,6 +68,8 @@ function filtered() {
       p.name,
       p.summary,
       p.field,
+      p.subfield,
+      p.cluster,
       p.kind,
       a.viral_hook,
       a.success,
@@ -68,6 +81,7 @@ function filtered() {
       e.publish_shape,
       e.open_math_parallel,
       e.publish_now,
+      ...(p.fields_secondary || []),
       ...(p.tags || []),
     ]
       .join(" ")
@@ -126,7 +140,7 @@ function renderFeatured() {
     .map((p) => {
       const hook = (p.agentic_10day?.viral_hook || p.name).slice(0, 72);
       return `<div class="feat" data-id="${esc(p.id)}" role="button" tabindex="0">
-        <div class="fh">sprint · ${esc(p.id)}</div>
+        <div class="fh">sprint · ${esc(p.field)}</div>
         <div class="ft">${esc(hook)}</div>
       </div>`;
     })
@@ -149,6 +163,54 @@ function renderFeatured() {
   });
 }
 
+function renderClusters() {
+  const root = $("#cluster-grid");
+  if (!root) return;
+  const tax = META.field_taxonomy || {};
+  const clusters = tax.clusters || {};
+  const fields = tax.fields || {};
+  const counts = {};
+  ALL.forEach((p) => {
+    counts[p.field] = (counts[p.field] || 0) + 1;
+  });
+  const ordered = Object.entries(clusters).sort(
+    (a, b) => (a[1].order || 99) - (b[1].order || 99)
+  );
+  root.innerHTML = ordered
+    .map(([cid, c]) => {
+      const n = ALL.filter((p) => p.cluster === cid).length;
+      const chips = (c.fields || [])
+        .map((f) => {
+          const title = (fields[f] && fields[f].title) || f;
+          const cn = counts[f] || 0;
+          return `<button type="button" class="field-chip" data-field="${esc(f)}">${esc(title)} <b>${cn}</b></button>`;
+        })
+        .join("");
+      return `<div class="cluster-card">
+        <h3>${esc(c.title || cid)}</h3>
+        <div class="cn">${n} problems · <code>${esc(cid)}</code></div>
+        <p class="cblurb">${esc(c.blurb || "")}</p>
+        <div class="field-chips">${chips}</div>
+      </div>`;
+    })
+    .join("");
+
+  root.querySelectorAll(".field-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const f = btn.dataset.field;
+      $("#score").value = "all";
+      activeFilter = "all";
+      $("#cluster").value = "";
+      $("#field").value = f;
+      refreshSubfieldOptions();
+      document.querySelectorAll(".field-chip").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      renderCards();
+      document.getElementById("board")?.scrollIntoView({ behavior: "smooth" });
+    });
+  });
+}
+
 function renderCards() {
   const list = filtered();
   const root = $("#cards");
@@ -164,20 +226,25 @@ function renderCards() {
       const a = p.agentic_10day || {};
       const e = ep(p);
       const hook = a.viral_hook || p.name;
+      const sec =
+        (p.fields_secondary || []).length > 0
+          ? ` · +${p.fields_secondary.length} cross`
+          : "";
       return `
       <article class="card" data-id="${esc(p.id)}" tabindex="0" role="button" aria-label="${esc(p.name)}">
         <div class="top">
           ${pill(a.score || "multi-sprint")}
-          <span style="color:var(--faint);font-size:0.72rem">${esc(e.culture || "")}</span>
+          <span style="color:var(--faint);font-size:0.72rem">${esc(p.field)}</span>
         </div>
         <h3>${esc(p.name)}</h3>
         <p class="hook">${esc(hook)}</p>
         <p class="summary">${esc((p.summary || "").slice(0, 140))}${(p.summary || "").length > 140 ? "…" : ""}</p>
         <div class="meta">
+          <span>${esc(p.subfield || "")}</span>
+          <span>${esc(e.culture || "")}</span>
           <span>${esc(e.refutability || "")}</span>
           <span>rung ${esc(e.closure_rung)}</span>
-          <span>${esc(e.publish_now || "")}</span>
-          <span>${esc(p.field)}</span>
+          ${sec ? `<span>${esc(sec.trim())}</span>` : ""}
         </div>
       </article>`;
     })
@@ -203,32 +270,38 @@ function showModal(id) {
   const backdrop = $("#modal");
   const body = $("#modal-body");
   $("#modal-title").textContent = p.name;
+  const sec = (p.fields_secondary || [])
+    .map((s) => `<span class="pill multi-sprint">${esc(s)}</span>`)
+    .join(" ");
   body.innerHTML = `
     <div class="row">
       ${pill(a.score || "multi-sprint")}
       ${pill(e.culture || "program")}
+      <span class="pill multi-sprint">${esc(p.field)}</span>
+      <span class="pill multi-sprint">${esc(p.cluster)}</span>
       <span class="pill multi-sprint">${esc(e.refutability)}</span>
       <span class="pill multi-sprint">rung ${esc(e.closure_rung)}</span>
-      <span class="pill multi-sprint">${esc(e.publish_now)}</span>
     </div>
+    <p><b>Subfield.</b> <code>${esc(p.subfield || "—")}</code>
+      ${sec ? ` · <b>Also spans</b> ${sec}` : ""}</p>
     <p><b>Viral hook.</b> ${esc(a.viral_hook || p.name)}</p>
     <p><b>Problem.</b> ${esc(p.summary)}</p>
     <p><b>Open-math parallel.</b> ${esc(e.open_math_parallel || "—")}</p>
     <p><b>Publish shape.</b> ${esc(e.publish_shape || "—")}</p>
-    <p><b>Weak win (publication-grade partial).</b> ${esc(e.weak_win || "—")}</p>
-    <p><b>Strong win (true closure).</b> ${esc(e.strong_win || "—")}</p>
+    <p><b>Weak win.</b> ${esc(e.weak_win || "—")}</p>
+    <p><b>Strong win.</b> ${esc(e.strong_win || "—")}</p>
     ${a.success ? `<p><b>10-day success criterion.</b> ${esc(a.success)}</p>` : ""}
     ${a.why ? `<p><b>Why this 10-day score.</b> ${esc(a.why)}</p>` : ""}
     ${p.why_hard ? `<p><b>Why the physics is hard.</b> ${esc(p.why_hard)}</p>` : ""}
     <p><b>Acceptance path.</b> ${esc(e.acceptance_path || "—")}</p>
-    <p><b>Nature votes?</b> ${esc(e.nature_vote || "—")} · <b>Possibility class:</b> ${esc(e.possibility || "—")}</p>
-    <p><b>Math analogue.</b> ${esc(e.math_analogue || "—")}</p>
-    <p><b>Agent can publish now?</b> ${e.agent_publishable ? "yes (scoped)" : "no / theory-only"} · <b>Impact</b> ${esc(p.impact)}/5 · <b>Difficulty</b> ${esc(p.difficulty)}/5</p>
+    <p><b>Nature votes?</b> ${esc(e.nature_vote || "—")} · <b>Possibility:</b> ${esc(e.possibility || "—")}</p>
+    <p><b>Agent publishable?</b> ${e.agent_publishable ? "yes (scoped)" : "no / theory-only"} ·
+      <b>Impact</b> ${esc(p.impact)}/5 · <b>Difficulty</b> ${esc(p.difficulty)}/5</p>
     ${(a.harness || []).length ? `<p><b>Harness needs</b></p><div class="harness">${a.harness.map((h) => `<code>${esc(h)}</code>`).join("")}</div>` : ""}
     ${(p.tags || []).length ? `<p style="margin-top:0.8rem">${p.tags.map((t) => `<span class="pill multi-sprint">#${esc(t)}</span>`).join(" ")}</p>` : ""}
     <p style="margin-top:1rem;font-size:0.85rem">ID <code style="color:var(--accent)">${esc(p.id)}</code>
-      · <a href="https://github.com/zozo123/open-physics-problems/blob/main/maps/open-math-to-physics.md" target="_blank" rel="noopener">open math → physics</a>
-      · <a href="https://github.com/zozo123/open-physics-problems/blob/main/data/problems.json" target="_blank" rel="noopener">source data</a>
+      · <a href="https://github.com/zozo123/open-physics-problems/blob/main/maps/by-field.md" target="_blank" rel="noopener">fields map</a>
+      · <a href="https://github.com/zozo123/open-physics-problems/blob/main/maps/fields/${esc(p.field)}.md" target="_blank" rel="noopener">${esc(p.field)} page</a>
     </p>
   `;
   backdrop.classList.add("open");
@@ -240,6 +313,21 @@ function hideModal() {
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
 }
 
+function refreshSubfieldOptions() {
+  const field = $("#field")?.value || "";
+  const cluster = $("#cluster")?.value || "";
+  const sel = $("#subfield");
+  if (!sel) return;
+  const cur = sel.value;
+  let pool = ALL;
+  if (field) pool = pool.filter((p) => p.field === field);
+  else if (cluster) pool = pool.filter((p) => p.cluster === cluster);
+  const subs = [...new Set(pool.map((p) => p.subfield).filter(Boolean))].sort();
+  sel.innerHTML = `<option value="">All subfields</option>` +
+    subs.map((s) => `<option value="${esc(s)}">${esc(s)}</option>`).join("");
+  if (subs.includes(cur)) sel.value = cur;
+}
+
 function setupFilters() {
   const fields = [...new Set(ALL.map((p) => p.field))].sort();
   const sel = $("#field");
@@ -249,16 +337,32 @@ function setupFilters() {
     o.textContent = f;
     sel.appendChild(o);
   });
+  refreshSubfieldOptions();
 
   const rerender = () => {
     activeFilter = $("#score").value;
+    if ($("#cluster")?.value && !$("#field")?.value) {
+      // keep
+    }
+    refreshSubfieldOptions();
     renderCards();
   };
-  ["q", "field", "score", "culture", "refut"].forEach((id) => {
+  ["q", "field", "score", "culture", "refut", "cluster", "subfield"].forEach((id) => {
     const el = $(`#${id}`);
     if (!el) return;
     el.addEventListener("input", rerender);
-    el.addEventListener("change", rerender);
+    el.addEventListener("change", () => {
+      if (id === "cluster") {
+        // clear field when cluster changes for cleaner nav
+        if ($("#field")) $("#field").value = "";
+      }
+      if (id === "field" && $("#field").value) {
+        // sync cluster from field
+        const p = ALL.find((x) => x.field === $("#field").value);
+        if (p && $("#cluster")) $("#cluster").value = p.cluster || "";
+      }
+      rerender();
+    });
   });
 
   document.querySelectorAll("[data-jump-score]").forEach((btn) => {
@@ -284,6 +388,7 @@ async function boot() {
     if (!res.ok) throw new Error("fetch failed");
     const data = await res.json();
     ALL = data.problems || [];
+    META = data.meta || {};
   } catch (e) {
     $("#cards").innerHTML = `<div class="empty">Could not load data/problems.json. Serve via GitHub Pages or <code>python3 -m http.server</code> from <code>docs/</code>.</div>`;
     console.error(e);
@@ -292,8 +397,8 @@ async function boot() {
 
   renderStats();
   renderFeatured();
+  renderClusters();
   setupFilters();
-  // Default: sprints first for visitors; full catalog one click away
   $("#score").value = "sprint";
   activeFilter = "sprint";
   renderCards();

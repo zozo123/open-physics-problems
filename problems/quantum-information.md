@@ -16,6 +16,8 @@
 
 **ID:** `bqp-complexity` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `quantum-info` · **Subfield:** `quantum-complexity` · **Also:** `mathematical-physics`
+
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `program-papers`
 
 What is the precise relation of BQP to classical complexity classes? Can physical computation exceed BQP?
@@ -46,6 +48,8 @@ What is the precise relation of BQP to classical complexity classes? Can physica
 <a id="ftqc-threshold"></a>
 
 **ID:** `ftqc-threshold` · **Status:** open · **Kind:** engineering · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `quantum-info` · **Subfield:** `fault-tolerance` · **Also:** `condensed-matter`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -80,6 +84,8 @@ Can we go beyond NISQ to fault-tolerant scalable quantum computers with practica
 
 **ID:** `room-temp-qc` · **Status:** open · **Kind:** engineering · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `quantum-info` · **Subfield:** `hardware-platforms` · **Also:** `condensed-matter`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `clarify-only`
 
 Can useful quantum computing operate at non-cryogenic / room temperature?
@@ -104,6 +110,8 @@ Can useful quantum computing operate at non-cryogenic / room temperature?
 <a id="pqc-security"></a>
 
 **ID:** `pqc-security` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `quantum-info` · **Subfield:** `post-quantum-crypto` · **Also:** `mathematical-physics`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `partial`
 
@@ -136,6 +144,8 @@ Can we prove that specific cryptographic protocols remain secure against quantum
 
 **ID:** `quantum-capacity` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `quantum-info` · **Subfield:** `quantum-channels` · **Also:** `mathematical-physics`
+
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `partial`
 
 What is the quantum capacity of general quantum channels (often unknown in closed form)?
@@ -166,6 +176,8 @@ What is the quantum capacity of general quantum channels (often unknown in close
 <a id="topological-qubits"></a>
 
 **ID:** `topological-qubits` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `quantum-info` · **Subfield:** `topological-qc` · **Also:** `condensed-matter`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 

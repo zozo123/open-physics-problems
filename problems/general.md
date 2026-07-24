@@ -12,6 +12,8 @@
 
 **ID:** `dimensionless-constants` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `constants-and-fine-tuning` · **Also:** `cosmology`, `foundations`, `particle-physics`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
 Can the dimensionless constants of nature (fine-structure constant, mass ratios, etc.) be derived from first principles, or are some historical/quantum accidents?
@@ -40,6 +42,8 @@ Can the dimensionless constants of nature (fine-structure constant, mass ratios,
 <a id="toe"></a>
 
 **ID:** `toe` · **Status:** open · **Kind:** theoretical · **AI:** 🔴 none · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `unification` · **Also:** `quantum-gravity`, `particle-physics`, `foundations`
 
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 

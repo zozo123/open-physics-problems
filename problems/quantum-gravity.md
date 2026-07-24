@@ -20,6 +20,8 @@
 
 **ID:** `bh-information` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `black-hole-quantum` · **Also:** `quantum-information`, `mathematical-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 Do black holes radiate thermally as Hawking predicted? Does radiation encode interior information? What remains after evaporation?
@@ -55,6 +57,8 @@ Do black holes radiate thermally as Hawking predicted? Does radiation encode int
 
 **ID:** `chronology-protection` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `gr-math` · **Also:** `foundations`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `clarify-only`
 
 Does quantum gravity forbid closed timelike curves / macroscopic time travel as Hawking suggested?
@@ -81,6 +85,8 @@ Does quantum gravity forbid closed timelike curves / macroscopic time travel as 
 <a id="cosmic-censorship"></a>
 
 **ID:** `cosmic-censorship` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `gr-math` · **Also:** `mathematical-physics`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `program-papers`
 
@@ -113,6 +119,8 @@ Can naked singularities form from realistic initial conditions, or does nature a
 
 **ID:** `spacetime-emergence` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `spacetime-structure` · **Also:** `quantum-information`, `foundations`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 How does classical continuous spacetime emerge from discrete/quantum microphysics (LQG, entanglement in AdS/CFT, etc.)?
@@ -140,6 +148,8 @@ How does classical continuous spacetime emerge from discrete/quantum microphysic
 
 **ID:** `hawking-radiation` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `black-hole-quantum` · **Also:** `astrophysics`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 Do real black holes emit Hawking radiation as predicted? Observable only for microscopic or analogue systems so far.
@@ -166,6 +176,8 @@ Do real black holes emit Hawking radiation as predicted? Observable only for mic
 <a id="holography"></a>
 
 **ID:** `holography` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `fundamental` · **Subfield:** `holography-duality` · **Also:** `mathematical-physics`, `quantum-information`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -196,6 +208,8 @@ Does quantum gravity admit a lower-dimensional dual without gravity? Can AdS/CFT
 
 **ID:** `m-theory-dof` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `fundamental` · **Subfield:** `string-m-theory` · **Also:** `mathematical-physics`, `particle-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `clarify-only`
 
 What are the fundamental degrees of freedom of M-theory, and does it describe Nature?
@@ -223,6 +237,8 @@ What are the fundamental degrees of freedom of M-theory, and does it describe Na
 
 **ID:** `problem-of-time` · **Status:** open · **Kind:** foundations · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `spacetime-structure` · **Also:** `foundations`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 How to reconcile time as a universal background parameter in QM with dynamical spacetime in GR?
@@ -249,6 +265,8 @@ How to reconcile time as a universal background parameter in QM with dynamical s
 <a id="quantum-gravity"></a>
 
 **ID:** `quantum-gravity` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `qg-frameworks` · **Also:** `mathematical-physics`, `foundations`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `clarify-only`
 
@@ -280,6 +298,8 @@ Can quantum mechanics and general relativity be realized as a fully consistent t
 <a id="why-3plus1"></a>
 
 **ID:** `why-3plus1` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `spacetime-structure` · **Also:** `foundations`, `cosmology`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `clarify-only`
 

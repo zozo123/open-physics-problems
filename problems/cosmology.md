@@ -24,6 +24,8 @@
 
 **ID:** `coincidence` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `dark-sector` · **Also:** `foundations`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
 Why are dark matter and dark energy densities comparable today despite different evolution?
@@ -51,6 +53,8 @@ Why are dark matter and dark energy densities comparable today despite different
 
 **ID:** `inflation` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `early-universe` · **Also:** `particle-physics`, `quantum-gravity`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 3 · **publish_now:** `theory-only`
 
 Is inflation correct? What is the inflaton? Is inflation eternal? Are there viable alternatives?
@@ -77,6 +81,8 @@ Is inflation correct? What is the inflaton? Is inflation eternal? Are there viab
 <a id="cosmo-constant"></a>
 
 **ID:** `cosmo-constant` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `cosmic` · **Subfield:** `dark-sector` · **Also:** `quantum-gravity`, `foundations`
 
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
@@ -111,6 +117,8 @@ Why is vacuum energy density ~120 orders of magnitude smaller than naive QFT est
 
 **ID:** `lithium-problem` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `bbn-light-elements` · **Also:** `nuclear-physics`, `astrophysics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `program-papers`
 
 Why does Big Bang nucleosynthesis overpredict 7Li relative to old stars?
@@ -139,6 +147,8 @@ Why does Big Bang nucleosynthesis overpredict 7Li relative to old stars?
 <a id="cosmo-principle"></a>
 
 **ID:** `cosmo-principle` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `global-cosmology` · **Also:** `astrophysics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -169,6 +179,8 @@ Is the universe homogeneous and isotropic on large scales? Is FLRW the right met
 
 **ID:** `dark-flow` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `large-scale-structure` · **Also:** `astrophysics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `clarify-only`
 
 Is there a bulk flow of galaxy clusters from gravitational pull outside the observable universe?
@@ -196,6 +208,8 @@ Is there a bulk flow of galaxy clusters from gravitational pull outside the obse
 
 **ID:** `horizon-problem` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `early-universe`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 3 · **publish_now:** `theory-only`
 
 Why is the distant universe so homogeneous? Is inflation the unique solution?
@@ -222,6 +236,8 @@ Why is the distant universe so homogeneous? Is inflation the unique solution?
 <a id="hubble-tension"></a>
 
 **ID:** `hubble-tension` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `precision-cosmology` · **Also:** `astrophysics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -256,6 +272,8 @@ Why do early-universe (CMB+ΛCDM) and late-universe (distance ladder) measuremen
 
 **ID:** `large-scale-anisotropy` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `large-scale-structure` · **Also:** `astrophysics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `program-papers`
 
 Do radio/CMB/quasar polarization anomalies indicate large-scale anisotropy violating the cosmological principle?
@@ -280,6 +298,8 @@ Do radio/CMB/quasar polarization anomalies indicate large-scale anisotropy viola
 <a id="baryogenesis"></a>
 
 **ID:** `baryogenesis` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `cosmic` · **Subfield:** `early-universe` · **Also:** `particle-physics`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 3 · **publish_now:** `theory-only`
 
@@ -309,6 +329,8 @@ Why is the observable universe dominated by matter rather than equal matter and 
 <a id="dark-energy"></a>
 
 **ID:** `dark-energy` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `cosmic` · **Subfield:** `dark-sector` · **Also:** `quantum-gravity`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
@@ -343,6 +365,8 @@ What causes the accelerated expansion of the universe? Cosmological constant, qu
 
 **ID:** `dark-matter` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `dark-sector` · **Also:** `particle-physics`, `astrophysics`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 4 · **publish_now:** `theory-only`
 
 What is dark matter? WIMP, axion, sterile neutrino, primordial black holes, modified gravity, or something else?
@@ -376,6 +400,8 @@ What is dark matter? WIMP, axion, sterile neutrino, primordial black holes, modi
 
 **ID:** `universe-origin-fate` · **Status:** open · **Kind:** theoretical · **AI:** 🔴 none · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `global-cosmology` · **Also:** `quantum-gravity`, `foundations`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
 How did conditions for existence arise? Big Freeze, Rip, Crunch, or Bounce?
@@ -402,6 +428,8 @@ How did conditions for existence arise? Big Freeze, Rip, Crunch, or Bounce?
 <a id="universe-size-shape"></a>
 
 **ID:** `universe-size-shape` · **Status:** open · **Kind:** experimental · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `cosmic` · **Subfield:** `global-cosmology` · **Also:** `mathematical-physics`
 
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 3 · **publish_now:** `theory-only`
 

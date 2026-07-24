@@ -15,6 +15,8 @@
 
 **ID:** `anthropic` · **Status:** open · **Kind:** foundations · **AI:** 🔴 none · **10d:** `not-agentic`
 
+**Cluster:** `foundations` · **Subfield:** `anthropic-selection` · **Also:** `cosmology`, `general`
+
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
 Are important aspects of the universe only understandable via anthropic selection, or is the principle unnecessary/unscientific?
@@ -41,6 +43,8 @@ Are important aspects of the universe only understandable via anthropic selectio
 <a id="arrow-of-time"></a>
 
 **ID:** `arrow-of-time` · **Status:** open · **Kind:** foundations · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `foundations` · **Subfield:** `time-and-thermo` · **Also:** `cosmology`
 
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
@@ -72,6 +76,8 @@ Why does time have a direction? Why was the early universe low entropy? How do t
 <a id="qm-interpretation"></a>
 
 **ID:** `qm-interpretation` · **Status:** open · **Kind:** foundations · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `foundations` · **Subfield:** `quantum-foundations` · **Also:** `quantum-information`
 
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 
@@ -106,6 +112,8 @@ How does the quantum formalism give rise to definite outcomes? What is a measure
 
 **ID:** `locality` · **Status:** open · **Kind:** foundations · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `foundations` · **Subfield:** `quantum-foundations` · **Also:** `quantum-information`, `quantum-gravity`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 1 · **publish_now:** `program-papers`
 
 Are non-local phenomena limited to Bell entanglement, or can information/conserved quantities move non-locally? Implications for spacetime structure?
@@ -132,6 +140,8 @@ Are non-local phenomena limited to Bell entanglement, or can information/conserv
 <a id="quantum-mind"></a>
 
 **ID:** `quantum-mind` · **Status:** controversially open · **Kind:** foundations · **AI:** 🟠 low · **10d:** `not-agentic`
+
+**Cluster:** `foundations` · **Subfield:** `mind-and-physics` · **Also:** `biophysics`, `quantum-information`
 
 **Culture:** `foundations` · **Refutability:** `underdetermined` · **Rung:** 0 · **publish_now:** `clarify-only`
 

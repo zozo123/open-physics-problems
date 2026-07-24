@@ -13,6 +13,8 @@
 
 **ID:** `granular-convection` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `matter` · **Subfield:** `granular`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
 Why do shaken granular materials convect and size-segregate?
@@ -43,6 +45,8 @@ Why do shaken granular materials convect and size-segregate?
 <a id="navier-stokes"></a>
 
 **ID:** `navier-stokes` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `not-agentic`
+
+**Cluster:** `matter` · **Subfield:** `mathematical-fluids` · **Also:** `mathematical-physics`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `clarify-only`
 
@@ -78,6 +82,8 @@ Do smooth solutions to 3D incompressible Navier–Stokes exist for all time for 
 <a id="turbulence"></a>
 
 **ID:** `turbulence` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `turbulence` · **Also:** `plasma-physics`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 

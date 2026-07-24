@@ -27,6 +27,8 @@
 
 **ID:** `astrophysical-jets` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `accretion-jets` · **Also:** `plasma-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 Why do some accretion disks launch relativistic jets? What sets QPO frequencies and overtones?
@@ -54,6 +56,8 @@ Why do some accretion disks launch relativistic jets? What sets QPO frequencies 
 
 **ID:** `supernova-mechanism` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `stellar-death` · **Also:** `nuclear-physics`, `plasma-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 What exact mechanism turns stellar core collapse into a successful explosion?
@@ -80,6 +84,8 @@ What exact mechanism turns stellar core collapse into a successful explosion?
 <a id="dibs"></a>
 
 **ID:** `dibs` · **Status:** open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `ism-chemistry` · **Also:** `biophysics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `yes-scoped`
 
@@ -112,6 +118,8 @@ What molecules or materials cause the numerous unidentified interstellar absorpt
 
 **ID:** `frb` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `stretch`
 
+**Cluster:** `cosmic` · **Subfield:** `transients` · **Also:** `plasma-physics`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `partial`
 
 What causes millisecond radio bursts from distant galaxies? Why do some repeat?
@@ -142,6 +150,8 @@ What causes millisecond radio bursts from distant galaxies? Why do some repeat?
 <a id="flyby-anomaly"></a>
 
 **ID:** `flyby-anomaly` · **Status:** controversially open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `solar-system`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
@@ -174,6 +184,8 @@ Why do some Earth flybys show tiny unexpected energy changes?
 
 **ID:** `age-metallicity` · **Status:** open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `galactic-archaeology`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
 Is there a universal age–metallicity relation in thin/thick Galactic disks?
@@ -205,6 +217,8 @@ Is there a universal age–metallicity relation in thin/thick Galactic disks?
 
 **ID:** `galaxy-rotation` · **Status:** open · **Kind:** theoretical · **AI:** 🟠 low · **10d:** `not-agentic`
 
+**Cluster:** `cosmic` · **Subfield:** `galactic-dynamics` · **Also:** `cosmology`, `particle-physics`
+
 **Culture:** `discovery` · **Refutability:** `gated` · **Rung:** 3 · **publish_now:** `theory-only`
 
 Are flat rotation curves due to dark matter, modified gravity, or both?
@@ -233,6 +247,8 @@ Are flat rotation curves due to dark matter, modified gravity, or both?
 <a id="kuiper-cliff"></a>
 
 **ID:** `kuiper-cliff` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `cosmic` · **Subfield:** `solar-system`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `partial`
 
@@ -265,6 +281,8 @@ Why does Kuiper belt object density drop sharply beyond ~50 AU?
 
 **ID:** `magnetar-fields` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `compact-objects` · **Also:** `plasma-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 What is the origin of magnetars' extreme magnetic fields?
@@ -289,6 +307,8 @@ What is the origin of magnetars' extreme magnetic fields?
 <a id="cosmic-b-fields"></a>
 
 **ID:** `cosmic-b-fields` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `cosmic-magnetism` · **Also:** `plasma-physics`, `cosmology`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -316,6 +336,8 @@ How were large-scale magnetic fields generated from galaxies to clusters?
 <a id="p-nuclei"></a>
 
 **ID:** `p-nuclei` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
+
+**Cluster:** `cosmic` · **Subfield:** `nucleosynthesis` · **Also:** `nuclear-physics`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `partial`
 
@@ -348,6 +370,8 @@ What astrophysical process produces rare proton-rich isotopes (p-nuclei)?
 
 **ID:** `saturn-rotation` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `planetary`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 What is the true rotation rate of Saturn's deep interior given magnetospheric period puzzles?
@@ -374,6 +398,8 @@ What is the true rotation rate of Saturn's deep interior given magnetospheric pe
 <a id="coronal-heating"></a>
 
 **ID:** `coronal-heating` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `solar-stellar` · **Also:** `plasma-physics`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -408,6 +434,8 @@ Why is the Sun's corona much hotter than its surface? Why is magnetic reconnecti
 
 **ID:** `solar-cycle` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `solar-stellar` · **Also:** `plasma-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 How does the Sun generate its reversing large-scale magnetic field? What causes grand minima like Maunder?
@@ -434,6 +462,8 @@ How does the Sun generate its reversing large-scale magnetic field? What causes 
 <a id="smbh-seeds"></a>
 
 **ID:** `smbh-seeds` · **Status:** open · **Kind:** theoretical · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `compact-objects` · **Also:** `cosmology`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
@@ -462,6 +492,8 @@ How did early quasars grow SMBHs to ~10^10 M☉ so quickly? Origin of M–σ rel
 
 **ID:** `uhecr` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
 
+**Cluster:** `cosmic` · **Subfield:** `cosmic-rays` · **Also:** `particle-physics`, `plasma-physics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `program-papers`
 
 What sources accelerate particles above the GZK limit region, and how?
@@ -488,6 +520,8 @@ What sources accelerate particles above the GZK limit region, and how?
 <a id="ulx"></a>
 
 **ID:** `ulx` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `multi-sprint`
+
+**Cluster:** `cosmic` · **Subfield:** `compact-objects`
 
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `program-papers`
 

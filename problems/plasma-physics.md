@@ -14,6 +14,8 @@
 
 **ID:** `alfvenic-turbulence` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `space-plasma` · **Also:** `astrophysics`, `fluid-dynamics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 How does MHD/Alfvénic turbulence work in solar wind, flares, CMEs, and substorms?
@@ -40,6 +42,8 @@ How does MHD/Alfvénic turbulence work in solar wind, flares, CMEs, and substorm
 <a id="ball-lightning"></a>
 
 **ID:** `ball-lightning` · **Status:** open · **Kind:** experimental · **AI:** 🟡 medium · **10d:** `stretch`
+
+**Cluster:** `matter` · **Subfield:** `atmospheric`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
@@ -72,6 +76,8 @@ What is the physical nature of ball lightning?
 
 **ID:** `fermi-injection` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `space-plasma` · **Also:** `astrophysics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 What pre-accelerates particles enough for Fermi acceleration to take over in astrophysical shocks?
@@ -96,6 +102,8 @@ What pre-accelerates particles enough for Fermi acceleration to take over in ast
 <a id="fusion-confinement"></a>
 
 **ID:** `fusion-confinement` · **Status:** open · **Kind:** engineering · **AI:** 🟡 medium · **10d:** `not-agentic`
+
+**Cluster:** `matter` · **Subfield:** `fusion-energy` · **Also:** `condensed-matter`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 3 · **publish_now:** `clarify-only`
 

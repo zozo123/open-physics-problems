@@ -13,6 +13,8 @@
 
 **ID:** `geometric-langlands-physics` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `fundamental` · **Subfield:** `geometry-qft-bridge`
+
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `program-papers`
 
 Can the Langlands program explain physical symmetries and vice versa?
@@ -39,6 +41,8 @@ Can the Langlands program explain physical symmetries and vice versa?
 <a id="rigorous-qft"></a>
 
 **ID:** `rigorous-qft` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `gauge-theory-rigor` · **Also:** `particle-physics`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `clarify-only`
 
@@ -72,6 +76,8 @@ Construct mathematically rigorous interacting quantum field theories in 4D space
 <a id="yang-mills-mass-gap"></a>
 
 **ID:** `yang-mills-mass-gap` · **Status:** open · **Kind:** mathematical · **AI:** 🟢 high · **10d:** `not-agentic`
+
+**Cluster:** `fundamental` · **Subfield:** `gauge-theory-rigor` · **Also:** `particle-physics`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 5 · **publish_now:** `clarify-only`
 

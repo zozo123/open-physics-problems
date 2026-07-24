@@ -23,6 +23,8 @@
 
 **ID:** `cryogenic-electron-emission` · **Status:** open · **Kind:** experimental · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `matter` · **Subfield:** `surfaces-detectors`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
 Why does dark electron emission in photomultipliers increase as temperature decreases?
@@ -51,6 +53,8 @@ Why does dark electron emission in photomultipliers increase as temperature decr
 <a id="fqhe-5-2"></a>
 
 **ID:** `fqhe-5-2` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `topological-matter` · **Also:** `quantum-information`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -83,6 +87,8 @@ What is the mechanism of the 5/2 FQHE state? Non-Abelian anyons?
 
 **ID:** `gauge-block-wringing` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `matter` · **Subfield:** `surfaces-metrology`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `yes-scoped`
 
 What mechanism allows precision gauge blocks to wring together?
@@ -111,6 +117,8 @@ What mechanism allows precision gauge blocks to wring together?
 <a id="glass-transition"></a>
 
 **ID:** `glass-transition` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `disordered-systems`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -145,6 +153,8 @@ What is the nature of the glass transition and universal properties of amorphous
 
 **ID:** `he4-critical-exponent` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `matter` · **Subfield:** `critical-phenomena` · **Also:** `fluid-dynamics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
 Explain discrepancy between experimental and theoretical heat-capacity critical exponent α near the lambda point.
@@ -175,6 +185,8 @@ Explain discrepancy between experimental and theoretical heat-capacity critical 
 <a id="high-tc"></a>
 
 **ID:** `high-tc` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `superconductivity`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
@@ -209,6 +221,8 @@ What mechanism causes high-Tc superconductivity in cuprates and related material
 
 **ID:** `amorphous-universality` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
 
+**Cluster:** `matter` · **Subfield:** `disordered-systems`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 
 Why is the phonon wavelength to mean-free-path ratio nearly universal across disordered solids?
@@ -233,6 +247,8 @@ Why is the phonon wavelength to mean-free-path ratio nearly universal across dis
 <a id="metal-whiskering"></a>
 
 **ID:** `metal-whiskering` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `matter` · **Subfield:** `materials-reliability`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `yes-scoped`
 
@@ -265,6 +281,8 @@ What is the growth mechanism of spontaneous metal whiskers causing electronics f
 
 **ID:** `nematic-smectic` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `stretch`
 
+**Cluster:** `matter` · **Subfield:** `soft-matter`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `partial`
 
 Can the nematic to smectic-A transition be characterized as a universal phase transition?
@@ -294,6 +312,8 @@ Can the nematic to smectic-A transition be characterized as a universal phase tr
 
 **ID:** `quantum-dots-nonparabolicity` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `matter` · **Subfield:** `nanoscale`
+
 **Culture:** `polymath-data` · **Refutability:** `hard` · **Rung:** 4 · **publish_now:** `yes-scoped`
 
 What causes nonparabolicity of the lowest optical absorption vs size in semiconductor nanocrystals?
@@ -322,6 +342,8 @@ What causes nonparabolicity of the lowest optical absorption vs size in semicond
 <a id="scharnhorst"></a>
 
 **ID:** `scharnhorst` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
+
+**Cluster:** `matter` · **Subfield:** `qed-casimir` · **Also:** `quantum-gravity`, `foundations`
 
 **Culture:** `open-math-like` · **Refutability:** `formal` · **Rung:** 3 · **publish_now:** `yes-scoped`
 
@@ -354,6 +376,8 @@ Can light travel slightly faster than c between closely spaced conducting plates
 
 **ID:** `sonoluminescence` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `sprint`
 
+**Cluster:** `matter` · **Subfield:** `nonequilibrium` · **Also:** `plasma-physics`, `fluid-dynamics`
+
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `yes-scoped`
 
 What causes light flashes from sound-driven imploding bubbles?
@@ -384,6 +408,8 @@ What causes light flashes from sound-driven imploding bubbles?
 <a id="topological-order-T"></a>
 
 **ID:** `topological-order-T` · **Status:** open · **Kind:** theoretical · **AI:** 🟢 high · **10d:** `multi-sprint`
+
+**Cluster:** `matter` · **Subfield:** `topological-matter` · **Also:** `quantum-information`
 
 **Culture:** `program` · **Refutability:** `soft` · **Rung:** 2 · **publish_now:** `program-papers`
 

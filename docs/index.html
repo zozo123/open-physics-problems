@@ -22,6 +22,7 @@
         <a href="#manifesto">Why</a>
         <a href="#mathculture">Open math → physics</a>
         <a href="#formalize">Formalize</a>
+        <a href="#fields">Fields</a>
         <a href="#playbook">Playbook</a>
         <a href="#board">Board</a>
         <a href="#honesty">Honesty</a>
@@ -290,6 +291,22 @@
   </section>
 
 
+  <section id="fields">
+    <div class="wrap">
+      <h2>Split by field — physics is a web, not one list</h2>
+      <p class="section-lead">
+        Erdős problems are one catalog. Physics is <b>multi-field</b>: dark matter is cosmology <i>and</i> particle;
+        confinement is particle <i>and</i> math-phys. Every problem has a primary field, a subfield,
+        secondary fields, and a navigation <b>cluster</b>.
+      </p>
+      <div class="cluster-grid" id="cluster-grid"></div>
+      <p class="section-lead" style="margin-top:1rem">
+        Click a field chip to filter the board. Math-phys and QI lean Nexus-like (formal Verify);
+        cosmic anomalies lean public-data pipelines; discovery still needs nature.
+      </p>
+    </div>
+  </section>
+
   <section id="playbook">
     <div class="wrap">
       <h2>Playbook — from card to publication</h2>
@@ -353,8 +370,20 @@
           <option value="gated">gated</option>
           <option value="underdetermined">underdetermined</option>
         </select>
+        <select id="cluster">
+          <option value="">All clusters</option>
+          <option value="fundamental">fundamental</option>
+          <option value="cosmic">cosmic</option>
+          <option value="matter">matter</option>
+          <option value="quantum-info">quantum-info</option>
+          <option value="life">life</option>
+          <option value="foundations">foundations</option>
+        </select>
         <select id="field">
           <option value="">All fields</option>
+        </select>
+        <select id="subfield">
+          <option value="">All subfields</option>
         </select>
         <span id="count-label" style="color:var(--muted);align-self:center;font-size:0.9rem"></span>
       </div>
