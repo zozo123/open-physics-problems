@@ -87,7 +87,34 @@
         "open": 104,
         "controversially open": 7,
         "partially solved": 1
+      },
+      "by_agentic_10day": {
+        "not-agentic": 36,
+        "multi-sprint": 48,
+        "sprint": 13,
+        "stretch": 15
       }
+    },
+    "agentic_10day_rubric": {
+      "assumption": "Strongest multi-agent harness: tool-using LLMs, code exec, literature search, formal provers, simulators, human-level verification at end of day 10. No new colliders or megaton detectors.",
+      "scores": {
+        "sprint": "Credible full closure, community verdict, or decisive partial with publishable success criterion in \u226410 days.",
+        "stretch": "Ambitious but imaginable with god-tier agents; more likely strong partial than final close.",
+        "multi-sprint": "Right shape for AI eventually; not honest as a single 10-day solve.",
+        "not-agentic": "Empirically gated, underdetermined, or century-scale formal; agents can only annotate/rank."
+      },
+      "what_counts_as_solved": [
+        "Peer-checkable proof or derivation of the stated claim",
+        "Reproducible data reanalysis that community would accept as closing an anomaly",
+        "Mechanism consensus with decisive out-of-sample prediction already satisfied by public data",
+        "Explicit meta-closure: show the Wikipedia 'open' item is already solved in literature"
+      ],
+      "what_does_not_count": [
+        "A confident blog post without code/proof",
+        "Proposing 12th high-Tc mechanism without discrimination",
+        "Claiming TOE/QG/Clay prizes",
+        "Hallucinated experimental results"
+      ]
     }
   },
   "problems": [
@@ -118,7 +145,15 @@
       "name": "Theory of everything",
       "field": "general",
       "summary": "Is there a single coherent framework that unifies all fundamental interactions and explains all physical phenomena?",
-      "why_hard": "Requires reconciling quantum field theory with general relativity and matching all low-energy data."
+      "why_hard": "Requires reconciling quantum field theory with general relativity and matching all low-energy data.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A",
+        "harness": [],
+        "why": "TOE.",
+        "viral_hook": "If your agent claims TOE in 10 days, it's lying."
+      }
     },
     {
       "status": "open",
@@ -148,7 +183,15 @@
       "name": "Dimensionless physical constants",
       "field": "general",
       "summary": "Can the dimensionless constants of nature (fine-structure constant, mass ratios, etc.) be derived from first principles, or are some historical/quantum accidents?",
-      "why_hard": "No accepted principle selects observed values; may require multiverse/anthropic reasoning or a TOE."
+      "why_hard": "No accepted principle selects observed values; may require multiverse/anthropic reasoning or a TOE.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "No accepted principle selects observed values; may require multiverse/anthropic reasoning or a TOE.",
+        "viral_hook": "Dimensionless physical constants"
+      }
     },
     {
       "status": "open",
@@ -172,7 +215,15 @@
       "name": "Anthropic principle necessity",
       "field": "foundations",
       "summary": "Are important aspects of the universe only understandable via anthropic selection, or is the principle unnecessary/unscientific?",
-      "why_hard": "Blurs physics and philosophy; hard to falsify cleanly."
+      "why_hard": "Blurs physics and philosophy; hard to falsify cleanly.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Blurs physics and philosophy; hard to falsify cleanly.",
+        "viral_hook": "Anthropic principle necessity"
+      }
     },
     {
       "status": "open",
@@ -203,7 +254,15 @@
       "name": "Quantum gravity",
       "field": "quantum-gravity",
       "summary": "Can quantum mechanics and general relativity be realized as a fully consistent theory? Is spacetime continuous or discrete? Graviton-mediated or emergent?",
-      "why_hard": "Planck-scale physics is experimentally almost inaccessible; multiple incomplete frameworks compete."
+      "why_hard": "Planck-scale physics is experimentally almost inaccessible; multiple incomplete frameworks compete.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A",
+        "harness": [],
+        "why": "Planck-scale.",
+        "viral_hook": "Not a sprint. A century."
+      }
     },
     {
       "status": "open",
@@ -234,7 +293,18 @@
       "name": "Black hole information paradox",
       "field": "quantum-gravity",
       "summary": "Do black holes radiate thermally as Hawking predicted? Does radiation encode interior information? What remains after evaporation?",
-      "why_hard": "Tensions unitarity, locality, and semiclassical gravity in extreme regimes."
+      "why_hard": "Tensions unitarity, locality, and semiclassical gravity in extreme regimes.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Map consensus islands (islands, holography) vs remaining gaps \u2014 not full QG.",
+        "harness": [
+          "literature-graph",
+          "quantum-info"
+        ],
+        "why": "Theoretical progress possible as synthesis.",
+        "viral_hook": "Where does information go when black holes die?"
+      }
     },
     {
       "status": "open",
@@ -259,7 +329,15 @@
       "name": "Hawking radiation confirmation",
       "field": "quantum-gravity",
       "summary": "Do real black holes emit Hawking radiation as predicted? Observable only for microscopic or analogue systems so far.",
-      "why_hard": "Astrophysical Hawking temperatures are tiny; relies on analogues or future precision."
+      "why_hard": "Astrophysical Hawking temperatures are tiny; relies on analogues or future precision.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Astrophysical Hawking temperatures are tiny; relies on analogues or future precision.",
+        "viral_hook": "Hawking radiation confirmation"
+      }
     },
     {
       "status": "open",
@@ -287,7 +365,15 @@
       "name": "Cosmic censorship hypothesis",
       "field": "quantum-gravity",
       "summary": "Can naked singularities form from realistic initial conditions, or does nature always hide them behind horizons?",
-      "why_hard": "Global nonlinear PDE analysis of Einstein equations under generic conditions."
+      "why_hard": "Global nonlinear PDE analysis of Einstein equations under generic conditions.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Global nonlinear PDE analysis of Einstein equations under generic conditions.",
+        "viral_hook": "Cosmic censorship hypothesis"
+      }
     },
     {
       "status": "open",
@@ -311,7 +397,15 @@
       "name": "Chronology protection conjecture",
       "field": "quantum-gravity",
       "summary": "Does quantum gravity forbid closed timelike curves / macroscopic time travel as Hawking suggested?",
-      "why_hard": "Requires a complete quantum gravity theory of realistic spacetimes."
+      "why_hard": "Requires a complete quantum gravity theory of realistic spacetimes.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Requires a complete quantum gravity theory of realistic spacetimes.",
+        "viral_hook": "Chronology protection conjecture"
+      }
     },
     {
       "status": "open",
@@ -335,7 +429,15 @@
       "name": "Holographic principle (general)",
       "field": "quantum-gravity",
       "summary": "Does quantum gravity admit a lower-dimensional dual without gravity? Can AdS/CFT be generalized to de Sitter and arbitrary asymptotics?",
-      "why_hard": "Best understood only in AdS; our universe is approximately de Sitter."
+      "why_hard": "Best understood only in AdS; our universe is approximately de Sitter.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Best understood only in AdS; our universe is approximately de Sitter.",
+        "viral_hook": "Holographic principle (general)"
+      }
     },
     {
       "status": "open",
@@ -359,7 +461,15 @@
       "name": "Emergence of spacetime",
       "field": "quantum-gravity",
       "summary": "How does classical continuous spacetime emerge from discrete/quantum microphysics (LQG, entanglement in AdS/CFT, etc.)?",
-      "why_hard": "No complete derivation of 4D classical GR dynamics from a unique microtheory of our universe."
+      "why_hard": "No complete derivation of 4D classical GR dynamics from a unique microtheory of our universe.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "No complete derivation of 4D classical GR dynamics from a unique microtheory of our universe.",
+        "viral_hook": "Emergence of spacetime"
+      }
     },
     {
       "status": "open",
@@ -383,7 +493,15 @@
       "name": "Problem of time",
       "field": "quantum-gravity",
       "summary": "How to reconcile time as a universal background parameter in QM with dynamical spacetime in GR?",
-      "why_hard": "Conceptual clash between two successful theories; multiple incompatible proposals."
+      "why_hard": "Conceptual clash between two successful theories; multiple incompatible proposals.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Conceptual clash between two successful theories; multiple incompatible proposals.",
+        "viral_hook": "Problem of time"
+      }
     },
     {
       "status": "open",
@@ -407,7 +525,15 @@
       "name": "M-theory fundamental degrees of freedom",
       "field": "quantum-gravity",
       "summary": "What are the fundamental degrees of freedom of M-theory, and does it describe Nature?",
-      "why_hard": "No complete nonperturbative definition connected to unique low-energy physics."
+      "why_hard": "No complete nonperturbative definition connected to unique low-energy physics.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "No complete nonperturbative definition connected to unique low-energy physics.",
+        "viral_hook": "M-theory fundamental degrees of freedom"
+      }
     },
     {
       "status": "open",
@@ -432,7 +558,15 @@
       "name": "Why 3+1 spacetime dimensions",
       "field": "quantum-gravity",
       "summary": "Why does the universe appear to have one time and three space dimensions?",
-      "why_hard": "May be environmental; no unique dynamical selection principle established."
+      "why_hard": "May be environmental; no unique dynamical selection principle established.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "May be environmental; no unique dynamical selection principle established.",
+        "viral_hook": "Why 3+1 spacetime dimensions"
+      }
     },
     {
       "status": "open",
@@ -464,7 +598,17 @@
       "name": "Yang\u2013Mills existence and mass gap",
       "field": "mathematical-physics",
       "summary": "Prove existence of a nontrivial quantum Yang\u2013Mills theory on R^4 with a mass gap (Clay Millennium Prize).",
-      "why_hard": "Nonperturbative constructive QFT in 4D is extremely difficult."
+      "why_hard": "Nonperturbative constructive QFT in 4D is extremely difficult.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A full proof. Possible: Lean formalization of toy 2D analogues / lemma library.",
+        "harness": [
+          "formal-proof"
+        ],
+        "why": "Clay problem; full solve is not a sprint.",
+        "viral_hook": "Yang\u2013Mills: build the proof harness, don't fake the trophy."
+      }
     },
     {
       "status": "open",
@@ -489,7 +633,17 @@
       "name": "Rigorous interacting 4D QFT",
       "field": "mathematical-physics",
       "summary": "Construct mathematically rigorous interacting quantum field theories in 4D spacetime without relying only on perturbation theory.",
-      "why_hard": "UV divergences, renormalization, and nonperturbative control in 4D."
+      "why_hard": "UV divergences, renormalization, and nonperturbative control in 4D.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A full 4D construction.",
+        "harness": [
+          "constructive-qft"
+        ],
+        "why": "Decade-scale math.",
+        "viral_hook": "Making QFT math legal isn't a sprint."
+      }
     },
     {
       "status": "open",
@@ -518,7 +672,18 @@
       "name": "Color confinement (analytic proof)",
       "field": "particle-physics",
       "summary": "Provide an analytic proof that color-charged particles are confined in non-Abelian gauge theory / QCD.",
-      "why_hard": "Nonperturbative strong-coupling dynamics without complete analytic tools."
+      "why_hard": "Nonperturbative strong-coupling dynamics without complete analytic tools.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A full analytic proof. Partial lattice/EFT exposition only.",
+        "harness": [
+          "formal-proof",
+          "lattice-lit"
+        ],
+        "why": "Tied to mass gap hardness.",
+        "viral_hook": "Confinement is real \u2014 the proof is not a weekend."
+      }
     },
     {
       "status": "open",
@@ -547,7 +712,18 @@
       "name": "Navier\u2013Stokes existence and smoothness",
       "field": "fluid-dynamics",
       "summary": "Do smooth solutions to 3D incompressible Navier\u2013Stokes exist for all time for nice initial data, or do singularities form? (Clay Millennium)",
-      "why_hard": "Nonlinear PDE blow-up control in 3D is a century-old challenge."
+      "why_hard": "Nonlinear PDE blow-up control in 3D is a century-old challenge.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A for full Clay problem in 10 days. Possible: formalize statement + survey barriers in Lean.",
+        "harness": [
+          "formal-proof",
+          "literature"
+        ],
+        "why": "Millennium problem; 10-day 'solve' is not credible.",
+        "viral_hook": "Don't claim NS in 10 days. Formalize the battlefield."
+      }
     },
     {
       "status": "open",
@@ -575,7 +751,19 @@
       "name": "Statistical theory of turbulence",
       "field": "fluid-dynamics",
       "summary": "Is there a closed theoretical model for the statistics and internal structures of turbulent flow?",
-      "why_hard": "Strong nonlinearity, multiscale energy cascade, lack of closed equations for moments."
+      "why_hard": "Strong nonlinearity, multiscale energy cascade, lack of closed equations for moments.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Improved reduced-order / ML-physics hybrid for a benchmark flow with open metrics \u2014 not 'solved turbulence'.",
+        "harness": [
+          "CFD",
+          "ML",
+          "theory"
+        ],
+        "why": "Century problem; 10-day wins are slices only.",
+        "viral_hook": "Don't solve turbulence \u2014 steal a benchmark."
+      }
     },
     {
       "status": "open",
@@ -605,7 +793,17 @@
       "name": "Nature of dark matter",
       "field": "cosmology",
       "summary": "What is dark matter? WIMP, axion, sterile neutrino, primordial black holes, modified gravity, or something else?",
-      "why_hard": "Only gravitational evidence so far; vast candidate space; null direct searches."
+      "why_hard": "Only gravitational evidence so far; vast candidate space; null direct searches.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Theory ranking only; detection not agentic.",
+        "harness": [
+          "theory-space"
+        ],
+        "why": "Needs detection.",
+        "viral_hook": "Agents can't find WIMPs in a laptop."
+      }
     },
     {
       "status": "open",
@@ -635,7 +833,17 @@
       "name": "Nature of dark energy",
       "field": "cosmology",
       "summary": "What causes the accelerated expansion of the universe? Cosmological constant, quintessence, modified gravity, or misinterpreted data?",
-      "why_hard": "Equation of state near -1; many models fit current data."
+      "why_hard": "Equation of state near -1; many models fit current data.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Model comparison on public cosmologies only.",
+        "harness": [
+          "cosmo-likelihood"
+        ],
+        "why": "Nature of DE needs data.",
+        "viral_hook": "70% of the universe isn't in your context window."
+      }
     },
     {
       "status": "open",
@@ -665,7 +873,17 @@
       "name": "Cosmological constant problem",
       "field": "cosmology",
       "summary": "Why is vacuum energy density ~120 orders of magnitude smaller than naive QFT estimates? What cancels it?",
-      "why_hard": "Worst fine-tuning problem in physics; no consensus mechanism."
+      "why_hard": "Worst fine-tuning problem in physics; no consensus mechanism.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Taxonomy of solutions; no accepted derivation in 10 days.",
+        "harness": [
+          "theory"
+        ],
+        "why": "Deepest fine-tuning.",
+        "viral_hook": "The worst prediction in physics."
+      }
     },
     {
       "status": "open",
@@ -691,7 +909,18 @@
       "name": "Hubble tension",
       "field": "cosmology",
       "summary": "Why do early-universe (CMB+\u039bCDM) and late-universe (distance ladder) measurements of H0 disagree at high significance (~5\u03c3)?",
-      "why_hard": "Could be unknown systematics or new physics; hard to decide with current precision."
+      "why_hard": "Could be unknown systematics or new physics; hard to decide with current precision.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Systematics+model comparison dashboard on public H0 inputs.",
+        "harness": [
+          "cosmo-data",
+          "stats"
+        ],
+        "why": "Hot topic; audit yes, final root cause maybe not.",
+        "viral_hook": "The universe expands at two speeds \u2014 referee them."
+      }
     },
     {
       "status": "open",
@@ -718,7 +947,15 @@
       "name": "Matter\u2013antimatter asymmetry",
       "field": "cosmology",
       "summary": "Why is the observable universe dominated by matter rather than equal matter and antimatter?",
-      "why_hard": "Requires Sakharov conditions; many mechanisms; need decisive experimental input (e.s. EDMs, CPV)."
+      "why_hard": "Requires Sakharov conditions; many mechanisms; need decisive experimental input (e.s. EDMs, CPV).",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Requires Sakharov conditions; many mechanisms; need decisive experimental input (e.s. EDMs, CPV).",
+        "viral_hook": "Matter\u2013antimatter asymmetry"
+      }
     },
     {
       "status": "open",
@@ -743,7 +980,15 @@
       "name": "Cosmic inflation details",
       "field": "cosmology",
       "summary": "Is inflation correct? What is the inflaton? Is inflation eternal? Are there viable alternatives?",
-      "why_hard": "Many models fit CMB; need primordial B-modes or other decisive probes."
+      "why_hard": "Many models fit CMB; need primordial B-modes or other decisive probes.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Many models fit CMB; need primordial B-modes or other decisive probes.",
+        "viral_hook": "Cosmic inflation details"
+      }
     },
     {
       "status": "open",
@@ -768,7 +1013,15 @@
       "name": "Horizon problem / alternatives",
       "field": "cosmology",
       "summary": "Why is the distant universe so homogeneous? Is inflation the unique solution?",
-      "why_hard": "Inflation is standard but not unique; alternatives hard to distinguish."
+      "why_hard": "Inflation is standard but not unique; alternatives hard to distinguish.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Inflation is standard but not unique; alternatives hard to distinguish.",
+        "viral_hook": "Horizon problem / alternatives"
+      }
     },
     {
       "status": "open",
@@ -792,7 +1045,15 @@
       "name": "Cosmic coincidence problem",
       "field": "cosmology",
       "summary": "Why are dark matter and dark energy densities comparable today despite different evolution?",
-      "why_hard": "May be anthropic or dynamical coupling; underdetermined."
+      "why_hard": "May be anthropic or dynamical coupling; underdetermined.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "May be anthropic or dynamical coupling; underdetermined.",
+        "viral_hook": "Cosmic coincidence problem"
+      }
     },
     {
       "status": "open",
@@ -817,7 +1078,15 @@
       "name": "Origin and fate of the universe",
       "field": "cosmology",
       "summary": "How did conditions for existence arise? Big Freeze, Rip, Crunch, or Bounce?",
-      "why_hard": "Requires quantum gravity + true dark-energy dynamics into the far future."
+      "why_hard": "Requires quantum gravity + true dark-energy dynamics into the far future.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Requires quantum gravity + true dark-energy dynamics into the far future.",
+        "viral_hook": "Origin and fate of the universe"
+      }
     },
     {
       "status": "open",
@@ -842,7 +1111,15 @@
       "name": "Size, shape, and topology of the universe",
       "field": "cosmology",
       "summary": "Is the universe infinite? What is the 3-manifold topology of comoving space?",
-      "why_hard": "Beyond the particle horizon is unobservable in principle."
+      "why_hard": "Beyond the particle horizon is unobservable in principle.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Beyond the particle horizon is unobservable in principle.",
+        "viral_hook": "Size, shape, and topology of the universe"
+      }
     },
     {
       "status": "open",
@@ -866,7 +1143,15 @@
       "name": "Cosmological principle validity",
       "field": "cosmology",
       "summary": "Is the universe homogeneous and isotropic on large scales? Is FLRW the right metric? Is CMB dipole purely kinematic?",
-      "why_hard": "Requires all-sky deep surveys free of systematics."
+      "why_hard": "Requires all-sky deep surveys free of systematics.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Requires all-sky deep surveys free of systematics.",
+        "viral_hook": "Cosmological principle validity"
+      }
     },
     {
       "status": "open",
@@ -891,7 +1176,15 @@
       "name": "Extra dimensions",
       "field": "particle-physics",
       "summary": "Does nature have more than 4 spacetime dimensions? What size? Fundamental or emergent?",
-      "why_hard": "No experimental signal; vast model space."
+      "why_hard": "No experimental signal; vast model space.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "No experimental signal; vast model space.",
+        "viral_hook": "Extra dimensions"
+      }
     },
     {
       "status": "controversially open",
@@ -914,7 +1207,15 @@
       "name": "Dark flow",
       "field": "cosmology",
       "summary": "Is there a bulk flow of galaxy clusters from gravitational pull outside the observable universe?",
-      "why_hard": "Observationally disputed; needs better peculiar-velocity data."
+      "why_hard": "Observationally disputed; needs better peculiar-velocity data.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Observationally disputed; needs better peculiar-velocity data.",
+        "viral_hook": "Dark flow"
+      }
     },
     {
       "status": "open",
@@ -938,7 +1239,15 @@
       "name": "Cosmological lithium problem",
       "field": "cosmology",
       "summary": "Why does Big Bang nucleosynthesis overpredict 7Li relative to old stars?",
-      "why_hard": "Tension between nuclear theory, stellar atmospheres, and observations."
+      "why_hard": "Tension between nuclear theory, stellar atmospheres, and observations.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Tension between nuclear theory, stellar atmospheres, and observations.",
+        "viral_hook": "Cosmological lithium problem"
+      }
     },
     {
       "status": "open",
@@ -966,7 +1275,15 @@
       "name": "Hierarchy problem",
       "field": "particle-physics",
       "summary": "Why is gravity so weak compared to other forces / why is the electroweak scale far below the Planck scale?",
-      "why_hard": "Naturalness arguments failed at LHC so far; may need new philosophy of theory choice."
+      "why_hard": "Naturalness arguments failed at LHC so far; may need new philosophy of theory choice.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Naturalness arguments failed at LHC so far; may need new philosophy of theory choice.",
+        "viral_hook": "Hierarchy problem"
+      }
     },
     {
       "status": "open",
@@ -994,7 +1311,15 @@
       "name": "Strong CP problem",
       "field": "particle-physics",
       "summary": "Why is the QCD \u03b8 angle so tiny? Is Peccei\u2013Quinn / axion the solution?",
-      "why_hard": "Fine-tuning without new symmetry; axion searches ongoing."
+      "why_hard": "Fine-tuning without new symmetry; axion searches ongoing.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Fine-tuning without new symmetry; axion searches ongoing.",
+        "viral_hook": "Strong CP problem"
+      }
     },
     {
       "status": "open",
@@ -1023,7 +1348,15 @@
       "name": "Neutrino masses and nature",
       "field": "particle-physics",
       "summary": "Absolute neutrino mass scale? Dirac or Majorana? Normal or inverted hierarchy? CP phase? Sterile neutrinos?",
-      "why_hard": "Requires \u03b2-decay, 0\u03bd\u03b2\u03b2, oscillation, and cosmology experiments."
+      "why_hard": "Requires \u03b2-decay, 0\u03bd\u03b2\u03b2, oscillation, and cosmology experiments.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Requires \u03b2-decay, 0\u03bd\u03b2\u03b2, oscillation, and cosmology experiments.",
+        "viral_hook": "Neutrino masses and nature"
+      }
     },
     {
       "status": "open",
@@ -1048,7 +1381,15 @@
       "name": "Three generations of matter",
       "field": "particle-physics",
       "summary": "Why three generations of quarks and leptons? Can Yukawa couplings be derived from first principles?",
-      "why_hard": "Flavor structure appears arbitrary; many models, few decisive tests."
+      "why_hard": "Flavor structure appears arbitrary; many models, few decisive tests.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Flavor structure appears arbitrary; many models, few decisive tests.",
+        "viral_hook": "Three generations of matter"
+      }
     },
     {
       "status": "open",
@@ -1072,7 +1413,19 @@
       "name": "Koide formula",
       "field": "particle-physics",
       "summary": "Why does a simple relation among charged lepton masses hold to high precision (Q\u22482/3)?",
-      "why_hard": "Could be accident; no accepted dynamical origin."
+      "why_hard": "Could be accident; no accepted dynamical origin.",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "verdict",
+        "success": "Exhaustive model search + statistical accident analysis: coincidence vs dynamics, with falsifiable next checks.",
+        "harness": [
+          "symbolic",
+          "stats",
+          "flavor-model-search"
+        ],
+        "why": "Number pattern; can be closed as numerology or promote genuine model.",
+        "viral_hook": "Is the Koide formula a cosmic coincidence?"
+      }
     },
     {
       "status": "open",
@@ -1098,7 +1451,15 @@
       "name": "Proton decay",
       "field": "particle-physics",
       "summary": "Is the proton stable? If not, what is its lifetime and decay modes (GUT predictions)?",
-      "why_hard": "Lifetimes >10^34 yr; needs megaton-scale detectors over decades."
+      "why_hard": "Lifetimes >10^34 yr; needs megaton-scale detectors over decades.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A",
+        "harness": [],
+        "why": "Megaton detectors.",
+        "viral_hook": "Watch paint dry for 10^34 years."
+      }
     },
     {
       "status": "open",
@@ -1122,7 +1483,15 @@
       "name": "Grand unification",
       "field": "particle-physics",
       "summary": "Do EM, weak, and strong forces unify at high energy? Under what symmetry?",
-      "why_hard": "Needs proton decay or other smoking-gun signals near GUT scale."
+      "why_hard": "Needs proton decay or other smoking-gun signals near GUT scale.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Needs proton decay or other smoking-gun signals near GUT scale.",
+        "viral_hook": "Grand unification"
+      }
     },
     {
       "status": "open",
@@ -1147,7 +1516,15 @@
       "name": "Supersymmetry realization",
       "field": "particle-physics",
       "summary": "Is spacetime supersymmetry realized near the TeV scale? How is it broken? Is the LSP dark matter?",
-      "why_hard": "No LHC discovery of superpartners so far; parameter space vast."
+      "why_hard": "No LHC discovery of superpartners so far; parameter space vast.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "No LHC discovery of superpartners so far; parameter space vast.",
+        "viral_hook": "Supersymmetry realization"
+      }
     },
     {
       "status": "open",
@@ -1171,7 +1548,15 @@
       "name": "Magnetic monopoles",
       "field": "particle-physics",
       "summary": "Did magnetic monopoles exist in the early universe? Do any remain? Do they explain charge quantization?",
-      "why_hard": "Extremely rare if any; searches null so far."
+      "why_hard": "Extremely rare if any; searches null so far.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Extremely rare if any; searches null so far.",
+        "viral_hook": "Magnetic monopoles"
+      }
     },
     {
       "status": "controversially open",
@@ -1196,7 +1581,18 @@
       "name": "Muon anomalous magnetic moment",
       "field": "particle-physics",
       "summary": "Why does the experimental muon g\u22122 differ from some Standard Model predictions?",
-      "why_hard": "Tension may be theory systematics or new physics\u2014needs both better SM theory and data."
+      "why_hard": "Tension may be theory systematics or new physics\u2014needs both better SM theory and data.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Independent combination of lattice/dispersive HVP inputs with open pipeline (not final SM close).",
+        "harness": [
+          "lattice-results-ingest",
+          "stats"
+        ],
+        "why": "World-class effort; 10 days only for pipeline slice.",
+        "viral_hook": "Muon g\u22122: agents recompute the tension."
+      }
     },
     {
       "status": "open",
@@ -1220,7 +1616,20 @@
       "name": "Neutron lifetime puzzle",
       "field": "particle-physics",
       "summary": "Why do bottle and beam measurements of the free neutron lifetime disagree?",
-      "why_hard": "Subtle experimental systematics vs possible new physics."
+      "why_hard": "Subtle experimental systematics vs possible new physics.",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Unified error budget for bottle vs beam; identify single most likely systematics class OR new-physics window size.",
+        "harness": [
+          "nuclear",
+          "stats",
+          "literature",
+          "sim"
+        ],
+        "why": "Harder experimental systematics; 10 days for a serious audit not final close.",
+        "viral_hook": "How long does a neutron live? Agents referee the fight."
+      }
     },
     {
       "status": "controversially open",
@@ -1244,7 +1653,19 @@
       "name": "Reactor antineutrino anomaly",
       "field": "particle-physics",
       "summary": "Why is measured reactor antineutrino flux ~6% below some predictions?",
-      "why_hard": "Nuclear data uncertainties vs sterile neutrinos."
+      "why_hard": "Nuclear data uncertainties vs sterile neutrinos.",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "verdict",
+        "success": "Updated flux model + nuclear data reconciliation: sterile \u03bd still needed or not, with uncertainty budget.",
+        "harness": [
+          "nuclear-data",
+          "stats",
+          "literature"
+        ],
+        "why": "Analysis-heavy; public reactor flux debate.",
+        "viral_hook": "Missing antineutrinos \u2014 bug in nuclear data or new physics?"
+      }
     },
     {
       "status": "controversially open",
@@ -1266,7 +1687,19 @@
       "id": "gallium-anomaly",
       "name": "Gallium anomaly",
       "field": "particle-physics",
-      "summary": "Why do gallium solar-neutrino calibration source experiments see a deficit?"
+      "summary": "Why do gallium solar-neutrino calibration source experiments see a deficit?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "verdict",
+        "success": "Same class as reactor: nuclear/systematics vs sterile with quantitative budget.",
+        "harness": [
+          "nuclear-data",
+          "stats",
+          "literature"
+        ],
+        "why": "Narrow neutrino calibration anomaly.",
+        "viral_hook": "Gallium's missing neutrinos, agent-audited."
+      }
     },
     {
       "status": "open",
@@ -1290,7 +1723,18 @@
       "name": "Proton spin crisis",
       "field": "particle-physics",
       "summary": "How do quarks and gluons fully account for the proton's spin?",
-      "why_hard": "Nonperturbative QCD structure of nucleons."
+      "why_hard": "Nonperturbative QCD structure of nucleons.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Updated global spin decomposition from public SIDIS/RHIC summaries.",
+        "harness": [
+          "QCD-fit",
+          "literature"
+        ],
+        "why": "Data-driven but specialist; multi-sprint for quality.",
+        "viral_hook": "Where does the proton's spin live?"
+      }
     },
     {
       "status": "open",
@@ -1314,7 +1758,19 @@
       "name": "Exotic hadrons structure",
       "field": "particle-physics",
       "summary": "What combinations of quarks exist (pentaquarks, tetraquarks)? Tightly bound multiquarks or molecules?",
-      "why_hard": "Many states; ambiguous binding mechanisms."
+      "why_hard": "Many states; ambiguous binding mechanisms.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "For one named state: molecule vs compact multi-quark likelihood table.",
+        "harness": [
+          "amplitude",
+          "lattice-results",
+          "literature"
+        ],
+        "why": "One state maybe; zoo is multi-sprint.",
+        "viral_hook": "Is that pentaquark a molecule?"
+      }
     },
     {
       "status": "open",
@@ -1337,7 +1793,15 @@
       "name": "Glueballs",
       "field": "particle-physics",
       "summary": "Do pure-glue bound states (glueballs) exist in nature, and which observed mesons are they?",
-      "why_hard": "Mix with ordinary mesons; hard experimental ID."
+      "why_hard": "Mix with ordinary mesons; hard experimental ID.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Mix with ordinary mesons; hard experimental ID.",
+        "viral_hook": "Glueballs"
+      }
     },
     {
       "status": "open",
@@ -1361,7 +1825,15 @@
       "name": "Strange matter stability",
       "field": "nuclear-physics",
       "summary": "Does strange quark matter exist? Is it stable at zero pressure? Strange stars?",
-      "why_hard": "Nonperturbative QCD equation of state uncertainties."
+      "why_hard": "Nonperturbative QCD equation of state uncertainties.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Nonperturbative QCD equation of state uncertainties.",
+        "viral_hook": "Strange matter stability"
+      }
     },
     {
       "status": "open",
@@ -1385,7 +1857,15 @@
       "name": "QCD vacuum and nuclear complexity",
       "field": "nuclear-physics",
       "summary": "How does nonperturbative QCD produce complex nuclei and nuclear structure from quarks and gluons?",
-      "why_hard": "Multi-scale many-body problem from QCD to nuclei."
+      "why_hard": "Multi-scale many-body problem from QCD to nuclei.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Multi-scale many-body problem from QCD to nuclei.",
+        "viral_hook": "QCD vacuum and nuclear complexity"
+      }
     },
     {
       "status": "open",
@@ -1408,7 +1888,15 @@
       "name": "\u03bc problem in SUSY",
       "field": "particle-physics",
       "summary": "Why is the supersymmetric \u03bc parameter of the electroweak scale rather than Planck scale?",
-      "why_hard": "Model-building within SUSY frameworks; depends on SUSY existing."
+      "why_hard": "Model-building within SUSY frameworks; depends on SUSY existing.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Model-building within SUSY frameworks; depends on SUSY existing.",
+        "viral_hook": "\u03bc problem in SUSY"
+      }
     },
     {
       "status": "open",
@@ -1432,7 +1920,18 @@
       "name": "Solar coronal heating problem",
       "field": "astrophysics",
       "summary": "Why is the Sun's corona much hotter than its surface? Why is magnetic reconnection so fast?",
-      "why_hard": "Multi-scale plasma physics from photosphere to corona."
+      "why_hard": "Multi-scale plasma physics from photosphere to corona.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Wave vs reconnection energy budget on public solar data for one active region class.",
+        "harness": [
+          "solar-data",
+          "MHD-lite"
+        ],
+        "why": "Classic problem; slice is multi-sprint.",
+        "viral_hook": "Why is the solar corona so hot?"
+      }
     },
     {
       "status": "open",
@@ -1455,7 +1954,15 @@
       "id": "solar-cycle",
       "name": "Solar cycle and dynamos",
       "field": "astrophysics",
-      "summary": "How does the Sun generate its reversing large-scale magnetic field? What causes grand minima like Maunder?"
+      "summary": "How does the Sun generate its reversing large-scale magnetic field? What causes grand minima like Maunder?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Nonlinear dynamo theory + long solar records.",
+        "viral_hook": "Solar cycle and dynamos"
+      }
     },
     {
       "status": "open",
@@ -1478,7 +1985,15 @@
       "id": "astrophysical-jets",
       "name": "Astrophysical jets and QPOs",
       "field": "astrophysics",
-      "summary": "Why do some accretion disks launch relativistic jets? What sets QPO frequencies and overtones?"
+      "summary": "Why do some accretion disks launch relativistic jets? What sets QPO frequencies and overtones?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "GRMHD + ML pattern discovery in timing data.",
+        "viral_hook": "Astrophysical jets and QPOs"
+      }
     },
     {
       "status": "open",
@@ -1501,7 +2016,20 @@
       "id": "dibs",
       "name": "Diffuse interstellar bands",
       "field": "astrophysics",
-      "summary": "What molecules or materials cause the numerous unidentified interstellar absorption bands?"
+      "summary": "What molecules or materials cause the numerous unidentified interstellar absorption bands?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "partial",
+        "success": "Ranked candidates for \u22655 strong DIB features against molecular DBs with reproducible spectra match scores; shortlist ready for lab test.",
+        "harness": [
+          "spectral-match",
+          "cheminformatics",
+          "literature",
+          "code-exec"
+        ],
+        "why": "Pattern-matching + public catalogs; not full identification of all DIBs.",
+        "viral_hook": "Space forensics: which molecule ate the starlight?"
+      }
     },
     {
       "status": "open",
@@ -1525,7 +2053,15 @@
       "name": "Supermassive black hole origins",
       "field": "astrophysics",
       "summary": "How did early quasars grow SMBHs to ~10^10 M\u2609 so quickly? Origin of M\u2013\u03c3 relation?",
-      "why_hard": "Needs early-universe growth channels constrained by deep surveys."
+      "why_hard": "Needs early-universe growth channels constrained by deep surveys.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Needs early-universe growth channels constrained by deep surveys.",
+        "viral_hook": "Supermassive black hole origins"
+      }
     },
     {
       "status": "open",
@@ -1547,7 +2083,18 @@
       "id": "kuiper-cliff",
       "name": "Kuiper cliff",
       "field": "astrophysics",
-      "summary": "Why does Kuiper belt object density drop sharply beyond ~50 AU?"
+      "summary": "Why does Kuiper belt object density drop sharply beyond ~50 AU?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "N-body formation scenario suite explaining cliff under stated assumptions; open code.",
+        "harness": [
+          "N-body",
+          "literature"
+        ],
+        "why": "Simulation-heavy but scoped Solar System dynamics.",
+        "viral_hook": "Why the Solar System falls off a cliff at 50 AU."
+      }
     },
     {
       "status": "controversially open",
@@ -1570,7 +2117,20 @@
       "id": "flyby-anomaly",
       "name": "Flyby anomaly",
       "field": "astrophysics",
-      "summary": "Why do some Earth flybys show tiny unexpected energy changes?"
+      "summary": "Why do some Earth flybys show tiny unexpected energy changes?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "full-or-verdict",
+        "success": "Publish a decisive reanalysis of public tracking data concluding systematics vs residual anomaly, with reproducible code.",
+        "harness": [
+          "trajectory-sim",
+          "literature",
+          "stats",
+          "code-exec"
+        ],
+        "why": "Small public dataset; likely systematics; clear binary-ish verdict.",
+        "viral_hook": "Can agents kill a spacecraft anomaly in a week?"
+      }
     },
     {
       "status": "open",
@@ -1596,7 +2156,15 @@
       "name": "Galaxy rotation problem",
       "field": "astrophysics",
       "summary": "Are flat rotation curves due to dark matter, modified gravity, or both?",
-      "why_hard": "Entangled with DM identity; multi-probe tests needed."
+      "why_hard": "Entangled with DM identity; multi-probe tests needed.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Entangled with DM identity; multi-probe tests needed.",
+        "viral_hook": "Galaxy rotation problem"
+      }
     },
     {
       "status": "open",
@@ -1619,7 +2187,15 @@
       "id": "supernova-mechanism",
       "name": "Core-collapse supernova mechanism",
       "field": "astrophysics",
-      "summary": "What exact mechanism turns stellar core collapse into a successful explosion?"
+      "summary": "What exact mechanism turns stellar core collapse into a successful explosion?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Multi-physics simulation + AI surrogates; converging but not closed.",
+        "viral_hook": "Core-collapse supernova mechanism"
+      }
     },
     {
       "status": "open",
@@ -1641,7 +2217,18 @@
       "id": "p-nuclei",
       "name": "Origin of p-nuclei",
       "field": "astrophysics",
-      "summary": "What astrophysical process produces rare proton-rich isotopes (p-nuclei)?"
+      "summary": "What astrophysical process produces rare proton-rich isotopes (p-nuclei)?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Reaction-network run identifying dominant production sites under current rates.",
+        "harness": [
+          "nuclear-networks",
+          "literature"
+        ],
+        "why": "Computational nuclear astrophysics scoped study.",
+        "viral_hook": "Where do the rarest isotopes come from?"
+      }
     },
     {
       "status": "open",
@@ -1665,7 +2252,15 @@
       "name": "Ultra-high-energy cosmic rays",
       "field": "astrophysics",
       "summary": "What sources accelerate particles above the GZK limit region, and how?",
-      "why_hard": "Rare events; composition and source ID incomplete."
+      "why_hard": "Rare events; composition and source ID incomplete.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Rare events; composition and source ID incomplete.",
+        "viral_hook": "Ultra-high-energy cosmic rays"
+      }
     },
     {
       "status": "open",
@@ -1687,7 +2282,15 @@
       "id": "saturn-rotation",
       "name": "Saturn deep rotation rate",
       "field": "astrophysics",
-      "summary": "What is the true rotation rate of Saturn's deep interior given magnetospheric period puzzles?"
+      "summary": "What is the true rotation rate of Saturn's deep interior given magnetospheric period puzzles?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Saturn deep rotation rate"
+      }
     },
     {
       "status": "open",
@@ -1709,7 +2312,15 @@
       "id": "magnetar-fields",
       "name": "Magnetar magnetic field origin",
       "field": "astrophysics",
-      "summary": "What is the origin of magnetars' extreme magnetic fields?"
+      "summary": "What is the origin of magnetars' extreme magnetic fields?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Magnetar magnetic field origin"
+      }
     },
     {
       "status": "controversially open",
@@ -1732,7 +2343,15 @@
       "id": "large-scale-anisotropy",
       "name": "Large-scale cosmic anisotropy",
       "field": "cosmology",
-      "summary": "Do radio/CMB/quasar polarization anomalies indicate large-scale anisotropy violating the cosmological principle?"
+      "summary": "Do radio/CMB/quasar polarization anomalies indicate large-scale anisotropy violating the cosmological principle?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Large-scale cosmic anisotropy"
+      }
     },
     {
       "status": "open",
@@ -1754,7 +2373,15 @@
       "id": "ulx",
       "name": "Ultraluminous X-ray sources",
       "field": "astrophysics",
-      "summary": "What powers ULXs exceeding Eddington limits\u2014IMBHs, beamed neutron stars, or both?"
+      "summary": "What powers ULXs exceeding Eddington limits\u2014IMBHs, beamed neutron stars, or both?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Ultraluminous X-ray sources"
+      }
     },
     {
       "status": "open",
@@ -1777,7 +2404,19 @@
       "id": "frb",
       "name": "Fast radio bursts",
       "field": "astrophysics",
-      "summary": "What causes millisecond radio bursts from distant galaxies? Why do some repeat?"
+      "summary": "What causes millisecond radio bursts from distant galaxies? Why do some repeat?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Bayesian model ranking on public FRB catalogs; top 3 engines with exclusion of weak classes.",
+        "harness": [
+          "astro-catalogs",
+          "bayes",
+          "literature"
+        ],
+        "why": "Won't discover engine alone but can rank hard.",
+        "viral_hook": "Cosmic radio flashes \u2014 rank the engines."
+      }
     },
     {
       "status": "open",
@@ -1801,7 +2440,15 @@
       "name": "Origin of cosmic magnetic fields",
       "field": "astrophysics",
       "summary": "How were large-scale magnetic fields generated from galaxies to clusters?",
-      "why_hard": "Primordial seed vs dynamo amplification hard to disentangle uniquely."
+      "why_hard": "Primordial seed vs dynamo amplification hard to disentangle uniquely.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Primordial seed vs dynamo amplification hard to disentangle uniquely.",
+        "viral_hook": "Origin of cosmic magnetic fields"
+      }
     },
     {
       "status": "open",
@@ -1823,7 +2470,19 @@
       "id": "age-metallicity",
       "name": "Galactic age\u2013metallicity relation",
       "field": "astrophysics",
-      "summary": "Is there a universal age\u2013metallicity relation in thin/thick Galactic disks?"
+      "summary": "Is there a universal age\u2013metallicity relation in thin/thick Galactic disks?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "partial",
+        "success": "Reanalysis of public stellar survey catalogs with open code answering thin/thick disk AMR question under stated priors.",
+        "harness": [
+          "astro-catalogs",
+          "stats",
+          "code-exec"
+        ],
+        "why": "Public data-rich; well-scoped galactic archaeology.",
+        "viral_hook": "Read the Milky Way's chemical diary in 10 days."
+      }
     },
     {
       "status": "open",
@@ -1846,7 +2505,15 @@
       "id": "qgp-onset",
       "name": "Quark\u2013gluon plasma onset and properties",
       "field": "nuclear-physics",
-      "summary": "Where is deconfinement onset in T\u2013\u03bc space? Why ideal flow? Flavor equilibration? Perfect statistical hadronization?"
+      "summary": "Where is deconfinement onset in T\u2013\u03bc space? Why ideal flow? Flavor equilibration? Perfect statistical hadronization?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Heavy-ion data analysis + hydro/transport models.",
+        "viral_hook": "Quark\u2013gluon plasma onset and properties"
+      }
     },
     {
       "status": "open",
@@ -1869,7 +2536,15 @@
       "id": "nuclear-force",
       "name": "Nature of the nuclear force from QCD",
       "field": "nuclear-physics",
-      "summary": "What is the precise nature of the nuclear force binding nuclei, rooted in QCD?"
+      "summary": "What is the precise nature of the nuclear force binding nuclei, rooted in QCD?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Nature of the nuclear force from QCD"
+      }
     },
     {
       "status": "open",
@@ -1892,7 +2567,18 @@
       "id": "emc-effect",
       "name": "EMC effect",
       "field": "nuclear-physics",
-      "summary": "Why do quark distributions in bound nucleons differ from free nucleons?"
+      "summary": "Why do quark distributions in bound nucleons differ from free nucleons?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Compare SRC vs other models on public DIS ratios; quantitative preference.",
+        "harness": [
+          "nuclear-PDF",
+          "stats"
+        ],
+        "why": "Serious nuclear theory analysis.",
+        "viral_hook": "Nuclei change quarks \u2014 which story wins?"
+      }
     },
     {
       "status": "open",
@@ -1916,7 +2602,15 @@
       "name": "Neutron star dense matter EOS",
       "field": "nuclear-physics",
       "summary": "What is the equation of state of ultra-dense nuclear matter in neutron stars?",
-      "why_hard": "Needs multimessenger GW + X-ray + nuclear theory."
+      "why_hard": "Needs multimessenger GW + X-ray + nuclear theory.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Needs multimessenger GW + X-ray + nuclear theory.",
+        "viral_hook": "Neutron star dense matter EOS"
+      }
     },
     {
       "status": "open",
@@ -1938,7 +2632,15 @@
       "id": "heaviest-element",
       "name": "Heaviest possible chemical element",
       "field": "nuclear-physics",
-      "summary": "What is the heaviest element that can exist (island of stability limits)?"
+      "summary": "What is the heaviest element that can exist (island of stability limits)?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Heaviest possible chemical element"
+      }
     },
     {
       "status": "open",
@@ -1961,7 +2663,15 @@
       "id": "cgc",
       "name": "Color glass condensate / gluon saturation",
       "field": "nuclear-physics",
-      "summary": "Do gluons saturate into a color glass condensate? What are decisive experimental signatures?"
+      "summary": "Do gluons saturate into a color glass condensate? What are decisive experimental signatures?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Color glass condensate / gluon saturation"
+      }
     },
     {
       "status": "open",
@@ -1986,7 +2696,18 @@
       "name": "High-temperature superconductivity mechanism",
       "field": "condensed-matter",
       "summary": "What mechanism causes high-Tc superconductivity in cuprates and related materials? Is room-temperature ambient SC possible?",
-      "why_hard": "Strong correlations; many competing orders; materials complexity."
+      "why_hard": "Strong correlations; many competing orders; materials complexity.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "For cuprates: map claim\u2192evidence for top mechanisms; one decisive observable ranking.",
+        "harness": [
+          "literature-graph",
+          "model-zoo"
+        ],
+        "why": "Not full mechanism in 10 days even with god-tier agents.",
+        "viral_hook": "High-Tc: can agents force a mechanism showdown?"
+      }
     },
     {
       "status": "open",
@@ -2010,7 +2731,19 @@
       "name": "Glass transition",
       "field": "condensed-matter",
       "summary": "What is the nature of the glass transition and universal properties of amorphous solids?",
-      "why_hard": "No consensus thermodynamic vs kinetic theory of the transition."
+      "why_hard": "No consensus thermodynamic vs kinetic theory of the transition.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Unified comparison of RFOT/mode-coupling/dynamic facilitation on standard simulations.",
+        "harness": [
+          "MD",
+          "theory",
+          "literature"
+        ],
+        "why": "Deep theory; 10 days compares frameworks, doesn't crown king.",
+        "viral_hook": "What is glass? Theory cage match."
+      }
     },
     {
       "status": "open",
@@ -2033,7 +2766,15 @@
       "id": "amorphous-universality",
       "name": "Low-T amorphous solid universality",
       "field": "condensed-matter",
-      "summary": "Why is the phonon wavelength to mean-free-path ratio nearly universal across disordered solids?"
+      "summary": "Why is the phonon wavelength to mean-free-path ratio nearly universal across disordered solids?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Low-T amorphous solid universality"
+      }
     },
     {
       "status": "open",
@@ -2056,7 +2797,18 @@
       "id": "fqhe-5-2",
       "name": "Fractional quantum Hall \u03bd=5/2 state",
       "field": "condensed-matter",
-      "summary": "What is the mechanism of the 5/2 FQHE state? Non-Abelian anyons?"
+      "summary": "What is the mechanism of the 5/2 FQHE state? Non-Abelian anyons?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Numerical/analytical status report on Pfaffian vs anti-Pfaffian vs others with open notebooks.",
+        "harness": [
+          "exact-diag-lite",
+          "literature"
+        ],
+        "why": "Specialist CM; multi-sprint for honest progress.",
+        "viral_hook": "Non-Abelian anyons at 5/2 \u2014 status check."
+      }
     },
     {
       "status": "open",
@@ -2078,7 +2830,18 @@
       "id": "topological-order-T",
       "name": "Topological order at finite temperature",
       "field": "condensed-matter",
-      "summary": "Is topological order stable at T>0? Can 3D self-correcting quantum memory exist?"
+      "summary": "Is topological order stable at T>0? Can 3D self-correcting quantum memory exist?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Status of 3D self-correcting memory proposals + one numerical check.",
+        "harness": [
+          "quantum-codes",
+          "numerics"
+        ],
+        "why": "Active research; multi-sprint.",
+        "viral_hook": "Can quantum memory protect itself?"
+      }
     },
     {
       "status": "open",
@@ -2102,7 +2865,19 @@
       "id": "sonoluminescence",
       "name": "Sonoluminescence mechanism",
       "field": "condensed-matter",
-      "summary": "What causes light flashes from sound-driven imploding bubbles?"
+      "summary": "What causes light flashes from sound-driven imploding bubbles?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "verdict",
+        "success": "State-of-the-field consensus: which mechanism is standard; list remaining open quantitative gaps only.",
+        "harness": [
+          "literature",
+          "plasma-sim-lite",
+          "meta-review"
+        ],
+        "why": "Much progress exists; Wikipedia lag possible; meta-closure valuable.",
+        "viral_hook": "Sound makes light \u2014 is the mystery already dead?"
+      }
     },
     {
       "status": "open",
@@ -2124,7 +2899,18 @@
       "id": "metal-whiskering",
       "name": "Metal whiskering",
       "field": "condensed-matter",
-      "summary": "What is the growth mechanism of spontaneous metal whiskers causing electronics failures?"
+      "summary": "What is the growth mechanism of spontaneous metal whiskers causing electronics failures?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "partial",
+        "success": "Dominant growth mechanism proposal + process parameters predicting whisker risk; testable checklist for electronics.",
+        "harness": [
+          "materials-sim",
+          "literature"
+        ],
+        "why": "Applied materials; literature + multi-scale reasoning.",
+        "viral_hook": "The tin whiskers killing satellites \u2014 solve the mechanism."
+      }
     },
     {
       "status": "open",
@@ -2147,7 +2933,19 @@
       "id": "gauge-block-wringing",
       "name": "Gauge block wringing",
       "field": "condensed-matter",
-      "summary": "What mechanism allows precision gauge blocks to wring together?"
+      "summary": "What mechanism allows precision gauge blocks to wring together?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "full-or-verdict",
+        "success": "Consensus mechanism writeup with surface-physics model + citations sufficient that metrology community treats problem as closed or experimentally decided.",
+        "harness": [
+          "literature",
+          "surface-science",
+          "simple-sim"
+        ],
+        "why": "Small niche problem; literature may already nearly answer it.",
+        "viral_hook": "Why do metal blocks stick? Agents vs metrology folklore."
+      }
     },
     {
       "status": "open",
@@ -2170,7 +2968,19 @@
       "id": "he4-critical-exponent",
       "name": "Helium-4 superfluid critical exponent \u03b1",
       "field": "condensed-matter",
-      "summary": "Explain discrepancy between experimental and theoretical heat-capacity critical exponent \u03b1 near the lambda point."
+      "summary": "Explain discrepancy between experimental and theoretical heat-capacity critical exponent \u03b1 near the lambda point.",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Finite-size / RG reconciliation plan with numerical estimate of \u03b1 discrepancy origin.",
+        "harness": [
+          "RG",
+          "numerics",
+          "literature"
+        ],
+        "why": "Precision critical phenomena; partial reconciliation possible.",
+        "viral_hook": "Helium's lambda point: theory vs experiment rematch."
+      }
     },
     {
       "status": "open",
@@ -2192,7 +3002,19 @@
       "id": "cryogenic-electron-emission",
       "name": "Cryogenic electron emission anomaly",
       "field": "condensed-matter",
-      "summary": "Why does dark electron emission in photomultipliers increase as temperature decreases?"
+      "summary": "Why does dark electron emission in photomultipliers increase as temperature decreases?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "full-or-verdict",
+        "success": "Identify mechanism consistent with photomultiplier literature or design a single decisive lab check.",
+        "harness": [
+          "literature",
+          "materials",
+          "detector-physics"
+        ],
+        "why": "Narrow instrumentation anomaly.",
+        "viral_hook": "Cold detectors, hot mystery \u2014 10-day teardown."
+      }
     },
     {
       "status": "open",
@@ -2214,7 +3036,19 @@
       "id": "quantum-dots-nonparabolicity",
       "name": "Quantum-dot energy-size nonparabolicity",
       "field": "condensed-matter",
-      "summary": "What causes nonparabolicity of the lowest optical absorption vs size in semiconductor nanocrystals?"
+      "summary": "What causes nonparabolicity of the lowest optical absorption vs size in semiconductor nanocrystals?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "full-or-verdict",
+        "success": "Quantitative effective-mass/DFT explanation matching published size-dependence curves.",
+        "harness": [
+          "DFT-or-approx",
+          "literature",
+          "fit"
+        ],
+        "why": "Computational condensed matter with clear curves to fit.",
+        "viral_hook": "Why quantum dots break the textbook formula."
+      }
     },
     {
       "status": "open",
@@ -2236,7 +3070,18 @@
       "id": "nematic-smectic",
       "name": "Nematic\u2013smectic-A transition universality",
       "field": "condensed-matter",
-      "summary": "Can the nematic to smectic-A transition be characterized as a universal phase transition?"
+      "summary": "Can the nematic to smectic-A transition be characterized as a universal phase transition?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "RG/universality classification with literature + calculation for contested regime.",
+        "harness": [
+          "RG",
+          "literature"
+        ],
+        "why": "Scoped critical-phenomena question.",
+        "viral_hook": "Liquid crystals: is this transition universal?"
+      }
     },
     {
       "status": "open",
@@ -2259,7 +3104,19 @@
       "id": "scharnhorst",
       "name": "Scharnhorst effect",
       "field": "condensed-matter",
-      "summary": "Can light travel slightly faster than c between closely spaced conducting plates via Casimir vacuum modification?"
+      "summary": "Can light travel slightly faster than c between closely spaced conducting plates via Casimir vacuum modification?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "full-or-verdict",
+        "success": "Rigorous status paper: no causal superluminal signaling; clarify measurable vs formal claims.",
+        "harness": [
+          "symbolic-math",
+          "literature",
+          "QED-calc"
+        ],
+        "why": "Theoretical clarification, not new experiment.",
+        "viral_hook": "Faster than light between plates? Settle it on paper."
+      }
     },
     {
       "status": "open",
@@ -2281,7 +3138,18 @@
       "id": "granular-convection",
       "name": "Granular convection / Brazil-nut effect",
       "field": "fluid-dynamics",
-      "summary": "Why do shaken granular materials convect and size-segregate?"
+      "summary": "Why do shaken granular materials convect and size-segregate?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Minimal continuum/DEM model reproducing Brazil-nut + convection with open simulation code.",
+        "harness": [
+          "DEM-sim",
+          "literature"
+        ],
+        "why": "Much known; polish into closed textbook mechanism with code.",
+        "viral_hook": "Why do the big nuts rise? Physics of your snack mix."
+      }
     },
     {
       "status": "open",
@@ -2306,7 +3174,17 @@
       "name": "Fault-tolerant quantum computing scalability",
       "field": "quantum-information",
       "summary": "Can we go beyond NISQ to fault-tolerant scalable quantum computers with practical error correction?",
-      "why_hard": "Requires qubit quality, scale, and systems engineering."
+      "why_hard": "Requires qubit quality, scale, and systems engineering.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Simulate threshold for one code family under a noise model.",
+        "harness": [
+          "qec-sim"
+        ],
+        "why": "Hardware ultimately gates FTQC.",
+        "viral_hook": "Simulate your way past NISQ \u2014 on paper."
+      }
     },
     {
       "status": "open",
@@ -2329,7 +3207,15 @@
       "name": "Topological qubits / Majorana modes",
       "field": "quantum-information",
       "summary": "Can topological quantum computers be built? Can Majorana zero modes be demonstrated conclusively?",
-      "why_hard": "Fabrication + unambiguous experimental signatures."
+      "why_hard": "Fabrication + unambiguous experimental signatures.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Fabrication + unambiguous experimental signatures.",
+        "viral_hook": "Topological qubits / Majorana modes"
+      }
     },
     {
       "status": "open",
@@ -2351,7 +3237,15 @@
       "id": "room-temp-qc",
       "name": "Non-cryogenic quantum computing",
       "field": "quantum-information",
-      "summary": "Can useful quantum computing operate at non-cryogenic / room temperature?"
+      "summary": "Can useful quantum computing operate at non-cryogenic / room temperature?",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Non-cryogenic quantum computing"
+      }
     },
     {
       "status": "open",
@@ -2374,7 +3268,18 @@
       "id": "bqp-complexity",
       "name": "BQP vs BPP / NP relations",
       "field": "quantum-information",
-      "summary": "What is the precise relation of BQP to classical complexity classes? Can physical computation exceed BQP?"
+      "summary": "What is the precise relation of BQP to classical complexity classes? Can physical computation exceed BQP?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "partial",
+        "success": "Survey + one new conditional result or barrier formalization.",
+        "harness": [
+          "complexity",
+          "formal"
+        ],
+        "why": "Open complexity separations are hard; partial ok.",
+        "viral_hook": "What can quantum computers actually reach?"
+      }
     },
     {
       "status": "open",
@@ -2397,7 +3302,19 @@
       "id": "pqc-security",
       "name": "Post-quantum cryptography proofs",
       "field": "quantum-information",
-      "summary": "Can we prove that specific cryptographic protocols remain secure against quantum adversaries?"
+      "summary": "Can we prove that specific cryptographic protocols remain secure against quantum adversaries?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Full security-reduction audit of ONE named PQC scheme; find gap or certify proof sketch.",
+        "harness": [
+          "crypto",
+          "formal",
+          "literature"
+        ],
+        "why": "Scoped cryptanalysis/proof audit is 10-day shaped.",
+        "viral_hook": "Break or bless one post-quantum scheme."
+      }
     },
     {
       "status": "open",
@@ -2419,7 +3336,18 @@
       "id": "quantum-capacity",
       "name": "Quantum channel capacity",
       "field": "quantum-information",
-      "summary": "What is the quantum capacity of general quantum channels (often unknown in closed form)?"
+      "summary": "What is the quantum capacity of general quantum channels (often unknown in closed form)?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Closed form or tight bounds for one concrete channel family left open in literature.",
+        "harness": [
+          "quantum-info-math",
+          "symbolic"
+        ],
+        "why": "If scoped to one channel, math agents can try.",
+        "viral_hook": "Compute a quantum channel capacity nobody pinned down."
+      }
     },
     {
       "status": "open",
@@ -2443,7 +3371,17 @@
       "name": "Fusion plasma confinement / H-mode",
       "field": "plasma-physics",
       "summary": "Can plasmas be confined long enough and hot enough for practical fusion power? What is the physical origin of H-mode?",
-      "why_hard": "Turbulence, stability, materials, and systems integration."
+      "why_hard": "Turbulence, stability, materials, and systems integration.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Control/theory tip only.",
+        "harness": [
+          "plasma"
+        ],
+        "why": "Facility engineering.",
+        "viral_hook": "Fusion needs magnets, not only tokens."
+      }
     },
     {
       "status": "open",
@@ -2466,7 +3404,15 @@
       "id": "fermi-injection",
       "name": "Fermi acceleration injection problem",
       "field": "plasma-physics",
-      "summary": "What pre-accelerates particles enough for Fermi acceleration to take over in astrophysical shocks?"
+      "summary": "What pre-accelerates particles enough for Fermi acceleration to take over in astrophysical shocks?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "",
+        "viral_hook": "Fermi acceleration injection problem"
+      }
     },
     {
       "status": "open",
@@ -2489,7 +3435,15 @@
       "id": "alfvenic-turbulence",
       "name": "Alfv\u00e9nic turbulence",
       "field": "plasma-physics",
-      "summary": "How does MHD/Alfv\u00e9nic turbulence work in solar wind, flares, CMEs, and substorms?"
+      "summary": "How does MHD/Alfv\u00e9nic turbulence work in solar wind, flares, CMEs, and substorms?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Data-rich space plasma statistics.",
+        "viral_hook": "Alfv\u00e9nic turbulence"
+      }
     },
     {
       "status": "open",
@@ -2513,7 +3467,18 @@
       "name": "Ball lightning",
       "field": "plasma-physics",
       "summary": "What is the physical nature of ball lightning?",
-      "why_hard": "Rare, poorly documented events; many candidate mechanisms."
+      "why_hard": "Rare, poorly documented events; many candidate mechanisms.",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "verdict",
+        "success": "Kill-list of mechanisms incompatible with best cases; shortlist \u22643 testable models.",
+        "harness": [
+          "literature",
+          "plasma"
+        ],
+        "why": "Won't capture ball lightning; can clean theory space.",
+        "viral_hook": "Ball lightning: murder-board the theories."
+      }
     },
     {
       "status": "open",
@@ -2537,7 +3502,17 @@
       "name": "Abiogenesis",
       "field": "biophysics",
       "summary": "Can life arise from purely physical/chemical processes? What pathway produced life on Earth?",
-      "why_hard": "Historical path underdetermined; vast chemical space."
+      "why_hard": "Historical path underdetermined; vast chemical space.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Pathway ranking only.",
+        "harness": [
+          "chem"
+        ],
+        "why": "Historical underdetermination.",
+        "viral_hook": "Origin of life \u2260 10-day agent run."
+      }
     },
     {
       "status": "open",
@@ -2559,7 +3534,18 @@
       "id": "homochirality",
       "name": "Homochirality origin",
       "field": "biophysics",
-      "summary": "Why do biomolecules prefer specific enantiomers?"
+      "summary": "Why do biomolecules prefer specific enantiomers?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Ranked mechanism table with required parameters; eliminate non-viable paths; propose cheapest decisive experiment.",
+        "harness": [
+          "chem-kinetics",
+          "literature"
+        ],
+        "why": "Many paths; ranking + kill-list is 10-day shaped, not historical truth.",
+        "viral_hook": "Why life is left-handed \u2014 kill bad theories in 10 days."
+      }
     },
     {
       "status": "open",
@@ -2582,7 +3568,18 @@
       "id": "magnetoreception",
       "name": "Magnetoreception mechanism",
       "field": "biophysics",
-      "summary": "How do animals (e.g. migratory birds) sense Earth's magnetic field?"
+      "summary": "How do animals (e.g. migratory birds) sense Earth's magnetic field?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Radical-pair vs competing models scored against key experiments; prediction for one decisive assay.",
+        "harness": [
+          "quantum-bio-sim",
+          "literature"
+        ],
+        "why": "Active field; model discrimination paper feasible.",
+        "viral_hook": "How birds see magnetic fields \u2014 theory showdown."
+      }
     },
     {
       "status": "open",
@@ -2605,7 +3602,18 @@
       "id": "gene-noise",
       "name": "Gene expression noise and developmental robustness",
       "field": "biophysics",
-      "summary": "How do genetic networks remain robust under external pressure and internal stochasticity, especially in development?"
+      "summary": "How do genetic networks remain robust under external pressure and internal stochasticity, especially in development?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Minimal stochastic network explaining a named developmental robustness phenotype; open simulation.",
+        "harness": [
+          "stochastic-sim",
+          "literature"
+        ],
+        "why": "Systems biology model paper shape.",
+        "viral_hook": "Noisy genes, reliable bodies \u2014 minimal model."
+      }
     },
     {
       "status": "open",
@@ -2627,7 +3635,18 @@
       "id": "immune-networks",
       "name": "Quantitative immune system networks",
       "field": "biophysics",
-      "summary": "What are quantitative building blocks and network properties of immune responses?"
+      "summary": "What are quantitative building blocks and network properties of immune responses?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Propose quantitative building-block set fitted to a public immune dataset.",
+        "harness": [
+          "network-inference",
+          "literature"
+        ],
+        "why": "Data+model; partial by design.",
+        "viral_hook": "The immune system as physics: find the Legos."
+      }
     },
     {
       "status": "partially solved",
@@ -2649,7 +3668,19 @@
       "id": "protein-folding-physics",
       "name": "Protein folding physics (beyond structure prediction)",
       "field": "biophysics",
-      "summary": "How do proteins fold so fast? Are native states global free-energy minima? How do cells avoid precipitation at high density?"
+      "summary": "How do proteins fold so fast? Are native states global free-energy minima? How do cells avoid precipitation at high density?",
+      "agentic_10day": {
+        "score": "stretch",
+        "scope": "partial",
+        "success": "Clarify remaining open physics vs solved prediction; one quantitative kinetics result on a model protein.",
+        "harness": [
+          "MD-lite",
+          "literature",
+          "ML"
+        ],
+        "why": "Structure prediction advanced; physics remnants partially attackable.",
+        "viral_hook": "AlphaFold won structure \u2014 what physics is left?"
+      }
     },
     {
       "status": "open",
@@ -2671,7 +3702,18 @@
       "id": "quantum-biology",
       "name": "Quantum biology functional coherence",
       "field": "biophysics",
-      "summary": "Can quantum coherence persist long enough to be functionally important in warm, wet biology?"
+      "summary": "Can quantum coherence persist long enough to be functionally important in warm, wet biology?",
+      "agentic_10day": {
+        "score": "sprint",
+        "scope": "verdict",
+        "success": "Audit major coherence claims; classify supported / unsupported with criteria.",
+        "harness": [
+          "literature",
+          "open-quantum-systems"
+        ],
+        "why": "Meta-scientific audit, high value, doable.",
+        "viral_hook": "Is quantum biology real? Agents fact-check the hype."
+      }
     },
     {
       "status": "open",
@@ -2695,7 +3737,15 @@
       "name": "Biology from fundamental physical laws",
       "field": "biophysics",
       "summary": "Can biology be expressed via fundamental laws, action principles, and symmetries (robustness, modularity, evolvability)?",
-      "why_hard": "Enormous hierarchical complexity; unclear if unique reduction exists."
+      "why_hard": "Enormous hierarchical complexity; unclear if unique reduction exists.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Enormous hierarchical complexity; unclear if unique reduction exists.",
+        "viral_hook": "Biology from fundamental physical laws"
+      }
     },
     {
       "status": "open",
@@ -2721,7 +3771,17 @@
       "name": "Interpretation of quantum mechanics / measurement problem",
       "field": "foundations",
       "summary": "How does the quantum formalism give rise to definite outcomes? What is a measurement? Which of locality/causality/realism must be sacrificed?",
-      "why_hard": "Multiple empirically equivalent interpretations; may not have unique scientific answer."
+      "why_hard": "Multiple empirically equivalent interpretations; may not have unique scientific answer.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "Clarify option space only.",
+        "harness": [
+          "philosophy-phys"
+        ],
+        "why": "Empirically equivalent interpretations.",
+        "viral_hook": "You can't unique-solve philosophy in 10 days."
+      }
     },
     {
       "status": "open",
@@ -2747,7 +3807,15 @@
       "name": "Arrow of time",
       "field": "foundations",
       "summary": "Why does time have a direction? Why was the early universe low entropy? How do thermodynamic, cosmological, and quantum arrows relate?",
-      "why_hard": "Tied to cosmological initial conditions; deep and possibly anthropic."
+      "why_hard": "Tied to cosmological initial conditions; deep and possibly anthropic.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "none",
+        "success": "N/A deep why.",
+        "harness": [],
+        "why": "Cosmological IC.",
+        "viral_hook": "Time's arrow isn't a Jira ticket."
+      }
     },
     {
       "status": "open",
@@ -2771,7 +3839,15 @@
       "name": "Nature of quantum non-locality",
       "field": "foundations",
       "summary": "Are non-local phenomena limited to Bell entanglement, or can information/conserved quantities move non-locally? Implications for spacetime structure?",
-      "why_hard": "Constrained by no-signaling but conceptually unsettled."
+      "why_hard": "Constrained by no-signaling but conceptually unsettled.",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Constrained by no-signaling but conceptually unsettled.",
+        "viral_hook": "Nature of quantum non-locality"
+      }
     },
     {
       "status": "controversially open",
@@ -2795,7 +3871,15 @@
       "name": "Quantum mind",
       "field": "foundations",
       "summary": "Do quantum phenomena play an essential role in brain function and consciousness?",
-      "why_hard": "Highly speculative; lacks decisive experimental support."
+      "why_hard": "Highly speculative; lacks decisive experimental support.",
+      "agentic_10day": {
+        "score": "not-agentic",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Highly speculative; lacks decisive experimental support.",
+        "viral_hook": "Quantum mind"
+      }
     },
     {
       "status": "open",
@@ -2819,7 +3903,15 @@
       "id": "geometric-langlands-physics",
       "name": "Geometric Langlands and physics",
       "field": "mathematical-physics",
-      "summary": "Can the Langlands program explain physical symmetries and vice versa?"
+      "summary": "Can the Langlands program explain physical symmetries and vice versa?",
+      "agentic_10day": {
+        "score": "multi-sprint",
+        "scope": "unknown",
+        "success": "",
+        "harness": [],
+        "why": "Deep math; formal AI systems may help bridges.",
+        "viral_hook": "Geometric Langlands and physics"
+      }
     }
   ],
   "recently_solved": [

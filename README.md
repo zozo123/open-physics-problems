@@ -1,8 +1,14 @@
 # Open Physics Problems Map
 
-**A multi-source, machine-readable map of open problems in physics** — with landscape taxonomies, historical source graphs, end-to-end research paths, and estimates of which problems scientific AI / LLMs might actually help close.
+**A multi-source, machine-readable map of open problems in physics** — with landscape taxonomies, historical source graphs, end-to-end research paths, AI tractability estimates, and a **10-day agentic sprint board** (what maximal multi-agent harnesses can *honestly* attempt before day 11).
 
 > **112 open problems** curated from Wikipedia, John Baez’s FAQ, Strings 2000, Clay Millennium problems, Ginzburg themes, Snowmass-era frontiers, and mathematical-physics lists.
+
+### Live site (GitHub Pages)
+
+**https://zozo123.github.io/open-physics-problems/**
+
+Sprint-first UI: formalization, virality ethics, filterable board with success criteria per card.
 
 ```
                     needs new experiment / facility
@@ -242,6 +248,7 @@ python3 -m http.server 8000
 | [`problems/INDEX.md`](problems/INDEX.md) | All 112 problems |
 | [`maps/landscape.md`](maps/landscape.md) | Multi-axis landscape + mermaid graphs |
 | [`maps/ai-tractability.md`](maps/ai-tractability.md) | Full AI/LLM split |
+| [`maps/agentic-10day.md`](maps/agentic-10day.md) | ≤10-day agentic sprint formalization |
 | [`maps/e2e-research-path.md`](maps/e2e-research-path.md) | How problem classes get closed |
 | [`SOURCES.md`](SOURCES.md) | Deep source knowledge graph |
 | [`TAXONOMY.md`](TAXONOMY.md) | Community classification schemes |

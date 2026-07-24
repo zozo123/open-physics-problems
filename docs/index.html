@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Open Physics Problems — 10-Day Agentic Sprint Map</title>
+  <meta name="description" content="A map of open physics problems ranked for agentic AI sprints: which mysteries could the strongest multi-agent harnesses honestly attack in ≤10 days?" />
+  <meta property="og:title" content="Open Physics Problems — 10-Day Agentic Sprint Map" />
+  <meta property="og:description" content="112 open physics problems. Formalized for agentic loops. Sprint board for the ones that aren't a century." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#06080f" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Open Physics Problems
+      </a>
+      <div class="nav-links">
+        <a href="#manifesto">Why</a>
+        <a href="#formalize">Formalize</a>
+        <a href="#board">Sprint board</a>
+        <a href="#honesty">Honesty</a>
+        <a href="https://github.com/zozo123/open-physics-problems" target="_blank" rel="noopener" class="gh-btn">GitHub ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero wrap">
+    <div class="kicker">Agentic physics · ≤10 days · strongest harness assumed</div>
+    <h1>Which open problems in physics can agents <em>actually</em> close?</h1>
+    <p class="lead">
+      Not “can an LLM discuss quantum gravity.” A harder question:
+      under the <b>craziest multi-agent harness</b> you can imagine — formal provers,
+      simulators, literature tools, code execution, specialist models working together —
+      which Wikipedia-class open problems have a <b>credible ≤10-day closure path</b>?
+      We mapped <span id="stat-total">112</span> problems and ranked them for sprints.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#board">Open sprint board</a>
+      <a class="btn btn-ghost" href="#formalize">Read the formalization</a>
+      <a class="btn btn-ghost" href="https://github.com/zozo123/open-physics-problems" target="_blank" rel="noopener">Star the repo</a>
+    </div>
+    <div class="stat-grid">
+      <div class="stat sprint" data-jump-score="sprint" role="button" tabindex="0" style="cursor:pointer">
+        <div class="n" id="stat-sprint">—</div><div class="l">10-day sprints</div>
+      </div>
+      <div class="stat stretch" data-jump-score="stretch" role="button" tabindex="0" style="cursor:pointer">
+        <div class="n" id="stat-stretch">—</div><div class="l">stretch goals</div>
+      </div>
+      <div class="stat multi" data-jump-score="multi-sprint" role="button" tabindex="0" style="cursor:pointer">
+        <div class="n" id="stat-multi">—</div><div class="l">multi-sprint AI shape</div>
+      </div>
+      <div class="stat na" data-jump-score="not-agentic" role="button" tabindex="0" style="cursor:pointer">
+        <div class="n" id="stat-na">—</div><div class="l">not agentic alone</div>
+      </div>
+    </div>
+  </header>
+
+  <section id="manifesto">
+    <div class="wrap">
+      <h2>Motivation — why this map exists</h2>
+      <p class="section-lead">
+        Physics problem lists are prestige museums. Agentic AI needs a <b>race track</b>:
+        clear success criteria, public data, reversible claims, and no fake trophies.
+      </p>
+      <div class="manifesto-grid">
+        <div class="panel">
+          <h3>The failure mode we are avoiding</h3>
+          <p>
+            Every model generation will claim it “understands” dark matter, TOE, and
+            Navier–Stokes. That is not research. That is autocomplete cosplay.
+          </p>
+          <p>
+            The useful question is operational:
+            <b>What can a closed-loop agentic system finish before the sprint ends?</b>
+            With artifacts a skeptical human can verify on day 11.
+          </p>
+          <blockquote class="quote">
+            Virality without honesty dies in a week. Honesty without a scoreboard never ships.
+          </blockquote>
+        </div>
+        <div class="panel">
+          <h3>Why this can go viral (for the right reasons)</h3>
+          <ul>
+            <li><b>Challenge culture</b> — “beat this sprint card” is shareable.</li>
+            <li><b>Anti-hype flex</b> — we mark Clay problems as <i>not-agentic</i> for 10 days.</li>
+            <li><b>Agent Olympics</b> — different harnesses can compete on the same criteria.</li>
+            <li><b>Wikipedia × frontier models</b> — public mysteries + public scoreboard.</li>
+            <li><b>Partial credit</b> — verdicts and kill-lists count when full “solve” is mythology.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>What we optimize for</h3>
+          <ul>
+            <li>Reproducible artifacts (code, proofs, notebooks)</li>
+            <li>Success criteria stated <i>before</i> the run</li>
+            <li>Problems where literature lag or systematics may already hide an answer</li>
+            <li>Scoped slices of famous problems when the full prize is absurd</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>What we refuse to optimize for</h3>
+          <ul>
+            <li>Vibes-based “we solved quantum gravity”</li>
+            <li>Problems that need new colliders, megaton tanks, or Planck probes</li>
+            <li>Empirically equivalent interpretations crowned by rhetoric</li>
+            <li>Hallucinated experimental results</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formalize">
+    <div class="wrap">
+      <h2>Formalization — the 10-day agentic predicate</h2>
+      <p class="section-lead">
+        We treat “solvable by agents in &lt;10 days” as a predicate with assumptions,
+        not a mood. Strong models without a harness are not enough; a harness without
+        a success criterion is theater.
+      </p>
+
+      <div class="panel" style="margin-bottom:1rem">
+        <h3 style="margin-top:0">Assumed harness (maximal)</h3>
+        <p style="color:var(--muted);margin:0.4rem 0 0">
+          Multi-agent orchestration · web + literature search · code execution ·
+          computer algebra · formal provers (Lean/Isabelle) · domain simulators
+          (DFT, DEM, N-body, nuclear networks, CFD lite) · human verification at day 10.
+          <b>No</b> new experimental facilities. <b>No</b> private lab data unless already public.
+        </p>
+      </div>
+
+      <div class="panel" style="overflow:auto">
+        <table class="formula-table">
+          <thead>
+            <tr>
+              <th>Score</th>
+              <th>Meaning</th>
+              <th>Counts as “done”</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="pill sprint">sprint</span></td>
+              <td>Credible closure, community-grade verdict, or decisive partial in ≤10 days.</td>
+              <td>Proof / reproducible reanalysis / mechanism consensus with public evidence.</td>
+            </tr>
+            <tr>
+              <td><span class="pill stretch">stretch</span></td>
+              <td>God-tier agents might land a serious partial; full close is optimistic.</td>
+              <td>Model ranking, kill-list, open simulation that moves the field.</td>
+            </tr>
+            <tr>
+              <td><span class="pill multi-sprint">multi-sprint</span></td>
+              <td>Right <i>shape</i> for AI eventually — wrong honesty for one 10-day solve.</td>
+              <td>Slices only (benchmarks, surveys, formalizations).</td>
+            </tr>
+            <tr>
+              <td><span class="pill not-agentic">not-agentic</span></td>
+              <td>Empirically gated, underdetermined, or century-scale formal depth.</td>
+              <td>Annotation and theory-space maps — not trophies.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="manifesto-grid" style="margin-top:1rem">
+        <div class="panel">
+          <h3>Predicate (informal)</h3>
+          <p style="font-family:var(--mono);font-size:0.86rem;color:var(--accent);line-height:1.55">
+            AgenticSprintable(P, 10d) ⇔<br/>
+            &nbsp;&nbsp;∃ harness H ∈ MaximalAI ·<br/>
+            &nbsp;&nbsp;∃ artifact A ·<br/>
+            &nbsp;&nbsp;Verify(A, SuccessCriterion(P)) ∧ Time(H→A) ≤ 10d<br/>
+            &nbsp;&nbsp;∧ ¬RequiresNewFacility(P) ∧ ¬UniqueInterpretationOnly(P)
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Success criteria we accept</h3>
+          <ul>
+            <li>Peer-checkable proof of the stated claim</li>
+            <li>Open reanalysis closing an anomaly (or proving it remains)</li>
+            <li>Mechanism verdict already fixed by public data + literature lag</li>
+            <li>Meta-closure: Wikipedia still says open, specialists already settled it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="board">
+    <div class="wrap">
+      <div class="board-head">
+        <div>
+          <h2 style="margin-bottom:0.25rem">Sprint board</h2>
+          <p class="section-lead" style="margin-bottom:0">
+            Default view: <b>10-day sprints</b>. Click a card for success criteria and harness needs.
+          </p>
+        </div>
+        <div class="legend">
+          <span><i class="dot sprint"></i> sprint</span>
+          <span><i class="dot stretch"></i> stretch</span>
+          <span><i class="dot multi"></i> multi-sprint</span>
+          <span><i class="dot na"></i> not-agentic</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="q" type="search" placeholder="Search name, hook, tag, criterion…" />
+        <select id="score">
+          <option value="sprint">Sprint only</option>
+          <option value="stretch">Stretch only</option>
+          <option value="multi-sprint">Multi-sprint only</option>
+          <option value="not-agentic">Not-agentic only</option>
+          <option value="all">All problems</option>
+        </select>
+        <select id="field">
+          <option value="">All fields</option>
+        </select>
+        <span id="count-label" style="color:var(--muted);align-self:center;font-size:0.9rem"></span>
+      </div>
+
+      <div id="cards" class="cards"></div>
+    </div>
+  </section>
+
+  <section id="honesty">
+    <div class="wrap">
+      <h2>Honesty layer — so this stays scientific</h2>
+      <div class="manifesto-grid">
+        <div class="panel">
+          <h3>Famous ≠ sprintable</h3>
+          <p>
+            Yang–Mills mass gap, Navier–Stokes, full high-Tc mechanism, dark matter identity,
+            and TOE are scored <span class="pill not-agentic">not-agentic</span> for a 10-day loop.
+            They may still be the best long-horizon AI targets. Different axes.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Partial is first-class</h3>
+          <p>
+            Many stretch/sprint cards are explicitly <b>verdicts</b>, <b>kill-lists</b>, or
+            <b>one-state analyses</b>. That is how real research works. The scoreboard
+            should reward discrimination, not swagger.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Virality loop we want</h3>
+          <ul>
+            <li>Pick a sprint card → run harness → publish artifact</li>
+            <li>Open PR updating status in <code>data/problems.json</code></li>
+            <li>Community stress-tests the artifact</li>
+            <li>Card moves to “closed” or “still open, better criterion”</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Virality loop we don’t want</h3>
+          <ul>
+            <li>Screenshot of a chat saying “solved”</li>
+            <li>Underspecified success + maximal confidence</li>
+            <li>Moving goalposts after failure</li>
+            <li>Ignoring experimental gatekeeping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap cols">
+      <div>
+        <h4>Open Physics Problems Map</h4>
+        <p>
+          Multi-source catalog of open problems with AI tractability and 10-day agentic scores.
+          CC BY 4.0 · data in <code>problems.json</code>.
+        </p>
+        <p class="tagline">solve the scoreboard, not the mythology</p>
+      </div>
+      <div>
+        <h4>Repo</h4>
+        <ul>
+          <li><a href="https://github.com/zozo123/open-physics-problems">GitHub</a></li>
+          <li><a href="https://github.com/zozo123/open-physics-problems/blob/main/maps/ai-tractability.md">AI tractability map</a></li>
+          <li><a href="https://github.com/zozo123/open-physics-problems/blob/main/docs/methodology.md">Methodology</a></li>
+          <li><a href="https://github.com/zozo123/open-physics-problems/blob/main/SOURCES.md">Sources graph</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Primary sources</h4>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics">Wikipedia unsolved physics</a></li>
+          <li><a href="https://math.ucr.edu/home/baez/physics/General/open_questions.html">Baez open questions</a></li>
+          <li><a href="https://www.preskill.caltech.edu/millennium.html">Strings 2000</a></li>
+          <li><a href="https://www.claymath.org/millennium-problems/">Clay Millennium</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <header>
+        <h3 id="modal-title">Problem</h3>
+        <button class="close" id="modal-close" aria-label="Close">✕</button>
+      </header>
+      <div class="body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

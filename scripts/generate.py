@@ -60,14 +60,20 @@ def main() -> None:
     solved = cat.get("recently_solved", [])
 
     # counts refresh
+    from collections import Counter
+
     meta["counts"] = {
         "open_problems": len(problems),
         "solved_contrast": len(solved),
-        "by_field": dict(sorted(Counter := __import__("collections").Counter(p["field"] for p in problems).items())),
-        "by_ai_tractability": dict(__import__("collections").Counter(p["ai_tractability"] for p in problems)),
-        "by_kind": dict(__import__("collections").Counter(p["kind"] for p in problems)),
-        "by_status": dict(__import__("collections").Counter(p["status"] for p in problems)),
+        "by_field": dict(sorted(Counter(p["field"] for p in problems).items())),
+        "by_ai_tractability": dict(Counter(p["ai_tractability"] for p in problems)),
+        "by_kind": dict(Counter(p["kind"] for p in problems)),
+        "by_status": dict(Counter(p["status"] for p in problems)),
     }
+    if any("agentic_10day" in p for p in problems):
+        meta["counts"]["by_agentic_10day"] = dict(
+            Counter((p.get("agentic_10day") or {}).get("score", "unset") for p in problems)
+        )
     cat["meta"] = meta
     DATA.write_text(json.dumps(cat, indent=2) + "\n")
 
@@ -174,8 +180,15 @@ def main() -> None:
 
     # Lightweight map refresh for AI table is kept hand-authored for prose;
     # print summary for commit messages.
+    # Keep GitHub Pages data in sync
+    pages_data = ROOT / "docs" / "data" / "problems.json"
+    if pages_data.parent.exists():
+        pages_data.write_text(json.dumps(cat, indent=2) + "\n")
+
     print(f"Regenerated CSV + problems/*.md from {len(problems)} problems")
     print("AI counts:", meta["counts"]["by_ai_tractability"])
+    if "by_agentic_10day" in meta["counts"]:
+        print("10d counts:", meta["counts"]["by_agentic_10day"])
 
 
 if __name__ == "__main__":

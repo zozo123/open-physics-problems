@@ -1,0 +1,5 @@
+# Minimal config so GitHub Pages serves static HTML as-is
+theme: null
+plugins: []
+title: Open Physics Problems
+description: 10-day agentic sprint map of open problems in physics

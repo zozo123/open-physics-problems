@@ -29,6 +29,7 @@ ALLOWED_FIELDS = {
 ALLOWED_KIND = {"theoretical", "experimental", "mathematical", "engineering", "foundations"}
 ALLOWED_AI = {"high", "medium", "low", "none"}
 ALLOWED_STATUS = {"open", "partially solved", "controversially open"}
+ALLOWED_AGENTIC = {"sprint", "stretch", "multi-sprint", "not-agentic"}
 REQUIRED = {"id", "name", "field", "summary", "status", "kind", "ai_tractability"}
 
 
@@ -58,6 +59,11 @@ def main() -> int:
         for key in ("difficulty", "impact"):
             if key in p and not (1 <= int(p[key]) <= 5):
                 errors.append(f"{pid}: {key} out of range")
+        if "agentic_10day" in p:
+            a = p["agentic_10day"] or {}
+            sc = a.get("score")
+            if sc not in ALLOWED_AGENTIC:
+                errors.append(f"{pid}: bad agentic_10day.score {sc}")
         for rel in p.get("related", []):
             # related may point ahead; check after full load
             pass
