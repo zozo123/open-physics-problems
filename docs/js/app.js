@@ -139,26 +139,19 @@ function renderFeatured() {
   row.innerHTML = pick
     .map((p) => {
       const hook = (p.agentic_10day?.viral_hook || p.name).slice(0, 72);
-      return `<div class="feat" data-id="${esc(p.id)}" role="button" tabindex="0">
+      return `<button type="button" class="feat" data-id="${esc(p.id)}" role="listitem" aria-label="Open ${esc(p.name)}">
         <div class="fh">sprint · ${esc(p.field)}</div>
         <div class="ft">${esc(hook)}</div>
-      </div>`;
+      </button>`;
     })
     .join("");
   row.querySelectorAll(".feat").forEach((el) => {
-    const go = () => {
+    el.addEventListener("click", () => {
       $("#score").value = "all";
       activeFilter = "all";
       renderCards();
       showModal(el.dataset.id);
       document.getElementById("board")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    };
-    el.addEventListener("click", go);
-    el.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        go();
-      }
     });
   });
 }
@@ -228,39 +221,34 @@ function renderCards() {
       const hook = a.viral_hook || p.name;
       const sec =
         (p.fields_secondary || []).length > 0
-          ? ` · +${p.fields_secondary.length} cross`
+          ? `+${p.fields_secondary.length} cross`
           : "";
       return `
-      <article class="card" data-id="${esc(p.id)}" tabindex="0" role="button" aria-label="${esc(p.name)}">
+      <button type="button" class="card" data-id="${esc(p.id)}" role="listitem" aria-label="${esc(p.name)}. ${esc(a.score || "")}. Open details">
         <div class="top">
           ${pill(a.score || "multi-sprint")}
           <span style="color:var(--faint);font-size:0.72rem">${esc(p.field)}</span>
         </div>
-        <h3>${esc(p.name)}</h3>
-        <p class="hook">${esc(hook)}</p>
-        <p class="summary">${esc((p.summary || "").slice(0, 140))}${(p.summary || "").length > 140 ? "…" : ""}</p>
+        <span class="card-title">${esc(p.name)}</span>
+        <span class="hook">${esc(hook)}</span>
+        <span class="summary">${esc((p.summary || "").slice(0, 140))}${(p.summary || "").length > 140 ? "…" : ""}</span>
         <div class="meta">
           <span>${esc(p.subfield || "")}</span>
           <span>${esc(e.culture || "")}</span>
           <span>${esc(e.refutability || "")}</span>
           <span>rung ${esc(e.closure_rung)}</span>
-          ${sec ? `<span>${esc(sec.trim())}</span>` : ""}
+          ${sec ? `<span>${esc(sec)}</span>` : ""}
         </div>
-      </article>`;
+      </button>`;
     })
     .join("");
 
   root.querySelectorAll(".card").forEach((el) => {
-    const open = () => showModal(el.dataset.id);
-    el.addEventListener("click", open);
-    el.addEventListener("keydown", (ev) => {
-      if (ev.key === "Enter" || ev.key === " ") {
-        ev.preventDefault();
-        open();
-      }
-    });
+    el.addEventListener("click", () => showModal(el.dataset.id));
   });
 }
+
+let lastFocus = null;
 
 function showModal(id) {
   const p = ALL.find((x) => x.id === id);
@@ -269,6 +257,7 @@ function showModal(id) {
   const e = ep(p);
   const backdrop = $("#modal");
   const body = $("#modal-body");
+  lastFocus = document.activeElement;
   $("#modal-title").textContent = p.name;
   const sec = (p.fields_secondary || [])
     .map((s) => `<span class="pill multi-sprint">${esc(s)}</span>`)
@@ -304,13 +293,21 @@ function showModal(id) {
       · <a href="https://github.com/zozo123/open-physics-problems/blob/main/maps/fields/${esc(p.field)}.md" target="_blank" rel="noopener">${esc(p.field)} page</a>
     </p>
   `;
+  backdrop.hidden = false;
   backdrop.classList.add("open");
   history.replaceState(null, "", `#${id}`);
+  // focus close control for keyboard users
+  requestAnimationFrame(() => $("#modal-close")?.focus());
 }
 
 function hideModal() {
-  $("#modal").classList.remove("open");
+  const backdrop = $("#modal");
+  backdrop.classList.remove("open");
+  backdrop.hidden = true;
   if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  if (lastFocus && typeof lastFocus.focus === "function") {
+    lastFocus.focus();
+  }
 }
 
 function refreshSubfieldOptions() {
@@ -413,7 +410,7 @@ async function boot() {
   });
   $("#modal-close").addEventListener("click", hideModal);
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") hideModal();
+    if (e.key === "Escape" && !$("#modal").hidden) hideModal();
   });
 }
 
