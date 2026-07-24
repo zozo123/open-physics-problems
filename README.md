@@ -67,8 +67,12 @@ python3 scripts/generate.py
 │   ├── ai-tractability.md     # LLM-plausible vs not
 │   ├── sources-graph.md       # genealogy of lists
 │   └── e2e-research-path.md   # how problems actually get closed
+├── assets/
+│   └── landscape.html         # interactive browser map
+├── SOURCES.md                 # full source knowledge graph (historical → modern)
+├── TAXONOMY.md                # how communities categorize problems
 ├── sources/
-│   └── SOURCES.md
+│   └── SOURCES.md             # compact source table
 ├── docs/
 │   └── methodology.md
 └── scripts/
@@ -217,13 +221,32 @@ Problem statements are paraphrased from public scientific lists; consult origina
   title  = {Open Physics Problems Map},
   year   = {2026},
   note   = {Multi-source catalog of open problems in physics with AI tractability maps},
-  url    = {https://github.com/PLACEHOLDER/open-physics-problems}
+  url    = {https://github.com/zozo123/open-physics-problems}
 }
 ```
 
+**Repo:** https://github.com/zozo123/open-physics-problems
+
 ---
 
-## Links
+## Explore
+
+```bash
+# Interactive map (from repo root)
+python3 -m http.server 8000
+# open http://localhost:8000/assets/landscape.html
+```
+
+| Doc | What it is |
+|-----|------------|
+| [`problems/INDEX.md`](problems/INDEX.md) | All 112 problems |
+| [`maps/landscape.md`](maps/landscape.md) | Multi-axis landscape + mermaid graphs |
+| [`maps/ai-tractability.md`](maps/ai-tractability.md) | Full AI/LLM split |
+| [`maps/e2e-research-path.md`](maps/e2e-research-path.md) | How problem classes get closed |
+| [`SOURCES.md`](SOURCES.md) | Deep source knowledge graph |
+| [`TAXONOMY.md`](TAXONOMY.md) | Community classification schemes |
+
+## External links
 
 | Resource | URL |
 |----------|-----|
