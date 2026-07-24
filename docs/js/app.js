@@ -13,6 +13,68 @@ let ALL = [];
 let META = {};
 let activeFilter = "sprint";
 
+const FILTER_KEYS = ["q", "score", "culture", "refut", "cluster", "field", "subfield"];
+
+function readURLState() {
+  const sp = new URLSearchParams(location.search);
+  const out = {};
+  FILTER_KEYS.forEach((k) => {
+    if (sp.has(k)) out[k] = sp.get(k);
+  });
+  return out;
+}
+
+function writeURLState() {
+  const sp = new URLSearchParams();
+  FILTER_KEYS.forEach((k) => {
+    const el = document.getElementById(k);
+    if (!el) return;
+    const v = (el.value || "").trim();
+    const def = k === "score" ? "sprint" : "";
+    if (v && v !== def) sp.set(k, v);
+  });
+  const qs = sp.toString();
+  const hash = location.hash || "";
+  const next = qs ? `?${qs}${hash}` : `${location.pathname}${hash}`;
+  history.replaceState(null, "", next);
+}
+
+function applyURLState() {
+  const st = readURLState();
+  FILTER_KEYS.forEach((k) => {
+    const el = document.getElementById(k);
+    if (!el || st[k] == null) return;
+    el.value = st[k];
+    if (k === "score") activeFilter = st[k];
+  });
+}
+
+function clearFilters() {
+  $("#q").value = "";
+  $("#score").value = "sprint";
+  activeFilter = "sprint";
+  ["culture", "refut", "cluster", "field", "subfield"].forEach((k) => {
+    const el = document.getElementById(k);
+    if (el) el.value = "";
+  });
+  document.querySelectorAll(".field-chip").forEach((b) => b.classList.remove("active"));
+  document.querySelectorAll(".stat").forEach((b) => b.setAttribute("aria-pressed", "false"));
+  const sprintBtn = document.querySelector('.stat[data-jump-score="sprint"]');
+  if (sprintBtn) sprintBtn.setAttribute("aria-pressed", "true");
+  refreshSubfieldOptions();
+  writeURLState();
+  renderCards();
+}
+
+function syncStatPressed() {
+  const score = $("#score")?.value || "sprint";
+  document.querySelectorAll(".stat").forEach((b) => {
+    b.setAttribute("aria-pressed", b.dataset.jumpScore === score ? "true" : "false");
+  });
+}
+
+
+
 const $ = (sel) => document.querySelector(sel);
 
 function pill(score) {
@@ -243,9 +305,16 @@ function renderCards() {
     })
     .join("");
 
-  root.querySelectorAll(".card").forEach((el) => {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  root.querySelectorAll(".card").forEach((el, i) => {
     el.addEventListener("click", () => showModal(el.dataset.id));
+    if (!reduce) {
+      el.style.animationDelay = `${Math.min(i, 24) * 0.04}s`;
+      el.classList.add("is-enter");
+    }
   });
+  syncStatPressed();
+  writeURLState();
 }
 
 let lastFocus = null;
@@ -344,39 +413,44 @@ function setupFilters() {
     refreshSubfieldOptions();
     renderCards();
   };
-  ["q", "field", "score", "culture", "refut", "cluster", "subfield"].forEach((id) => {
+  ["field", "score", "culture", "refut", "cluster", "subfield"].forEach((id) => {
     const el = $(`#${id}`);
     if (!el) return;
-    el.addEventListener("input", rerender);
     el.addEventListener("change", () => {
       if (id === "cluster") {
-        // clear field when cluster changes for cleaner nav
         if ($("#field")) $("#field").value = "";
       }
       if (id === "field" && $("#field").value) {
-        // sync cluster from field
         const p = ALL.find((x) => x.field === $("#field").value);
         if (p && $("#cluster")) $("#cluster").value = p.cluster || "";
       }
+      if (id === "score") activeFilter = $("#score").value;
+      syncStatPressed();
       rerender();
     });
+  });
+
+  let searchTimer = null;
+  $("#q")?.addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      activeFilter = $("#score").value;
+      renderCards();
+    }, 150);
   });
 
   document.querySelectorAll("[data-jump-score]").forEach((btn) => {
     const go = () => {
       $("#score").value = btn.dataset.jumpScore;
       activeFilter = btn.dataset.jumpScore;
+      syncStatPressed();
       document.getElementById("board").scrollIntoView({ behavior: "smooth" });
       renderCards();
     };
     btn.addEventListener("click", go);
-    btn.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        go();
-      }
-    });
   });
+
+  $("#clear-filters")?.addEventListener("click", clearFilters);
 }
 
 async function boot() {
@@ -396,9 +470,16 @@ async function boot() {
   renderFeatured();
   renderClusters();
   setupFilters();
-  $("#score").value = "sprint";
-  activeFilter = "sprint";
+  applyURLState();
+  if (!$("#score").value) {
+    $("#score").value = "sprint";
+    activeFilter = "sprint";
+  } else {
+    activeFilter = $("#score").value;
+  }
+  refreshSubfieldOptions();
   renderCards();
+  syncStatPressed();
 
   if (location.hash) {
     const id = location.hash.slice(1);

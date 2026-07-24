@@ -6,6 +6,8 @@
 
 **https://zozo123.github.io/open-physics-problems/**
 
+UI system: [ui-ux-pro-max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) design tokens in [`design-system/open-physics-problems/MASTER.md`](design-system/open-physics-problems/MASTER.md) (Modern Dark cinema + data-dense dashboard).
+
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)](CHANGELOG.md)
 

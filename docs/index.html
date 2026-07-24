@@ -8,11 +8,15 @@
   <meta property="og:title" content="Open Physics Problems — From open math culture to physics" />
   <meta property="og:description" content="Math solved open problems with fixed statements and published proofs. Physics needs the same machine — with nature's vote." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#070a12" />
+  <meta name="theme-color" content="#0a101c" />
   <meta name="color-scheme" content="dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="ambient" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="page">
   <a class="skip-link" href="#main">Skip to main content</a>
   <nav class="nav" aria-label="Primary">
     <div class="wrap nav-inner">
@@ -22,7 +26,7 @@
       </a>
       <div class="nav-links">
         <a href="#manifesto">Why</a>
-        <a href="#mathculture">Open math → physics</a>
+        <a href="#mathculture">Math papers</a>
         <a href="#formalize">Formalize</a>
         <a href="#fields">Fields</a>
         <a href="#playbook">Playbook</a>
@@ -35,7 +39,7 @@
 
   <main id="main">
   <header class="hero wrap">
-    <div class="kicker">v1.0 · after AlphaProof &amp; Erdős solves · now physics</div>
+    <div class="kicker">v1.0 · AlphaProof · Erdős Nexus · physics board</div>
     <h1>Math just got papers that <em>closed</em> open problems. Physics needs the same board.</h1>
     <p class="lead">
       <b>AlphaProof</b> (IMO silver, <a href="https://www.nature.com/articles/s41586-025-09833-y" target="_blank" rel="noopener">Nature 2025</a>)
@@ -348,9 +352,10 @@
         </div>
       </div>
 
+      <div class="controls-dock">
       <div class="controls" role="search">
         <label class="sr-only" for="q">Search problems</label>
-        <input id="q" name="q" type="search" placeholder="Search name, hook, culture, win…" autocomplete="off" spellcheck="false" />
+        <input id="q" name="q" type="search" placeholder="Search problems, hooks, cultures…" autocomplete="off" spellcheck="false" enterkeyhint="search" />
         <label class="sr-only" for="score">Agentic score</label>
         <select id="score" name="score">
           <option value="sprint">Sprint only</option>
@@ -395,7 +400,11 @@
         <select id="subfield" name="subfield">
           <option value="">All subfields</option>
         </select>
-        <span id="count-label" aria-live="polite"></span>
+        <div class="controls-meta">
+          <span id="count-label" aria-live="polite"></span>
+          <button type="button" class="btn-clear" id="clear-filters">Clear filters</button>
+        </div>
+      </div>
       </div>
 
       <div id="cards" class="cards" role="list" aria-label="Problem cards"></div>
@@ -487,6 +496,7 @@
     </div>
   </div>
 
+  </div><!-- .page -->
   <script src="js/app.js"></script>
 </body>
 </html>
