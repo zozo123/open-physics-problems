@@ -1,0 +1,2893 @@
+{
+  "meta": {
+    "title": "Open Physics Problems Map",
+    "version": "0.1.0",
+    "generated": "2026-07-24",
+    "description": "Curated, multi-source catalog of open problems in physics with AI tractability estimates, cross-links, and landscape maps.",
+    "primary_sources": [
+      {
+        "id": "wikipedia",
+        "name": "Wikipedia: List of unsolved problems in physics",
+        "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics"
+      },
+      {
+        "id": "baez",
+        "name": "John Baez Open Questions in Physics FAQ",
+        "url": "https://math.ucr.edu/home/baez/physics/General/open_questions.html"
+      },
+      {
+        "id": "strings2000",
+        "name": "Strings 2000 Millennium Problems in Physics",
+        "url": "https://www.preskill.caltech.edu/millennium.html"
+      },
+      {
+        "id": "clay",
+        "name": "Clay Mathematics Institute Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/"
+      },
+      {
+        "id": "ginzburg",
+        "name": "Vitaly Ginzburg open problems lists (1971\u20132005)",
+        "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics"
+      },
+      {
+        "id": "snowmass",
+        "name": "Snowmass 2021 particle physics community planning",
+        "url": "https://atlaswww.hep.anl.gov/snowmass21/"
+      },
+      {
+        "id": "darpa",
+        "name": "DARPA Mathematical Challenges (physics-related)",
+        "url": "https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics"
+      },
+      {
+        "id": "coley",
+        "name": "Coley: Open problems in mathematical physics (arXiv:1710.02105)",
+        "url": "https://arxiv.org/abs/1710.02105"
+      }
+    ],
+    "ai_tractability_rubric": {
+      "high": "Formal proof, mechanism from existing data, or computational theory problem where AI reasoning/simulation can plausibly close or nearly close the problem.",
+      "medium": "AI can accelerate theory/model selection substantially, but decisive progress needs new experiments or facilities.",
+      "low": "Empirically gated or underdetermined; AI helps explore theory space but cannot decide alone.",
+      "none": "Requires new discovery-class experiments, Planck-scale access, or is not uniquely decidable by science as currently framed."
+    },
+    "counts": {
+      "open_problems": 112,
+      "solved_contrast": 11,
+      "by_field": {
+        "astrophysics": 17,
+        "biophysics": 8,
+        "condensed-matter": 13,
+        "cosmology": 14,
+        "fluid-dynamics": 3,
+        "foundations": 5,
+        "general": 2,
+        "mathematical-physics": 3,
+        "nuclear-physics": 8,
+        "particle-physics": 19,
+        "plasma-physics": 4,
+        "quantum-gravity": 10,
+        "quantum-information": 6
+      },
+      "by_ai_tractability": {
+        "none": 5,
+        "low": 26,
+        "medium": 34,
+        "high": 47
+      },
+      "by_kind": {
+        "theoretical": 60,
+        "foundations": 7,
+        "experimental": 33,
+        "mathematical": 9,
+        "engineering": 3
+      },
+      "by_status": {
+        "open": 104,
+        "controversially open": 7,
+        "partially solved": 1
+      }
+    }
+  },
+  "problems": [
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "none",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "unification",
+        "quantum-gravity",
+        "standard-model"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "quantum-gravity",
+        "hierarchy",
+        "dimensionless-constants"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "toe",
+      "name": "Theory of everything",
+      "field": "general",
+      "summary": "Is there a single coherent framework that unifies all fundamental interactions and explains all physical phenomena?",
+      "why_hard": "Requires reconciling quantum field theory with general relativity and matching all low-energy data."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "constants",
+        "anthropic",
+        "fine-tuning"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000",
+        "baez"
+      ],
+      "related": [
+        "toe",
+        "anthropic",
+        "hierarchy"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "dimensionless-constants",
+      "name": "Dimensionless physical constants",
+      "field": "general",
+      "summary": "Can the dimensionless constants of nature (fine-structure constant, mass ratios, etc.) be derived from first principles, or are some historical/quantum accidents?",
+      "why_hard": "No accepted principle selects observed values; may require multiverse/anthropic reasoning or a TOE."
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "none",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "anthropic",
+        "multiverse",
+        "philosophy"
+      ],
+      "sources": [
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "anthropic",
+      "name": "Anthropic principle necessity",
+      "field": "foundations",
+      "summary": "Are important aspects of the universe only understandable via anthropic selection, or is the principle unnecessary/unscientific?",
+      "why_hard": "Blurs physics and philosophy; hard to falsify cleanly."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "quantum-gravity",
+        "spacetime",
+        "planck"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "strings2000"
+      ],
+      "related": [
+        "toe",
+        "problem-of-time",
+        "holography",
+        "spacetime-emergence"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "quantum-gravity",
+      "name": "Quantum gravity",
+      "field": "quantum-gravity",
+      "summary": "Can quantum mechanics and general relativity be realized as a fully consistent theory? Is spacetime continuous or discrete? Graviton-mediated or emergent?",
+      "why_hard": "Planck-scale physics is experimentally almost inaccessible; multiple incomplete frameworks compete."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "Theoretical consensus may crystallize via holography/quantum info arguments; full QG still needed.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "black-holes",
+        "information",
+        "hawking",
+        "unitarity"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "strings2000"
+      ],
+      "related": [
+        "quantum-gravity",
+        "holography",
+        "hawking-radiation"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "bh-information",
+      "name": "Black hole information paradox",
+      "field": "quantum-gravity",
+      "summary": "Do black holes radiate thermally as Hawking predicted? Does radiation encode interior information? What remains after evaporation?",
+      "why_hard": "Tensions unitarity, locality, and semiclassical gravity in extreme regimes."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "black-holes",
+        "hawking",
+        "experiment"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "hawking-radiation",
+      "name": "Hawking radiation confirmation",
+      "field": "quantum-gravity",
+      "summary": "Do real black holes emit Hawking radiation as predicted? Observable only for microscopic or analogue systems so far.",
+      "why_hard": "Astrophysical Hawking temperatures are tiny; relies on analogues or future precision."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Mathematical GR conjecture; partial results exist; AI formal math could help.",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "gr",
+        "singularities",
+        "penrose",
+        "mathematical-physics"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "chronology-protection"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "cosmic-censorship",
+      "name": "Cosmic censorship hypothesis",
+      "field": "quantum-gravity",
+      "summary": "Can naked singularities form from realistic initial conditions, or does nature always hide them behind horizons?",
+      "why_hard": "Global nonlinear PDE analysis of Einstein equations under generic conditions."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 3,
+      "tags": [
+        "gr",
+        "causality",
+        "time-travel"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "chronology-protection",
+      "name": "Chronology protection conjecture",
+      "field": "quantum-gravity",
+      "summary": "Does quantum gravity forbid closed timelike curves / macroscopic time travel as Hawking suggested?",
+      "why_hard": "Requires a complete quantum gravity theory of realistic spacetimes."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "Math progress on dualities; realistic cosmology (dS) remains hard.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "holography",
+        "ads-cft",
+        "string-theory"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "holography",
+      "name": "Holographic principle (general)",
+      "field": "quantum-gravity",
+      "summary": "Does quantum gravity admit a lower-dimensional dual without gravity? Can AdS/CFT be generalized to de Sitter and arbitrary asymptotics?",
+      "why_hard": "Best understood only in AdS; our universe is approximately de Sitter."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "emergence",
+        "entanglement",
+        "quantum-info"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "spacetime-emergence",
+      "name": "Emergence of spacetime",
+      "field": "quantum-gravity",
+      "summary": "How does classical continuous spacetime emerge from discrete/quantum microphysics (LQG, entanglement in AdS/CFT, etc.)?",
+      "why_hard": "No complete derivation of 4D classical GR dynamics from a unique microtheory of our universe."
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "time",
+        "quantum-gravity",
+        "foundations"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "problem-of-time",
+      "name": "Problem of time",
+      "field": "quantum-gravity",
+      "summary": "How to reconcile time as a universal background parameter in QM with dynamical spacetime in GR?",
+      "why_hard": "Conceptual clash between two successful theories; multiple incompatible proposals."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "string-theory",
+        "m-theory",
+        "unification"
+      ],
+      "sources": [
+        "strings2000"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "m-theory-dof",
+      "name": "M-theory fundamental degrees of freedom",
+      "field": "quantum-gravity",
+      "summary": "What are the fundamental degrees of freedom of M-theory, and does it describe Nature?",
+      "why_hard": "No complete nonperturbative definition connected to unique low-energy physics."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "dimensions",
+        "anthropic",
+        "string-theory"
+      ],
+      "sources": [
+        "strings2000",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "why-3plus1",
+      "name": "Why 3+1 spacetime dimensions",
+      "field": "quantum-gravity",
+      "summary": "Why does the universe appear to have one time and three space dimensions?",
+      "why_hard": "May be environmental; no unique dynamical selection principle established."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Pure formal math; top AI formal-reasoning target among physics problems.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "millennium",
+        "qft",
+        "yang-mills",
+        "mass-gap",
+        "clay"
+      ],
+      "sources": [
+        "clay",
+        "wikipedia",
+        "strings2000",
+        "baez"
+      ],
+      "related": [
+        "color-confinement",
+        "rigorous-qft"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "yang-mills-mass-gap",
+      "name": "Yang\u2013Mills existence and mass gap",
+      "field": "mathematical-physics",
+      "summary": "Prove existence of a nontrivial quantum Yang\u2013Mills theory on R^4 with a mass gap (Clay Millennium Prize).",
+      "why_hard": "Nonperturbative constructive QFT in 4D is extremely difficult."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Mathematical physics; AI can assist constructive methods and proofs.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "qft",
+        "constructive-qft",
+        "mathematical-physics"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "rigorous-qft",
+      "name": "Rigorous interacting 4D QFT",
+      "field": "mathematical-physics",
+      "summary": "Construct mathematically rigorous interacting quantum field theories in 4D spacetime without relying only on perturbation theory.",
+      "why_hard": "UV divergences, renormalization, and nonperturbative control in 4D."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Closely related to mass gap; lattice evidence strong but proof missing.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "qcd",
+        "confinement",
+        "yang-mills"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000",
+        "baez"
+      ],
+      "related": [
+        "yang-mills-mass-gap",
+        "qcd-vacuum"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "color-confinement",
+      "name": "Color confinement (analytic proof)",
+      "field": "particle-physics",
+      "summary": "Provide an analytic proof that color-charged particles are confined in non-Abelian gauge theory / QCD.",
+      "why_hard": "Nonperturbative strong-coupling dynamics without complete analytic tools."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Pure analysis; among best LLM/AI math targets.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "millennium",
+        "fluids",
+        "pde",
+        "clay"
+      ],
+      "sources": [
+        "clay",
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "turbulence"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "navier-stokes",
+      "name": "Navier\u2013Stokes existence and smoothness",
+      "field": "fluid-dynamics",
+      "summary": "Do smooth solutions to 3D incompressible Navier\u2013Stokes exist for all time for nice initial data, or do singularities form? (Clay Millennium)",
+      "why_hard": "Nonlinear PDE blow-up control in 3D is a century-old challenge."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Data-rich; ML + theory of cascades/structure functions highly promising.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "turbulence",
+        "fluids",
+        "chaos",
+        "nonequilibrium"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "navier-stokes"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "turbulence",
+      "name": "Statistical theory of turbulence",
+      "field": "fluid-dynamics",
+      "summary": "Is there a closed theoretical model for the statistics and internal structures of turbulent flow?",
+      "why_hard": "Strong nonlinearity, multiscale energy cascade, lack of closed equations for moments."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "dark-matter",
+        "cosmology",
+        "particle-physics"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "snowmass"
+      ],
+      "related": [
+        "galaxy-rotation",
+        "strong-cp",
+        "susy"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "dark-matter",
+      "name": "Nature of dark matter",
+      "field": "cosmology",
+      "summary": "What is dark matter? WIMP, axion, sterile neutrino, primordial black holes, modified gravity, or something else?",
+      "why_hard": "Only gravitational evidence so far; vast candidate space; null direct searches."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "dark-energy",
+        "cosmology",
+        "lambda"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "strings2000"
+      ],
+      "related": [
+        "cosmo-constant",
+        "hubble-tension",
+        "coincidence"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "dark-energy",
+      "name": "Nature of dark energy",
+      "field": "cosmology",
+      "summary": "What causes the accelerated expansion of the universe? Cosmological constant, quintessence, modified gravity, or misinterpreted data?",
+      "why_hard": "Equation of state near -1; many models fit current data."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "vacuum-energy",
+        "fine-tuning",
+        "qft",
+        "gravity"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000",
+        "baez"
+      ],
+      "related": [
+        "dark-energy",
+        "toe"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "cosmo-constant",
+      "name": "Cosmological constant problem",
+      "field": "cosmology",
+      "summary": "Why is vacuum energy density ~120 orders of magnitude smaller than naive QFT estimates? What cancels it?",
+      "why_hard": "Worst fine-tuning problem in physics; no consensus mechanism."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "AI can help systematics hunting and model comparison; needs better data to close.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "hubble",
+        "cosmology",
+        "systematics",
+        "lambda-cdm"
+      ],
+      "sources": [
+        "wikipedia",
+        "snowmass"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "hubble-tension",
+      "name": "Hubble tension",
+      "field": "cosmology",
+      "summary": "Why do early-universe (CMB+\u039bCDM) and late-universe (distance ladder) measurements of H0 disagree at high significance (~5\u03c3)?",
+      "why_hard": "Could be unknown systematics or new physics; hard to decide with current precision."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "baryogenesis",
+        "cp-violation",
+        "early-universe"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "neutrino-mass"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "baryogenesis",
+      "name": "Matter\u2013antimatter asymmetry",
+      "field": "cosmology",
+      "summary": "Why is the observable universe dominated by matter rather than equal matter and antimatter?",
+      "why_hard": "Requires Sakharov conditions; many mechanisms; need decisive experimental input (e.s. EDMs, CPV)."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "inflation",
+        "early-universe",
+        "cmb"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "inflation",
+      "name": "Cosmic inflation details",
+      "field": "cosmology",
+      "summary": "Is inflation correct? What is the inflaton? Is inflation eternal? Are there viable alternatives?",
+      "why_hard": "Many models fit CMB; need primordial B-modes or other decisive probes."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "horizon",
+        "inflation",
+        "cmb"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "horizon-problem",
+      "name": "Horizon problem / alternatives",
+      "field": "cosmology",
+      "summary": "Why is the distant universe so homogeneous? Is inflation the unique solution?",
+      "why_hard": "Inflation is standard but not unique; alternatives hard to distinguish."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "coincidence",
+        "dark-energy",
+        "dark-matter"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "coincidence",
+      "name": "Cosmic coincidence problem",
+      "field": "cosmology",
+      "summary": "Why are dark matter and dark energy densities comparable today despite different evolution?",
+      "why_hard": "May be anthropic or dynamical coupling; underdetermined."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "none",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "cosmology",
+        "origin",
+        "fate"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "universe-origin-fate",
+      "name": "Origin and fate of the universe",
+      "field": "cosmology",
+      "summary": "How did conditions for existence arise? Big Freeze, Rip, Crunch, or Bounce?",
+      "why_hard": "Requires quantum gravity + true dark-energy dynamics into the far future."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "topology",
+        "geometry",
+        "cmb"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "universe-size-shape",
+      "name": "Size, shape, and topology of the universe",
+      "field": "cosmology",
+      "summary": "Is the universe infinite? What is the 3-manifold topology of comoving space?",
+      "why_hard": "Beyond the particle horizon is unobservable in principle."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "Survey statistics + anomaly hunting; AI helps but data decides.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "cosmology",
+        "isotropy",
+        "flrw"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "cosmo-principle",
+      "name": "Cosmological principle validity",
+      "field": "cosmology",
+      "summary": "Is the universe homogeneous and isotropic on large scales? Is FLRW the right metric? Is CMB dipole purely kinematic?",
+      "why_hard": "Requires all-sky deep surveys free of systematics."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "extra-dimensions",
+        "string-theory",
+        "collider"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "extra-dimensions",
+      "name": "Extra dimensions",
+      "field": "particle-physics",
+      "summary": "Does nature have more than 4 spacetime dimensions? What size? Fundamental or emergent?",
+      "why_hard": "No experimental signal; vast model space."
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "large-scale-structure",
+        "anomaly"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "dark-flow",
+      "name": "Dark flow",
+      "field": "cosmology",
+      "summary": "Is there a bulk flow of galaxy clusters from gravitational pull outside the observable universe?",
+      "why_hard": "Observationally disputed; needs better peculiar-velocity data."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "Could be stellar depletion or nuclear/astrophysics systematics\u2014analysis-heavy.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "bbn",
+        "lithium",
+        "stellar-astrophysics"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "lithium-problem",
+      "name": "Cosmological lithium problem",
+      "field": "cosmology",
+      "summary": "Why does Big Bang nucleosynthesis overpredict 7Li relative to old stars?",
+      "why_hard": "Tension between nuclear theory, stellar atmospheres, and observations."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "naturalness",
+        "hierarchy",
+        "bsm"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000"
+      ],
+      "related": [
+        "susy",
+        "extra-dimensions"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "hierarchy",
+      "name": "Hierarchy problem",
+      "field": "particle-physics",
+      "summary": "Why is gravity so weak compared to other forces / why is the electroweak scale far below the Planck scale?",
+      "why_hard": "Naturalness arguments failed at LHC so far; may need new philosophy of theory choice."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "Theory space mappable by AI; existence of axions is experimental.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "qcd",
+        "cp",
+        "axion",
+        "dark-matter"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [
+        "dark-matter"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "strong-cp",
+      "name": "Strong CP problem",
+      "field": "particle-physics",
+      "summary": "Why is the QCD \u03b8 angle so tiny? Is Peccei\u2013Quinn / axion the solution?",
+      "why_hard": "Fine-tuning without new symmetry; axion searches ongoing."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "neutrinos",
+        "majorana",
+        "oscillations"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "snowmass"
+      ],
+      "related": [
+        "baryogenesis",
+        "reactor-anomaly"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "neutrino-mass",
+      "name": "Neutrino masses and nature",
+      "field": "particle-physics",
+      "summary": "Absolute neutrino mass scale? Dirac or Majorana? Normal or inverted hierarchy? CP phase? Sterile neutrinos?",
+      "why_hard": "Requires \u03b2-decay, 0\u03bd\u03b2\u03b2, oscillation, and cosmology experiments."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "flavor",
+        "yukawa",
+        "generations"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "generations",
+      "name": "Three generations of matter",
+      "field": "particle-physics",
+      "summary": "Why three generations of quarks and leptons? Can Yukawa couplings be derived from first principles?",
+      "why_hard": "Flavor structure appears arbitrary; many models, few decisive tests."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "Pattern discovery + model search; may be coincidence.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "flavor",
+        "numerology",
+        "leptons"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "koide",
+      "name": "Koide formula",
+      "field": "particle-physics",
+      "summary": "Why does a simple relation among charged lepton masses hold to high precision (Q\u22482/3)?",
+      "why_hard": "Could be accident; no accepted dynamical origin."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "none",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "gut",
+        "proton-decay",
+        "baryon-number"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "proton-decay",
+      "name": "Proton decay",
+      "field": "particle-physics",
+      "summary": "Is the proton stable? If not, what is its lifetime and decay modes (GUT predictions)?",
+      "why_hard": "Lifetimes >10^34 yr; needs megaton-scale detectors over decades."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "gut",
+        "unification"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "gut",
+      "name": "Grand unification",
+      "field": "particle-physics",
+      "summary": "Do EM, weak, and strong forces unify at high energy? Under what symmetry?",
+      "why_hard": "Needs proton decay or other smoking-gun signals near GUT scale."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "susy",
+        "bsm",
+        "dark-matter"
+      ],
+      "sources": [
+        "wikipedia",
+        "strings2000"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "susy",
+      "name": "Supersymmetry realization",
+      "field": "particle-physics",
+      "summary": "Is spacetime supersymmetry realized near the TeV scale? How is it broken? Is the LSP dark matter?",
+      "why_hard": "No LHC discovery of superpartners so far; parameter space vast."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "none",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "monopoles",
+        "topology",
+        "early-universe"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "monopoles",
+      "name": "Magnetic monopoles",
+      "field": "particle-physics",
+      "summary": "Did magnetic monopoles exist in the early universe? Do any remain? Do they explain charge quantization?",
+      "why_hard": "Extremely rare if any; searches null so far."
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "Hadronic vacuum polarization theory (lattice/dispersive) is AI-accelerable; experiment continues.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "muon",
+        "precision",
+        "bsm",
+        "anomaly"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "muon-g2",
+      "name": "Muon anomalous magnetic moment",
+      "field": "particle-physics",
+      "summary": "Why does the experimental muon g\u22122 differ from some Standard Model predictions?",
+      "why_hard": "Tension may be theory systematics or new physics\u2014needs both better SM theory and data."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Classic systematics + nuclear theory reconciliation problem.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "neutron",
+        "anomaly",
+        "nuclear"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "neutron-lifetime",
+      "name": "Neutron lifetime puzzle",
+      "field": "particle-physics",
+      "summary": "Why do bottle and beam measurements of the free neutron lifetime disagree?",
+      "why_hard": "Subtle experimental systematics vs possible new physics."
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Nuclear data + flux models; sterile neutrino hypothesis testable.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "neutrinos",
+        "reactor",
+        "sterile"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "reactor-anomaly",
+      "name": "Reactor antineutrino anomaly",
+      "field": "particle-physics",
+      "summary": "Why is measured reactor antineutrino flux ~6% below some predictions?",
+      "why_hard": "Nuclear data uncertainties vs sterile neutrinos."
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Analysis and nuclear physics heavy.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "neutrinos",
+        "anomaly"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "gallium-anomaly",
+      "name": "Gallium anomaly",
+      "field": "particle-physics",
+      "summary": "Why do gallium solar-neutrino calibration source experiments see a deficit?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Global QCD analyses + lattice; data-driven.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "qcd",
+        "spin",
+        "nucleon-structure"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "proton-spin",
+      "name": "Proton spin crisis",
+      "field": "particle-physics",
+      "summary": "How do quarks and gluons fully account for the proton's spin?",
+      "why_hard": "Nonperturbative QCD structure of nucleons."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Spectroscopy + lattice + amplitude analysis.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "qcd",
+        "hadrons",
+        "spectroscopy"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "exotic-hadrons",
+      "name": "Exotic hadrons structure",
+      "field": "particle-physics",
+      "summary": "What combinations of quarks exist (pentaquarks, tetraquarks)? Tightly bound multiquarks or molecules?",
+      "why_hard": "Many states; ambiguous binding mechanisms."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "qcd",
+        "glueballs"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "glueballs",
+      "name": "Glueballs",
+      "field": "particle-physics",
+      "summary": "Do pure-glue bound states (glueballs) exist in nature, and which observed mesons are they?",
+      "why_hard": "Mix with ordinary mesons; hard experimental ID."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "qcd",
+        "compact-stars",
+        "strange-matter"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "strange-matter",
+      "name": "Strange matter stability",
+      "field": "nuclear-physics",
+      "summary": "Does strange quark matter exist? Is it stable at zero pressure? Strange stars?",
+      "why_hard": "Nonperturbative QCD equation of state uncertainties."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "qcd",
+        "nuclei",
+        "nonperturbative"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "qcd-vacuum",
+      "name": "QCD vacuum and nuclear complexity",
+      "field": "nuclear-physics",
+      "summary": "How does nonperturbative QCD produce complex nuclei and nuclear structure from quarks and gluons?",
+      "why_hard": "Multi-scale many-body problem from QCD to nuclei."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "susy",
+        "naturalness"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "mu-problem",
+      "name": "\u03bc problem in SUSY",
+      "field": "particle-physics",
+      "summary": "Why is the supersymmetric \u03bc parameter of the electroweak scale rather than Planck scale?",
+      "why_hard": "Model-building within SUSY frameworks; depends on SUSY existing."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Solar data + MHD/kinetic models; AI-assisted reconnection theory.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "sun",
+        "plasma",
+        "reconnection"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "coronal-heating",
+      "name": "Solar coronal heating problem",
+      "field": "astrophysics",
+      "summary": "Why is the Sun's corona much hotter than its surface? Why is magnetic reconnection so fast?",
+      "why_hard": "Multi-scale plasma physics from photosphere to corona."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Nonlinear dynamo theory + long solar records.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "dynamo",
+        "sun",
+        "magnetism"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "solar-cycle",
+      "name": "Solar cycle and dynamos",
+      "field": "astrophysics",
+      "summary": "How does the Sun generate its reversing large-scale magnetic field? What causes grand minima like Maunder?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "GRMHD + ML pattern discovery in timing data.",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "jets",
+        "accretion",
+        "black-holes"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "astrophysical-jets",
+      "name": "Astrophysical jets and QPOs",
+      "field": "astrophysics",
+      "summary": "Why do some accretion disks launch relativistic jets? What sets QPO frequencies and overtones?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Classic spectral matching + molecular database search\u2014excellent AI target.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "ism",
+        "spectroscopy",
+        "astrochemistry"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "dibs",
+      "name": "Diffuse interstellar bands",
+      "field": "astrophysics",
+      "summary": "What molecules or materials cause the numerous unidentified interstellar absorption bands?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "black-holes",
+        "galaxies",
+        "jwst"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "smbh-seeds",
+      "name": "Supermassive black hole origins",
+      "field": "astrophysics",
+      "summary": "How did early quasars grow SMBHs to ~10^10 M\u2609 so quickly? Origin of M\u2013\u03c3 relation?",
+      "why_hard": "Needs early-universe growth channels constrained by deep surveys."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "N-body Solar System formation simulations.",
+      "difficulty": 2,
+      "impact": 2,
+      "tags": [
+        "solar-system",
+        "dynamics"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "kuiper-cliff",
+      "name": "Kuiper cliff",
+      "field": "astrophysics",
+      "summary": "Why does Kuiper belt object density drop sharply beyond ~50 AU?"
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Likely systematics; trajectory reanalysis.",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "anomaly",
+        "spacecraft",
+        "gravity"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "flyby-anomaly",
+      "name": "Flyby anomaly",
+      "field": "astrophysics",
+      "summary": "Why do some Earth flybys show tiny unexpected energy changes?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "dark-matter",
+        "mond",
+        "galaxies"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [
+        "dark-matter"
+      ],
+      "year_listed": null,
+      "notes": "",
+      "id": "galaxy-rotation",
+      "name": "Galaxy rotation problem",
+      "field": "astrophysics",
+      "summary": "Are flat rotation curves due to dark matter, modified gravity, or both?",
+      "why_hard": "Entangled with DM identity; multi-probe tests needed."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Multi-physics simulation + AI surrogates; converging but not closed.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "supernovae",
+        "neutrinos",
+        "simulation"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "supernova-mechanism",
+      "name": "Core-collapse supernova mechanism",
+      "field": "astrophysics",
+      "summary": "What exact mechanism turns stellar core collapse into a successful explosion?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Reaction networks + stellar models.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "nucleosynthesis",
+        "nuclear-astrophysics"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "p-nuclei",
+      "name": "Origin of p-nuclei",
+      "field": "astrophysics",
+      "summary": "What astrophysical process produces rare proton-rich isotopes (p-nuclei)?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "cosmic-rays",
+        "astroparticle"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "uhecr",
+      "name": "Ultra-high-energy cosmic rays",
+      "field": "astrophysics",
+      "summary": "What sources accelerate particles above the GZK limit region, and how?",
+      "why_hard": "Rare events; composition and source ID incomplete."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "planets",
+        "saturn"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "Some related spin discrepancies resolved via gravity field; residual questions remain.",
+      "id": "saturn-rotation",
+      "name": "Saturn deep rotation rate",
+      "field": "astrophysics",
+      "summary": "What is the true rotation rate of Saturn's deep interior given magnetospheric period puzzles?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "neutron-stars",
+        "magnetism"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "magnetar-fields",
+      "name": "Magnetar magnetic field origin",
+      "field": "astrophysics",
+      "summary": "What is the origin of magnetars' extreme magnetic fields?"
+    },
+    {
+      "status": "controversially open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "anisotropy",
+        "cmb",
+        "cosmology"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "large-scale-anisotropy",
+      "name": "Large-scale cosmic anisotropy",
+      "field": "cosmology",
+      "summary": "Do radio/CMB/quasar polarization anomalies indicate large-scale anisotropy violating the cosmological principle?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "x-ray",
+        "compact-objects"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "ulx",
+      "name": "Ultraluminous X-ray sources",
+      "field": "astrophysics",
+      "summary": "What powers ULXs exceeding Eddington limits\u2014IMBHs, beamed neutron stars, or both?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "Model ranking against multiwavelength catalogs; confirmation observational.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "frb",
+        "transients",
+        "radio"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "frb",
+      "name": "Fast radio bursts",
+      "field": "astrophysics",
+      "summary": "What causes millisecond radio bursts from distant galaxies? Why do some repeat?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "magnetism",
+        "cosmology",
+        "dynamo"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "cosmic-b-fields",
+      "name": "Origin of cosmic magnetic fields",
+      "field": "astrophysics",
+      "summary": "How were large-scale magnetic fields generated from galaxies to clusters?",
+      "why_hard": "Primordial seed vs dynamo amplification hard to disentangle uniquely."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Survey data + chemical evolution models.",
+      "difficulty": 2,
+      "impact": 2,
+      "tags": [
+        "milky-way",
+        "chemical-evolution"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "age-metallicity",
+      "name": "Galactic age\u2013metallicity relation",
+      "field": "astrophysics",
+      "summary": "Is there a universal age\u2013metallicity relation in thin/thick Galactic disks?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "Heavy-ion data analysis + hydro/transport models.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "qgp",
+        "heavy-ion",
+        "qcd"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "qgp-onset",
+      "name": "Quark\u2013gluon plasma onset and properties",
+      "field": "nuclear-physics",
+      "summary": "Where is deconfinement onset in T\u2013\u03bc space? Why ideal flow? Flavor equilibration? Perfect statistical hadronization?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "nuclear-force",
+        "eft",
+        "qcd"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "nuclear-force",
+      "name": "Nature of the nuclear force from QCD",
+      "field": "nuclear-physics",
+      "summary": "What is the precise nature of the nuclear force binding nuclei, rooted in QCD?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Nuclear PDF phenomenology + short-range correlations.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "nuclear",
+        "pdf",
+        "qcd"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "emc-effect",
+      "name": "EMC effect",
+      "field": "nuclear-physics",
+      "summary": "Why do quark distributions in bound nucleons differ from free nucleons?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "neutron-stars",
+        "eos",
+        "multimessenger"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "neutron-stars-eos",
+      "name": "Neutron star dense matter EOS",
+      "field": "nuclear-physics",
+      "summary": "What is the equation of state of ultra-dense nuclear matter in neutron stars?",
+      "why_hard": "Needs multimessenger GW + X-ray + nuclear theory."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "superheavy",
+        "nuclear-structure"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "heaviest-element",
+      "name": "Heaviest possible chemical element",
+      "field": "nuclear-physics",
+      "summary": "What is the heaviest element that can exist (island of stability limits)?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "qcd",
+        "saturation",
+        "eic"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "cgc",
+      "name": "Color glass condensate / gluon saturation",
+      "field": "nuclear-physics",
+      "summary": "Do gluons saturate into a color glass condensate? What are decisive experimental signatures?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Huge data; theory model selection + materials AI; mechanism still debated.",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "superconductivity",
+        "cuprates",
+        "strongly-correlated"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "high-tc",
+      "name": "High-temperature superconductivity mechanism",
+      "field": "condensed-matter",
+      "summary": "What mechanism causes high-Tc superconductivity in cuprates and related materials? Is room-temperature ambient SC possible?",
+      "why_hard": "Strong correlations; many competing orders; materials complexity."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Conceptual + computational stat-mech; major AI theory target.",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "glass",
+        "amorphous",
+        "statistical-mechanics"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "glass-transition",
+      "name": "Glass transition",
+      "field": "condensed-matter",
+      "summary": "What is the nature of the glass transition and universal properties of amorphous solids?",
+      "why_hard": "No consensus thermodynamic vs kinetic theory of the transition."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "glass",
+        "phonons",
+        "universality"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "amorphous-universality",
+      "name": "Low-T amorphous solid universality",
+      "field": "condensed-matter",
+      "summary": "Why is the phonon wavelength to mean-free-path ratio nearly universal across disordered solids?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Focused condensed-matter theory + numerics.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "fqhe",
+        "anyons",
+        "topological"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "fqhe-5-2",
+      "name": "Fractional quantum Hall \u03bd=5/2 state",
+      "field": "condensed-matter",
+      "summary": "What is the mechanism of the 5/2 FQHE state? Non-Abelian anyons?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Theory + numerics of topological codes.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "topological-order",
+        "quantum-memory"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "topological-order-T",
+      "name": "Topological order at finite temperature",
+      "field": "condensed-matter",
+      "summary": "Is topological order stable at T>0? Can 3D self-correcting quantum memory exist?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Likely closeable with careful multi-physics modeling.",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "sonoluminescence",
+        "plasma",
+        "bubbles"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "sonoluminescence",
+      "name": "Sonoluminescence mechanism",
+      "field": "condensed-matter",
+      "summary": "What causes light flashes from sound-driven imploding bubbles?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Materials multi-scale simulation problem.",
+      "difficulty": 2,
+      "impact": 2,
+      "tags": [
+        "materials",
+        "reliability"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "metal-whiskering",
+      "name": "Metal whiskering",
+      "field": "condensed-matter",
+      "summary": "What is the growth mechanism of spontaneous metal whiskers causing electronics failures?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 1,
+      "impact": 1,
+      "tags": [
+        "surfaces",
+        "adhesion",
+        "metrology"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "gauge-block-wringing",
+      "name": "Gauge block wringing",
+      "field": "condensed-matter",
+      "summary": "What mechanism allows precision gauge blocks to wring together?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "RG + finite-size effects reconciliation.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "critical-phenomena",
+        "superfluid",
+        "helium"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "he4-critical-exponent",
+      "name": "Helium-4 superfluid critical exponent \u03b1",
+      "field": "condensed-matter",
+      "summary": "Explain discrepancy between experimental and theoretical heat-capacity critical exponent \u03b1 near the lambda point."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "materials",
+        "detectors"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "cryogenic-electron-emission",
+      "name": "Cryogenic electron emission anomaly",
+      "field": "condensed-matter",
+      "summary": "Why does dark electron emission in photomultipliers increase as temperature decreases?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "nanocrystals",
+        "semiconductors"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "quantum-dots-nonparabolicity",
+      "name": "Quantum-dot energy-size nonparabolicity",
+      "field": "condensed-matter",
+      "summary": "What causes nonparabolicity of the lowest optical absorption vs size in semiconductor nanocrystals?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "liquid-crystals",
+        "critical-phenomena"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "nematic-smectic",
+      "name": "Nematic\u2013smectic-A transition universality",
+      "field": "condensed-matter",
+      "summary": "Can the nematic to smectic-A transition be characterized as a universal phase transition?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Theoretical consistency clarification; no causality violation expected in practice.",
+      "difficulty": 2,
+      "impact": 1,
+      "tags": [
+        "qed",
+        "casimir",
+        "foundations"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "scharnhorst",
+      "name": "Scharnhorst effect",
+      "field": "condensed-matter",
+      "summary": "Can light travel slightly faster than c between closely spaced conducting plates via Casimir vacuum modification?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Soft-matter simulation + theory; much progress already.",
+      "difficulty": 2,
+      "impact": 2,
+      "tags": [
+        "granular",
+        "soft-matter"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "granular-convection",
+      "name": "Granular convection / Brazil-nut effect",
+      "field": "fluid-dynamics",
+      "summary": "Why do shaken granular materials convect and size-segregate?"
+    },
+    {
+      "status": "open",
+      "kind": "engineering",
+      "ai_tractability": "medium",
+      "ai_notes": "AI helps codes/control; hardware still rules.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "quantum-computing",
+        "error-correction",
+        "nisq"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "ftqc-threshold",
+      "name": "Fault-tolerant quantum computing scalability",
+      "field": "quantum-information",
+      "summary": "Can we go beyond NISQ to fault-tolerant scalable quantum computers with practical error correction?",
+      "why_hard": "Requires qubit quality, scale, and systems engineering."
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "majorana",
+        "topological-qc"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "topological-qubits",
+      "name": "Topological qubits / Majorana modes",
+      "field": "quantum-information",
+      "summary": "Can topological quantum computers be built? Can Majorana zero modes be demonstrated conclusively?",
+      "why_hard": "Fabrication + unambiguous experimental signatures."
+    },
+    {
+      "status": "open",
+      "kind": "engineering",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "quantum-computing",
+        "materials"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "room-temp-qc",
+      "name": "Non-cryogenic quantum computing",
+      "field": "quantum-information",
+      "summary": "Can useful quantum computing operate at non-cryogenic / room temperature?"
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Complexity theory; formal methods friendly.",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "complexity",
+        "bqp",
+        "quantum-info"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "bqp-complexity",
+      "name": "BQP vs BPP / NP relations",
+      "field": "quantum-information",
+      "summary": "What is the precise relation of BQP to classical complexity classes? Can physical computation exceed BQP?"
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Formal security reductions; high AI leverage.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "cryptography",
+        "pqc",
+        "security"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "pqc-security",
+      "name": "Post-quantum cryptography proofs",
+      "field": "quantum-information",
+      "summary": "Can we prove that specific cryptographic protocols remain secure against quantum adversaries?"
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Quantum information theory math.",
+      "difficulty": 4,
+      "impact": 3,
+      "tags": [
+        "quantum-info",
+        "capacity"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "quantum-capacity",
+      "name": "Quantum channel capacity",
+      "field": "quantum-information",
+      "summary": "What is the quantum capacity of general quantum channels (often unknown in closed form)?"
+    },
+    {
+      "status": "open",
+      "kind": "engineering",
+      "ai_tractability": "medium",
+      "ai_notes": "Theory+control AI helps; multi-billion experiments decide.",
+      "difficulty": 4,
+      "impact": 5,
+      "tags": [
+        "fusion",
+        "tokamak",
+        "h-mode"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "fusion-confinement",
+      "name": "Fusion plasma confinement / H-mode",
+      "field": "plasma-physics",
+      "summary": "Can plasmas be confined long enough and hot enough for practical fusion power? What is the physical origin of H-mode?",
+      "why_hard": "Turbulence, stability, materials, and systems integration."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "cosmic-rays",
+        "shocks",
+        "plasma"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "fermi-injection",
+      "name": "Fermi acceleration injection problem",
+      "field": "plasma-physics",
+      "summary": "What pre-accelerates particles enough for Fermi acceleration to take over in astrophysical shocks?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Data-rich space plasma statistics.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "turbulence",
+        "solar-wind",
+        "mhd"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "alfvenic-turbulence",
+      "name": "Alfv\u00e9nic turbulence",
+      "field": "plasma-physics",
+      "summary": "How does MHD/Alfv\u00e9nic turbulence work in solar wind, flares, CMEs, and substorms?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 1,
+      "tags": [
+        "atmospheric",
+        "plasma",
+        "anomaly"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "ball-lightning",
+      "name": "Ball lightning",
+      "field": "plasma-physics",
+      "summary": "What is the physical nature of ball lightning?",
+      "why_hard": "Rare, poorly documented events; many candidate mechanisms."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "origin-of-life",
+        "chemistry"
+      ],
+      "sources": [
+        "wikipedia",
+        "ginzburg"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "Ginzburg listed life from physics as a 'great problem'.",
+      "id": "abiogenesis",
+      "name": "Abiogenesis",
+      "field": "biophysics",
+      "summary": "Can life arise from purely physical/chemical processes? What pathway produced life on Earth?",
+      "why_hard": "Historical path underdetermined; vast chemical space."
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Kinetic/symmetry-breaking models.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "chirality",
+        "origin-of-life"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "homochirality",
+      "name": "Homochirality origin",
+      "field": "biophysics",
+      "summary": "Why do biomolecules prefer specific enantiomers?"
+    },
+    {
+      "status": "open",
+      "kind": "experimental",
+      "ai_tractability": "high",
+      "ai_notes": "Radical-pair vs other models; biophysics theory + experiments.",
+      "difficulty": 3,
+      "impact": 2,
+      "tags": [
+        "quantum-biology",
+        "sensory",
+        "radical-pair"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "magnetoreception",
+      "name": "Magnetoreception mechanism",
+      "field": "biophysics",
+      "summary": "How do animals (e.g. migratory birds) sense Earth's magnetic field?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "systems-biology",
+        "stochastic",
+        "development"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "gene-noise",
+      "name": "Gene expression noise and developmental robustness",
+      "field": "biophysics",
+      "summary": "How do genetic networks remain robust under external pressure and internal stochasticity, especially in development?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "immunology",
+        "networks"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "immune-networks",
+      "name": "Quantitative immune system networks",
+      "field": "biophysics",
+      "summary": "What are quantitative building blocks and network properties of immune responses?"
+    },
+    {
+      "status": "partially solved",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Structure prediction largely advanced by AlphaFold-class models; kinetic/thermodynamic physics still open.",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "protein-folding",
+        "statistical-mechanics"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "Wikipedia still lists structure prediction; ML largely solved prediction for many proteins.",
+      "id": "protein-folding-physics",
+      "name": "Protein folding physics (beyond structure prediction)",
+      "field": "biophysics",
+      "summary": "How do proteins fold so fast? Are native states global free-energy minima? How do cells avoid precipitation at high density?"
+    },
+    {
+      "status": "open",
+      "kind": "theoretical",
+      "ai_tractability": "high",
+      "ai_notes": "Rigorous model audit of claims is AI-friendly.",
+      "difficulty": 3,
+      "impact": 3,
+      "tags": [
+        "quantum-biology",
+        "coherence"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "quantum-biology",
+      "name": "Quantum biology functional coherence",
+      "field": "biophysics",
+      "summary": "Can quantum coherence persist long enough to be functionally important in warm, wet biology?"
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 4,
+      "tags": [
+        "theoretical-biology",
+        "emergence"
+      ],
+      "sources": [
+        "wikipedia",
+        "darpa"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "biology-from-physics",
+      "name": "Biology from fundamental physical laws",
+      "field": "biophysics",
+      "summary": "Can biology be expressed via fundamental laws, action principles, and symmetries (robustness, modularity, evolvability)?",
+      "why_hard": "Enormous hierarchical complexity; unclear if unique reduction exists."
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "quantum-foundations",
+        "measurement",
+        "interpretations"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "ginzburg"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "Ginzburg 'great problem'.",
+      "id": "qm-interpretation",
+      "name": "Interpretation of quantum mechanics / measurement problem",
+      "field": "foundations",
+      "summary": "How does the quantum formalism give rise to definite outcomes? What is a measurement? Which of locality/causality/realism must be sacrificed?",
+      "why_hard": "Multiple empirically equivalent interpretations; may not have unique scientific answer."
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 5,
+      "tags": [
+        "time",
+        "entropy",
+        "cosmology"
+      ],
+      "sources": [
+        "wikipedia",
+        "baez",
+        "ginzburg"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "Ginzburg 'great problem'.",
+      "id": "arrow-of-time",
+      "name": "Arrow of time",
+      "field": "foundations",
+      "summary": "Why does time have a direction? Why was the early universe low entropy? How do thermodynamic, cosmological, and quantum arrows relate?",
+      "why_hard": "Tied to cosmological initial conditions; deep and possibly anthropic."
+    },
+    {
+      "status": "open",
+      "kind": "foundations",
+      "ai_tractability": "medium",
+      "ai_notes": "",
+      "difficulty": 4,
+      "impact": 4,
+      "tags": [
+        "locality",
+        "bell",
+        "entanglement"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "locality",
+      "name": "Nature of quantum non-locality",
+      "field": "foundations",
+      "summary": "Are non-local phenomena limited to Bell entanglement, or can information/conserved quantities move non-locally? Implications for spacetime structure?",
+      "why_hard": "Constrained by no-signaling but conceptually unsettled."
+    },
+    {
+      "status": "controversially open",
+      "kind": "foundations",
+      "ai_tractability": "low",
+      "ai_notes": "",
+      "difficulty": 5,
+      "impact": 3,
+      "tags": [
+        "consciousness",
+        "speculation",
+        "neuroscience"
+      ],
+      "sources": [
+        "wikipedia"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "quantum-mind",
+      "name": "Quantum mind",
+      "field": "foundations",
+      "summary": "Do quantum phenomena play an essential role in brain function and consciousness?",
+      "why_hard": "Highly speculative; lacks decisive experimental support."
+    },
+    {
+      "status": "open",
+      "kind": "mathematical",
+      "ai_tractability": "high",
+      "ai_notes": "Deep math; formal AI systems may help bridges.",
+      "difficulty": 5,
+      "impact": 3,
+      "tags": [
+        "langlands",
+        "mathematical-physics",
+        "gauge-theory"
+      ],
+      "sources": [
+        "wikipedia",
+        "darpa"
+      ],
+      "related": [],
+      "year_listed": null,
+      "notes": "",
+      "id": "geometric-langlands-physics",
+      "name": "Geometric Langlands and physics",
+      "field": "mathematical-physics",
+      "summary": "Can the Langlands program explain physical symmetries and vice versa?"
+    }
+  ],
+  "recently_solved": [
+    {
+      "id": "higgs",
+      "name": "Higgs boson / electroweak symmetry breaking",
+      "year_solved": 2012,
+      "notes": "LHC discovery"
+    },
+    {
+      "id": "gw",
+      "name": "Gravitational waves direct detection",
+      "year_solved": 2015,
+      "notes": "LIGO GW150914"
+    },
+    {
+      "id": "neutrino-osc",
+      "name": "Solar neutrino problem / neutrino oscillations",
+      "year_solved": 2001,
+      "notes": "SNO and others"
+    },
+    {
+      "id": "short-grb",
+      "name": "Short gamma-ray burst origin",
+      "year_solved": 2017,
+      "notes": "GW170817 + GRB 170817A"
+    },
+    {
+      "id": "missing-baryons",
+      "name": "Missing baryon problem",
+      "year_solved": 2017,
+      "notes": "Hot intergalactic gas"
+    },
+    {
+      "id": "loophole-free-bell",
+      "name": "Loophole-free Bell tests",
+      "year_solved": 2015,
+      "notes": "Local hidden variables ruled out at high confidence"
+    },
+    {
+      "id": "qgp-discovery",
+      "name": "Quark-gluon plasma creation",
+      "year_solved": 2005,
+      "notes": "RHIC/LHC; properties still studied"
+    },
+    {
+      "id": "pioneer-anomaly",
+      "name": "Pioneer anomaly",
+      "year_solved": 2012,
+      "notes": "Thermal recoil force"
+    },
+    {
+      "id": "ftl-neutrinos",
+      "name": "OPERA faster-than-light neutrinos",
+      "year_solved": 2012,
+      "notes": "Experimental error"
+    },
+    {
+      "id": "time-crystals",
+      "name": "Time crystals existence",
+      "year_solved": 2016,
+      "notes": "Driven quantum systems"
+    },
+    {
+      "id": "proton-radius",
+      "name": "Proton radius puzzle (largely)",
+      "year_solved": 2022,
+      "notes": "Consensus toward smaller radius"
+    }
+  ]
+}
