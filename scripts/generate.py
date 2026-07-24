@@ -74,6 +74,22 @@ def main() -> None:
         meta["counts"]["by_agentic_10day"] = dict(
             Counter((p.get("agentic_10day") or {}).get("score", "unset") for p in problems)
         )
+    if any("epistemology" in p for p in problems):
+        meta["counts"]["by_culture"] = dict(
+            Counter((p.get("epistemology") or {}).get("culture", "unset") for p in problems)
+        )
+        meta["counts"]["by_refutability"] = dict(
+            Counter((p.get("epistemology") or {}).get("refutability", "unset") for p in problems)
+        )
+        meta["counts"]["by_publish_now"] = dict(
+            Counter((p.get("epistemology") or {}).get("publish_now", "unset") for p in problems)
+        )
+        meta["counts"]["by_closure_rung"] = {
+            str(k): v
+            for k, v in sorted(
+                Counter((p.get("epistemology") or {}).get("closure_rung", -1) for p in problems).items()
+            )
+        }
     cat["meta"] = meta
     DATA.write_text(json.dumps(cat, indent=2) + "\n")
 

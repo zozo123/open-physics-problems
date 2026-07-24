@@ -82,6 +82,25 @@ Subjective curator scores for prioritization — **not** objective metrics.
 | `partially solved` | Major piece closed; core physics remains |
 | `controversially open` | Disputed whether a real anomaly remains |
 
+## Epistemology (open math → open physics)
+
+Every problem has an `epistemology` object (see `maps/open-math-to-physics.md`).
+
+| Field | Values / meaning |
+|-------|------------------|
+| `culture` | `open-math-like` · `polymath-data` · `program` · `discovery` · `foundations` |
+| `refutability` | `formal` · `hard` · `soft` · `gated` · `underdetermined` |
+| `closure_rung` | 0 map → 5 theorem (target rung for a “full” solve) |
+| `possibility` | `mathematical` · `empirical-fact` · `theoretical` · `technological` · `maybe-unique` |
+| `nature_vote` | whether experiment must decide |
+| `weak_win` / `strong_win` | publication-grade partial vs true closure |
+| `publish_shape` | what kind of paper moves status |
+| `open_math_parallel` | closest math-culture analogue |
+| `publish_now` | `yes-scoped` · `partial` · `program-papers` · `theory-only` · `clarify-only` |
+| `agent_publishable` | can agents produce a citable scoped artifact now? |
+
+**Inspiration:** Millennium statements, Polymath, Lean formalization, crypto proof culture — ported so physics “solves” are artifacts with kill conditions, not vibes.
+
 ## Generation pipeline
 
 ```

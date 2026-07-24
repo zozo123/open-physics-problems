@@ -93,6 +93,35 @@
         "multi-sprint": 48,
         "sprint": 13,
         "stretch": 15
+      },
+      "by_culture": {
+        "foundations": 11,
+        "program": 52,
+        "discovery": 18,
+        "open-math-like": 10,
+        "polymath-data": 21
+      },
+      "by_refutability": {
+        "underdetermined": 11,
+        "soft": 52,
+        "gated": 18,
+        "formal": 10,
+        "hard": 21
+      },
+      "by_publish_now": {
+        "clarify-only": 22,
+        "program-papers": 44,
+        "theory-only": 18,
+        "yes-scoped": 13,
+        "partial": 15
+      },
+      "by_closure_rung": {
+        "0": 10,
+        "1": 2,
+        "2": 36,
+        "3": 35,
+        "4": 20,
+        "5": 9
       }
     },
     "agentic_10day_rubric": {
@@ -115,6 +144,39 @@
         "Claiming TOE/QG/Clay prizes",
         "Hallucinated experimental results"
       ]
+    },
+    "open_math_to_physics": {
+      "title": "From open math publications to open physics publications",
+      "inspiration": [
+        "Millennium Prize Problems \u2014 fixed formal statement, prize for proof",
+        "arXiv + peer review as the acceptance machine for math solves",
+        "Lean/Isabelle formalization wave (Mathlib, major theorem formalizations)",
+        "Polymath collaborative attacks on hard conjectures",
+        "OEIS and classification culture for naming objects",
+        "Crypto/complexity: proofs and reductions as the product",
+        "Public error-finding and proof repair as first-class contributions"
+      ],
+      "core_transfer": "A 'solve' is a publication-grade artifact with a pre-registered claim and a kill condition \u2014 not a vibe.",
+      "what_transfers": [
+        "Pre-registered success criteria (= the conjecture statement)",
+        "Public artifacts (code, notebooks, proofs) over screenshots",
+        "Partial credit: lemmas, barriers, kill-lists, audits",
+        "Agent+human Polymath-style sprints",
+        "Status boards that move when literature closes a gap"
+      ],
+      "what_does_not_transfer": [
+        "Nature often must vote \u2014 no pure proof of dark-matter identity",
+        "Many physics items are research programs, not single conjectures",
+        "Foundations may be underdetermined (CH-like)",
+        "Engineering needs devices, not only papers"
+      ],
+      "cultures": {
+        "open-math-like": "Theorem on a fixed mathematical-physics claim",
+        "polymath-data": "Reproducible reanalysis/shortlist/audit on public data",
+        "program": "Mechanism programs; multi-paper convergence",
+        "discovery": "Experimental witness; agents help theory only",
+        "foundations": "Constraint maps; refuse unique false trophies"
+      }
     }
   },
   "problems": [
@@ -153,6 +215,22 @@
         "harness": [],
         "why": "TOE.",
         "viral_hook": "If your agent claims TOE in 10 days, it's lying."
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "constraint list any TOE must satisfy",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "constraints and no-gos",
+        "strong_win": "unique framework \u2014 may be ill-posed",
+        "open_math_parallel": "Not a single conjecture statement",
+        "culture": "foundations",
+        "citation_ready": false,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -191,6 +269,22 @@
         "harness": [],
         "why": "No accepted principle selects observed values; may require multiverse/anthropic reasoning or a TOE.",
         "viral_hook": "Dimensionless physical constants"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "taxonomy / measure / anthropic analysis",
+        "math_analogue": "independence-like: may lack unique derivation",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "constraint maps and model taxonomies",
+        "strong_win": "unique derivation \u2014 not guaranteed to exist",
+        "open_math_parallel": "Continuum hypothesis vibe: answer may be 'no unique answer from axioms'",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -223,6 +317,22 @@
         "harness": [],
         "why": "Blurs physics and philosophy; hard to falsify cleanly.",
         "viral_hook": "Anthropic principle necessity"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "taxonomy / measure / anthropic analysis",
+        "math_analogue": "independence-like: may lack unique derivation",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "constraint maps and model taxonomies",
+        "strong_win": "unique derivation \u2014 not guaranteed to exist",
+        "open_math_parallel": "Continuum hypothesis vibe: answer may be 'no unique answer from axioms'",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -262,6 +372,22 @@
         "harness": [],
         "why": "Planck-scale.",
         "viral_hook": "Not a sprint. A century."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -304,6 +430,22 @@
         ],
         "why": "Theoretical progress possible as synthesis.",
         "viral_hook": "Where does information go when black holes die?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "paradox resolution with calculational control",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "map islands/holography consensus vs gaps",
+        "strong_win": "community-standard resolution",
+        "open_math_parallel": "Resolve paradox by new precise definitions",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -337,6 +479,23 @@
         "harness": [],
         "why": "Astrophysical Hawking temperatures are tiny; relies on analogues or future precision.",
         "viral_hook": "Hawking radiation confirmation"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -373,6 +532,22 @@
         "harness": [],
         "why": "Global nonlinear PDE analysis of Einstein equations under generic conditions.",
         "viral_hook": "Cosmic censorship hypothesis"
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "theorem for precise GR formulation",
+        "math_analogue": "Penrose conjecture",
+        "acceptance_path": "peer review + (ideally) formalization",
+        "agent_publishable": true,
+        "weak_win": "status of counterexamples vs generic form",
+        "strong_win": "Proof of community-standard formulation",
+        "open_math_parallel": "Geometric analysis conjecture culture",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -405,6 +580,22 @@
         "harness": [],
         "why": "Requires a complete quantum gravity theory of realistic spacetimes.",
         "viral_hook": "Chronology protection conjecture"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -437,6 +628,22 @@
         "harness": [],
         "why": "Best understood only in AdS; our universe is approximately de Sitter.",
         "viral_hook": "Holographic principle (general)"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -469,6 +676,22 @@
         "harness": [],
         "why": "No complete derivation of 4D classical GR dynamics from a unique microtheory of our universe.",
         "viral_hook": "Emergence of spacetime"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -501,6 +724,22 @@
         "harness": [],
         "why": "Conceptual clash between two successful theories; multiple incompatible proposals.",
         "viral_hook": "Problem of time"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -533,6 +772,22 @@
         "harness": [],
         "why": "No complete nonperturbative definition connected to unique low-energy physics.",
         "viral_hook": "M-theory fundamental degrees of freedom"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -566,6 +821,22 @@
         "harness": [],
         "why": "May be environmental; no unique dynamical selection principle established.",
         "viral_hook": "Why 3+1 spacetime dimensions"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "very-indirect",
+        "publish_shape": "framework consistency + low-energy predictions",
+        "math_analogue": "building a theory, not one conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "no-gos, dictionary lemmas, consensus maps",
+        "strong_win": "predictive QG with empirical contact",
+        "open_math_parallel": "Program-scale like building algebraic geometry \u2014 not a single ticket",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -608,6 +879,23 @@
         ],
         "why": "Clay problem; full solve is not a sprint.",
         "viral_hook": "Yang\u2013Mills: build the proof harness, don't fake the trophy."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "Clay-style theorem",
+        "math_analogue": "Millennium Prize problem",
+        "acceptance_path": "journal + specialists; Clay rules if applicable",
+        "agent_publishable": true,
+        "weak_win": "Lean formalization; barrier survey; 2D/toy theorems",
+        "strong_win": "Full proof accepted by mathematical physics community",
+        "open_math_parallel": "Fixed statement \u2192 proof \u2192 citation \u2014 pure math playbook",
+        "publication_feasibility": "long-horizon; agent-assisted lemmas feasible now",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -643,6 +931,23 @@
         ],
         "why": "Decade-scale math.",
         "viral_hook": "Making QFT math legal isn't a sprint."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "Clay-style theorem",
+        "math_analogue": "Millennium Prize problem",
+        "acceptance_path": "journal + specialists; Clay rules if applicable",
+        "agent_publishable": true,
+        "weak_win": "Lean formalization; barrier survey; 2D/toy theorems",
+        "strong_win": "Full proof accepted by mathematical physics community",
+        "open_math_parallel": "Fixed statement \u2192 proof \u2192 citation \u2014 pure math playbook",
+        "publication_feasibility": "long-horizon; agent-assisted lemmas feasible now",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -683,6 +988,23 @@
         ],
         "why": "Tied to mass gap hardness.",
         "viral_hook": "Confinement is real \u2014 the proof is not a weekend."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "Clay-style theorem",
+        "math_analogue": "Millennium Prize problem",
+        "acceptance_path": "journal + specialists; Clay rules if applicable",
+        "agent_publishable": true,
+        "weak_win": "Lean formalization; barrier survey; 2D/toy theorems",
+        "strong_win": "Full proof accepted by mathematical physics community",
+        "open_math_parallel": "Fixed statement \u2192 proof \u2192 citation \u2014 pure math playbook",
+        "publication_feasibility": "long-horizon; agent-assisted lemmas feasible now",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -723,6 +1045,23 @@
         ],
         "why": "Millennium problem; 10-day 'solve' is not credible.",
         "viral_hook": "Don't claim NS in 10 days. Formalize the battlefield."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "Clay-style theorem",
+        "math_analogue": "Millennium Prize problem",
+        "acceptance_path": "journal + specialists; Clay rules if applicable",
+        "agent_publishable": true,
+        "weak_win": "Lean formalization; barrier survey; 2D/toy theorems",
+        "strong_win": "Full proof accepted by mathematical physics community",
+        "open_math_parallel": "Fixed statement \u2192 proof \u2192 citation \u2014 pure math playbook",
+        "publication_feasibility": "long-horizon; agent-assisted lemmas feasible now",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -763,6 +1102,23 @@
         ],
         "why": "Century problem; 10-day wins are slices only.",
         "viral_hook": "Don't solve turbulence \u2014 steal a benchmark."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -803,6 +1159,23 @@
         ],
         "why": "Needs detection.",
         "viral_hook": "Agents can't find WIMPs in a laptop."
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -843,6 +1216,23 @@
         ],
         "why": "Nature of DE needs data.",
         "viral_hook": "70% of the universe isn't in your context window."
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -883,6 +1273,22 @@
         ],
         "why": "Deepest fine-tuning.",
         "viral_hook": "The worst prediction in physics."
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "taxonomy / measure / anthropic analysis",
+        "math_analogue": "independence-like: may lack unique derivation",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "constraint maps and model taxonomies",
+        "strong_win": "unique derivation \u2014 not guaranteed to exist",
+        "open_math_parallel": "Continuum hypothesis vibe: answer may be 'no unique answer from axioms'",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -920,6 +1326,23 @@
         ],
         "why": "Hot topic; audit yes, final root cause maybe not.",
         "viral_hook": "The universe expands at two speeds \u2014 referee them."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -955,6 +1378,22 @@
         "harness": [],
         "why": "Requires Sakharov conditions; many mechanisms; need decisive experimental input (e.s. EDMs, CPV).",
         "viral_hook": "Matter\u2013antimatter asymmetry"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "mechanism + related CPV/EDM/0\u03bd\u03b2\u03b2 contact",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "viable parameter maps",
+        "strong_win": "identified mechanism with lab corroboration",
+        "culture": "discovery",
+        "citation_ready": true,
+        "publish_now": "theory-only",
+        "open_math_parallel": "Experiment provides witness"
       }
     },
     {
@@ -988,6 +1427,22 @@
         "harness": [],
         "why": "Many models fit CMB; need primordial B-modes or other decisive probes.",
         "viral_hook": "Cosmic inflation details"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "early-universe probe paper",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "model comparison on public CMB",
+        "strong_win": "decisive B-modes / topology detection",
+        "open_math_parallel": "Conjecture refined by new 'oracles' (observations)",
+        "culture": "discovery",
+        "citation_ready": true,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1021,6 +1476,22 @@
         "harness": [],
         "why": "Inflation is standard but not unique; alternatives hard to distinguish.",
         "viral_hook": "Horizon problem / alternatives"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "early-universe probe paper",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "model comparison on public CMB",
+        "strong_win": "decisive B-modes / topology detection",
+        "open_math_parallel": "Conjecture refined by new 'oracles' (observations)",
+        "culture": "discovery",
+        "citation_ready": true,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1053,6 +1524,22 @@
         "harness": [],
         "why": "May be anthropic or dynamical coupling; underdetermined.",
         "viral_hook": "Cosmic coincidence problem"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "taxonomy / measure / anthropic analysis",
+        "math_analogue": "independence-like: may lack unique derivation",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "constraint maps and model taxonomies",
+        "strong_win": "unique derivation \u2014 not guaranteed to exist",
+        "open_math_parallel": "Continuum hypothesis vibe: answer may be 'no unique answer from axioms'",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -1086,6 +1573,22 @@
         "harness": [],
         "why": "Requires quantum gravity + true dark-energy dynamics into the far future.",
         "viral_hook": "Origin and fate of the universe"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "taxonomy / measure / anthropic analysis",
+        "math_analogue": "independence-like: may lack unique derivation",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "constraint maps and model taxonomies",
+        "strong_win": "unique derivation \u2014 not guaranteed to exist",
+        "open_math_parallel": "Continuum hypothesis vibe: answer may be 'no unique answer from axioms'",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -1119,6 +1622,22 @@
         "harness": [],
         "why": "Beyond the particle horizon is unobservable in principle.",
         "viral_hook": "Size, shape, and topology of the universe"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "early-universe probe paper",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "model comparison on public CMB",
+        "strong_win": "decisive B-modes / topology detection",
+        "open_math_parallel": "Conjecture refined by new 'oracles' (observations)",
+        "culture": "discovery",
+        "citation_ready": true,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1151,6 +1670,22 @@
         "harness": [],
         "why": "Requires all-sky deep surveys free of systematics.",
         "viral_hook": "Cosmological principle validity"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "all-sky statistical test of FLRW",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "survey stress tests",
+        "strong_win": "validated or rejected at stated scales",
+        "open_math_parallel": "Prove or disprove a global assumption on data",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1184,6 +1719,23 @@
         "harness": [],
         "why": "No experimental signal; vast model space.",
         "viral_hook": "Extra dimensions"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1215,6 +1767,23 @@
         "harness": [],
         "why": "Observationally disputed; needs better peculiar-velocity data.",
         "viral_hook": "Dark flow"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -1247,6 +1816,23 @@
         "harness": [],
         "why": "Tension between nuclear theory, stellar atmospheres, and observations.",
         "viral_hook": "Cosmological lithium problem"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1283,6 +1869,23 @@
         "harness": [],
         "why": "Naturalness arguments failed at LHC so far; may need new philosophy of theory choice.",
         "viral_hook": "Hierarchy problem"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1319,6 +1922,22 @@
         "harness": [],
         "why": "Fine-tuning without new symmetry; axion searches ongoing.",
         "viral_hook": "Strong CP problem"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "axion search theory + experiment",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "map solutions; design",
+        "strong_win": "axion or alternative confirmed",
+        "open_math_parallel": "Conjecture (Peccei-Quinn) with experimental witness",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1356,6 +1975,23 @@
         "harness": [],
         "why": "Requires \u03b2-decay, 0\u03bd\u03b2\u03b2, oscillation, and cosmology experiments.",
         "viral_hook": "Neutrino masses and nature"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1389,6 +2025,23 @@
         "harness": [],
         "why": "Flavor structure appears arbitrary; many models, few decisive tests.",
         "viral_hook": "Three generations of matter"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1425,6 +2078,22 @@
         ],
         "why": "Number pattern; can be closed as numerology or promote genuine model.",
         "viral_hook": "Is the Koide formula a cosmic coincidence?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "statistical accident analysis + model search",
+        "math_analogue": "testing a closed-form conjecture",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "coincidence bounds",
+        "strong_win": "derived from flavor theory OR buried as accident",
+        "open_math_parallel": "Numeric checks then prove/disprove structure",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -1459,6 +2128,23 @@
         "harness": [],
         "why": "Megaton detectors.",
         "viral_hook": "Watch paint dry for 10^34 years."
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1491,6 +2177,23 @@
         "harness": [],
         "why": "Needs proton decay or other smoking-gun signals near GUT scale.",
         "viral_hook": "Grand unification"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1524,6 +2227,23 @@
         "harness": [],
         "why": "No LHC discovery of superpartners so far; parameter space vast.",
         "viral_hook": "Supersymmetry realization"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1556,6 +2276,23 @@
         "harness": [],
         "why": "Extremely rare if any; searches null so far.",
         "viral_hook": "Magnetic monopoles"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1592,6 +2329,23 @@
         ],
         "why": "World-class effort; 10 days only for pipeline slice.",
         "viral_hook": "Muon g\u22122: agents recompute the tension."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1629,6 +2383,23 @@
         ],
         "why": "Harder experimental systematics; 10 days for a serious audit not final close.",
         "viral_hook": "How long does a neutron live? Agents referee the fight."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -1665,6 +2436,23 @@
         ],
         "why": "Analysis-heavy; public reactor flux debate.",
         "viral_hook": "Missing antineutrinos \u2014 bug in nuclear data or new physics?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -1699,6 +2487,23 @@
         ],
         "why": "Narrow neutrino calibration anomaly.",
         "viral_hook": "Gallium's missing neutrinos, agent-audited."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -1734,6 +2539,22 @@
         ],
         "why": "Data-driven but specialist; multi-sprint for quality.",
         "viral_hook": "Where does the proton's spin live?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1770,6 +2591,22 @@
         ],
         "why": "One state maybe; zoo is multi-sprint.",
         "viral_hook": "Is that pentaquark a molecule?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1801,6 +2638,22 @@
         "harness": [],
         "why": "Mix with ordinary mesons; hard experimental ID.",
         "viral_hook": "Glueballs"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1833,6 +2686,23 @@
         "harness": [],
         "why": "Nonperturbative QCD equation of state uncertainties.",
         "viral_hook": "Strange matter stability"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1865,6 +2735,22 @@
         "harness": [],
         "why": "Multi-scale many-body problem from QCD to nuclei.",
         "viral_hook": "QCD vacuum and nuclear complexity"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1896,6 +2782,23 @@
         "harness": [],
         "why": "Model-building within SUSY frameworks; depends on SUSY existing.",
         "viral_hook": "\u03bc problem in SUSY"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "discovery / precision property / decisive null",
+        "math_analogue": "existence \u2014 experiment provides the witness",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": false,
+        "weak_win": "theory priors, public exclusions, design papers",
+        "strong_win": "detection or PDG property",
+        "open_math_parallel": "Cannot Lean-prove a particle into existence",
+        "publication_feasibility": "theory papers yes; discovery no",
+        "culture": "discovery",
+        "citation_ready": false,
+        "publish_now": "theory-only"
       }
     },
     {
@@ -1931,6 +2834,23 @@
         ],
         "why": "Classic problem; slice is multi-sprint.",
         "viral_hook": "Why is the solar corona so hot?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1962,6 +2882,23 @@
         "harness": [],
         "why": "Nonlinear dynamo theory + long solar records.",
         "viral_hook": "Solar cycle and dynamos"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -1993,6 +2930,23 @@
         "harness": [],
         "why": "GRMHD + ML pattern discovery in timing data.",
         "viral_hook": "Astrophysical jets and QPOs"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2029,6 +2983,22 @@
         ],
         "why": "Pattern-matching + public catalogs; not full identification of all DIBs.",
         "viral_hook": "Space forensics: which molecule ate the starlight?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -2061,6 +3031,22 @@
         "harness": [],
         "why": "Needs early-universe growth channels constrained by deep surveys.",
         "viral_hook": "Supermassive black hole origins"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "observation + simulation",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open sims/reanalysis",
+        "strong_win": "standard textbook scenario",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -2094,6 +3080,22 @@
         ],
         "why": "Simulation-heavy but scoped Solar System dynamics.",
         "viral_hook": "Why the Solar System falls off a cliff at 50 AU."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "observation + simulation",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open sims/reanalysis",
+        "strong_win": "standard textbook scenario",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -2130,6 +3132,23 @@
         ],
         "why": "Small public dataset; likely systematics; clear binary-ish verdict.",
         "viral_hook": "Can agents kill a spacecraft anomaly in a week?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -2164,6 +3183,22 @@
         "harness": [],
         "why": "Entangled with DM identity; multi-probe tests needed.",
         "viral_hook": "Galaxy rotation problem"
+      },
+      "epistemology": {
+        "refutability": "gated",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "required",
+        "publish_shape": "DM vs modified gravity discrimination",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "public rotation+lensing tests",
+        "strong_win": "unique explanation",
+        "culture": "discovery",
+        "citation_ready": true,
+        "publish_now": "theory-only",
+        "open_math_parallel": "Experiment provides witness"
       }
     },
     {
@@ -2195,6 +3230,23 @@
         "harness": [],
         "why": "Multi-physics simulation + AI surrogates; converging but not closed.",
         "viral_hook": "Core-collapse supernova mechanism"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2228,6 +3280,22 @@
         ],
         "why": "Computational nuclear astrophysics scoped study.",
         "viral_hook": "Where do the rarest isotopes come from?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -2260,6 +3328,22 @@
         "harness": [],
         "why": "Rare events; composition and source ID incomplete.",
         "viral_hook": "Ultra-high-energy cosmic rays"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "observation + simulation",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open sims/reanalysis",
+        "strong_win": "standard textbook scenario",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -2290,6 +3374,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Saturn deep rotation rate"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "observation + simulation",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open sims/reanalysis",
+        "strong_win": "standard textbook scenario",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -2320,6 +3420,23 @@
         "harness": [],
         "why": "",
         "viral_hook": "Magnetar magnetic field origin"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2351,6 +3468,23 @@
         "harness": [],
         "why": "",
         "viral_hook": "Large-scale cosmic anisotropy"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2381,6 +3515,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Ultraluminous X-ray sources"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2416,6 +3566,22 @@
         ],
         "why": "Won't discover engine alone but can rank hard.",
         "viral_hook": "Cosmic radio flashes \u2014 rank the engines."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -2448,6 +3614,23 @@
         "harness": [],
         "why": "Primordial seed vs dynamo amplification hard to disentangle uniquely.",
         "viral_hook": "Origin of cosmic magnetic fields"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2482,6 +3665,22 @@
         ],
         "why": "Public data-rich; well-scoped galactic archaeology.",
         "viral_hook": "Read the Milky Way's chemical diary in 10 days."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "observation + simulation",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open sims/reanalysis",
+        "strong_win": "standard textbook scenario",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "yes-scoped",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -2513,6 +3712,22 @@
         "harness": [],
         "why": "Heavy-ion data analysis + hydro/transport models.",
         "viral_hook": "Quark\u2013gluon plasma onset and properties"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2544,6 +3759,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Nature of the nuclear force from QCD"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2578,6 +3809,22 @@
         ],
         "why": "Serious nuclear theory analysis.",
         "viral_hook": "Nuclei change quarks \u2014 which story wins?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2610,6 +3857,22 @@
         "harness": [],
         "why": "Needs multimessenger GW + X-ray + nuclear theory.",
         "viral_hook": "Neutron star dense matter EOS"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2640,6 +3903,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Heaviest possible chemical element"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2671,6 +3950,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Color glass condensate / gluon saturation"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "lattice/EFT/heavy-ion global analysis",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "open fits and comparisons",
+        "strong_win": "predictive first-principles nuclear/QCD package",
+        "open_math_parallel": "Computational math + experiment",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2707,6 +4002,23 @@
         ],
         "why": "Not full mechanism in 10 days even with god-tier agents.",
         "viral_hook": "High-Tc: can agents force a mechanism showdown?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2743,6 +4055,23 @@
         ],
         "why": "Deep theory; 10 days compares frameworks, doesn't crown king.",
         "viral_hook": "What is glass? Theory cage match."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2774,6 +4103,23 @@
         "harness": [],
         "why": "",
         "viral_hook": "Low-T amorphous solid universality"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2808,6 +4154,23 @@
         ],
         "why": "Specialist CM; multi-sprint for honest progress.",
         "viral_hook": "Non-Abelian anyons at 5/2 \u2014 status check."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2841,6 +4204,23 @@
         ],
         "why": "Active research; multi-sprint.",
         "viral_hook": "Can quantum memory protect itself?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -2877,6 +4257,23 @@
         ],
         "why": "Much progress exists; Wikipedia lag possible; meta-closure valuable.",
         "viral_hook": "Sound makes light \u2014 is the mystery already dead?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -2910,6 +4307,23 @@
         ],
         "why": "Applied materials; literature + multi-scale reasoning.",
         "viral_hook": "The tin whiskers killing satellites \u2014 solve the mechanism."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -2945,6 +4359,23 @@
         ],
         "why": "Small niche problem; literature may already nearly answer it.",
         "viral_hook": "Why do metal blocks stick? Agents vs metrology folklore."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -2980,6 +4411,23 @@
         ],
         "why": "Precision critical phenomena; partial reconciliation possible.",
         "viral_hook": "Helium's lambda point: theory vs experiment rematch."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3014,6 +4462,23 @@
         ],
         "why": "Narrow instrumentation anomaly.",
         "viral_hook": "Cold detectors, hot mystery \u2014 10-day teardown."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 3,
+        "possibility": "empirical-fact",
+        "nature_vote": "data-in-hand-or-public",
+        "publish_shape": "reanalysis / error budget paper",
+        "math_analogue": "finding a gap in a proof OR sharpening a bound",
+        "acceptance_path": "independent pipelines + experimental groups",
+        "agent_publishable": true,
+        "weak_win": "open pipeline reproducing residuals",
+        "strong_win": "anomaly closed or forced new physics accepted",
+        "open_math_parallel": "Polymath-style collaborative checking \u2014 applied to data artifacts",
+        "publication_feasibility": "highest agent flagship class",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -3048,6 +4513,22 @@
         ],
         "why": "Computational condensed matter with clear curves to fit.",
         "viral_hook": "Why quantum dots break the textbook formula."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 4,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "identification / classification with scores",
+        "math_analogue": "classification of objects",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "ranked shortlist with reproducible scores",
+        "strong_win": "unique ID confirmed by lab/observation",
+        "open_math_parallel": "OEIS / classification culture: name the object",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -3081,6 +4562,23 @@
         ],
         "why": "Scoped critical-phenomena question.",
         "viral_hook": "Liquid crystals: is this transition universal?"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3116,6 +4614,22 @@
         ],
         "why": "Theoretical clarification, not new experiment.",
         "viral_hook": "Faster than light between plates? Settle it on paper."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 3,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "QED calculation + causality clarification",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "status paper",
+        "strong_win": "community treats as settled",
+        "open_math_parallel": "Clarify a subtle claimed theorem",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -3149,6 +4663,23 @@
         ],
         "why": "Much known; polish into closed textbook mechanism with code.",
         "viral_hook": "Why do the big nuts rise? Physics of your snack mix."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3184,6 +4715,22 @@
         ],
         "why": "Hardware ultimately gates FTQC.",
         "viral_hook": "Simulate your way past NISQ \u2014 on paper."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "technological",
+        "nature_vote": "device-level",
+        "publish_shape": "demo with metrics",
+        "math_analogue": "constructive existence (build it)",
+        "acceptance_path": "reproducible demonstration, metrics",
+        "agent_publishable": false,
+        "weak_win": "threshold sims / architecture search",
+        "strong_win": "reproducible device beyond metric",
+        "open_math_parallel": "Constructive existence by exhibition",
+        "culture": "program",
+        "citation_ready": false,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -3215,6 +4762,22 @@
         "harness": [],
         "why": "Fabrication + unambiguous experimental signatures.",
         "viral_hook": "Topological qubits / Majorana modes"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "technological",
+        "nature_vote": "device-level",
+        "publish_shape": "demo with metrics",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": false,
+        "weak_win": "threshold sims / architecture search",
+        "strong_win": "reproducible device beyond metric",
+        "open_math_parallel": "Constructive existence by exhibition",
+        "culture": "program",
+        "citation_ready": false,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -3245,6 +4808,22 @@
         "harness": [],
         "why": "",
         "viral_hook": "Non-cryogenic quantum computing"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "technological",
+        "nature_vote": "device-level",
+        "publish_shape": "demo with metrics",
+        "math_analogue": "constructive existence (build it)",
+        "acceptance_path": "reproducible demonstration, metrics",
+        "agent_publishable": false,
+        "weak_win": "threshold sims / architecture search",
+        "strong_win": "reproducible device beyond metric",
+        "open_math_parallel": "Constructive existence by exhibition",
+        "culture": "program",
+        "citation_ready": false,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3279,6 +4858,22 @@
         ],
         "why": "Open complexity separations are hard; partial ok.",
         "viral_hook": "What can quantum computers actually reach?"
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "proof / reduction / capacity formula / dictionary theorem",
+        "math_analogue": "complexity / crypto / Langlands",
+        "acceptance_path": "peer review + (ideally) formalization",
+        "agent_publishable": true,
+        "weak_win": "conditional results, barriers, audit one scheme/channel",
+        "strong_win": "named open result closed",
+        "open_math_parallel": "arXiv proof culture \u2014 the paper IS the solve",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -3314,6 +4909,22 @@
         ],
         "why": "Scoped cryptanalysis/proof audit is 10-day shaped.",
         "viral_hook": "Break or bless one post-quantum scheme."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "proof / reduction / capacity formula / dictionary theorem",
+        "math_analogue": "complexity / crypto / Langlands",
+        "acceptance_path": "peer review + (ideally) formalization",
+        "agent_publishable": true,
+        "weak_win": "conditional results, barriers, audit one scheme/channel",
+        "strong_win": "named open result closed",
+        "open_math_parallel": "arXiv proof culture \u2014 the paper IS the solve",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3347,6 +4958,22 @@
         ],
         "why": "If scoped to one channel, math agents can try.",
         "viral_hook": "Compute a quantum channel capacity nobody pinned down."
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "proof / reduction / capacity formula / dictionary theorem",
+        "math_analogue": "complexity / crypto / Langlands",
+        "acceptance_path": "peer review + (ideally) formalization",
+        "agent_publishable": true,
+        "weak_win": "conditional results, barriers, audit one scheme/channel",
+        "strong_win": "named open result closed",
+        "open_math_parallel": "arXiv proof culture \u2014 the paper IS the solve",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3381,6 +5008,22 @@
         ],
         "why": "Facility engineering.",
         "viral_hook": "Fusion needs magnets, not only tokens."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 3,
+        "possibility": "technological",
+        "nature_vote": "device-level",
+        "publish_shape": "demo with metrics",
+        "math_analogue": "constructive existence (build it)",
+        "acceptance_path": "reproducible demonstration, metrics",
+        "agent_publishable": false,
+        "weak_win": "threshold sims / architecture search",
+        "strong_win": "reproducible device beyond metric",
+        "open_math_parallel": "Constructive existence by exhibition",
+        "culture": "program",
+        "citation_ready": false,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3412,6 +5055,23 @@
         "harness": [],
         "why": "",
         "viral_hook": "Fermi acceleration injection problem"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -3443,6 +5103,23 @@
         "harness": [],
         "why": "Data-rich space plasma statistics.",
         "viral_hook": "Alfv\u00e9nic turbulence"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism paper with decisive observable discrimination",
+        "math_analogue": "structural research program (not one ticket)",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "framework cage-match on fixed benchmarks",
+        "strong_win": "textbook convergence on one mechanism",
+        "open_math_parallel": "Like settling a program over many papers (geometrization-era style)",
+        "publication_feasibility": "medium; agents rank, community crowns",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     },
     {
@@ -3478,6 +5155,22 @@
         ],
         "why": "Won't capture ball lightning; can clean theory space.",
         "viral_hook": "Ball lightning: murder-board the theories."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "empirical-fact",
+        "nature_vote": "rare-events",
+        "publish_shape": "mechanism kill-list + lab analogue",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "kill-list",
+        "strong_win": "reproducible analogue + field cases",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3512,6 +5205,22 @@
         ],
         "why": "Historical underdetermination.",
         "viral_hook": "Origin of life \u2260 10-day agent run."
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 1,
+        "possibility": "maybe-unique",
+        "nature_vote": "historical",
+        "publish_shape": "pathway demonstration",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "viable pathway ranking",
+        "strong_win": "in-principle life-from-chemistry; Earth's path may stay open",
+        "open_math_parallel": "Existence \u2260 unique historical construction",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3545,6 +5254,22 @@
         ],
         "why": "Many paths; ranking + kill-list is 10-day shaped, not historical truth.",
         "viral_hook": "Why life is left-handed \u2014 kill bad theories in 10 days."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism + assay prediction",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "model ranking",
+        "strong_win": "lab-confirmed mechanism",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3579,6 +5304,22 @@
         ],
         "why": "Active field; model discrimination paper feasible.",
         "viral_hook": "How birds see magnetic fields \u2014 theory showdown."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism + assay prediction",
+        "math_analogue": "none \u2014 nature chooses",
+        "acceptance_path": "independent experiment + community consensus",
+        "agent_publishable": true,
+        "weak_win": "model ranking",
+        "strong_win": "lab-confirmed mechanism",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3613,6 +5354,22 @@
         ],
         "why": "Systems biology model paper shape.",
         "viral_hook": "Noisy genes, reliable bodies \u2014 minimal model."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism + assay prediction",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "model ranking",
+        "strong_win": "lab-confirmed mechanism",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3646,6 +5403,22 @@
         ],
         "why": "Data+model; partial by design.",
         "viral_hook": "The immune system as physics: find the Legos."
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "mechanism + assay prediction",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "model ranking",
+        "strong_win": "lab-confirmed mechanism",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "partial",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3680,6 +5453,22 @@
         ],
         "why": "Structure prediction advanced; physics remnants partially attackable.",
         "viral_hook": "AlphaFold won structure \u2014 what physics is left?"
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 2,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "kinetics/crowding physics beyond structure prediction",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "separate ML prediction from open physics; model kinetics",
+        "strong_win": "predictive folding physics",
+        "open_math_parallel": "AlphaFold solved a prediction conjecture; physics remains like a harder analysis problem",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "partial"
       }
     },
     {
@@ -3713,6 +5502,22 @@
         ],
         "why": "Meta-scientific audit, high value, doable.",
         "viral_hook": "Is quantum biology real? Agents fact-check the hype."
+      },
+      "epistemology": {
+        "refutability": "hard",
+        "closure_rung": 2,
+        "possibility": "empirical-fact",
+        "nature_vote": "indirect",
+        "publish_shape": "claim audit + open-systems calcs",
+        "math_analogue": "explanatory conjecture + checks",
+        "acceptance_path": "predictive success + community convergence",
+        "agent_publishable": true,
+        "weak_win": "pass/fail audit of coherence claims",
+        "strong_win": "functional quantum effect established or buried",
+        "open_math_parallel": "Proof audit culture \u2014 check claimed results for gaps",
+        "culture": "polymath-data",
+        "citation_ready": true,
+        "publish_now": "yes-scoped"
       }
     },
     {
@@ -3745,6 +5550,22 @@
         "harness": [],
         "why": "Enormous hierarchical complexity; unclear if unique reduction exists.",
         "viral_hook": "Biology from fundamental physical laws"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "constraints / no-gos / taxonomy",
+        "math_analogue": "foundations of math (axiom choice)",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "precise option-space + which experiments bite",
+        "strong_win": "often unavailable",
+        "open_math_parallel": "Foundations debates, not Hilbert tickets",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3781,6 +5602,22 @@
         ],
         "why": "Empirically equivalent interpretations.",
         "viral_hook": "You can't unique-solve philosophy in 10 days."
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "constraints / no-gos / taxonomy",
+        "math_analogue": "foundations of math (axiom choice)",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "precise option-space + which experiments bite",
+        "strong_win": "often unavailable",
+        "open_math_parallel": "Foundations debates, not Hilbert tickets",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3815,6 +5652,22 @@
         "harness": [],
         "why": "Cosmological IC.",
         "viral_hook": "Time's arrow isn't a Jira ticket."
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "constraints / no-gos / taxonomy",
+        "math_analogue": "foundations of math (axiom choice)",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "precise option-space + which experiments bite",
+        "strong_win": "often unavailable",
+        "open_math_parallel": "Foundations debates, not Hilbert tickets",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3847,6 +5700,22 @@
         "harness": [],
         "why": "Constrained by no-signaling but conceptually unsettled.",
         "viral_hook": "Nature of quantum non-locality"
+      },
+      "epistemology": {
+        "refutability": "soft",
+        "closure_rung": 1,
+        "possibility": "theoretical",
+        "nature_vote": "indirect",
+        "publish_shape": "clarify Bell implications + no-signaling inventory",
+        "math_analogue": "foundations of math (axiom choice)",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "theorem inventory",
+        "strong_win": "spacetime structure from information axioms",
+        "culture": "program",
+        "citation_ready": true,
+        "publish_now": "program-papers",
+        "open_math_parallel": "Multi-paper research program"
       }
     },
     {
@@ -3879,6 +5748,22 @@
         "harness": [],
         "why": "Highly speculative; lacks decisive experimental support.",
         "viral_hook": "Quantum mind"
+      },
+      "epistemology": {
+        "refutability": "underdetermined",
+        "closure_rung": 0,
+        "possibility": "maybe-unique",
+        "nature_vote": "weak-or-none",
+        "publish_shape": "constraints / no-gos / taxonomy",
+        "math_analogue": "foundations of math (axiom choice)",
+        "acceptance_path": "philosophical + empirical constraint consensus",
+        "agent_publishable": true,
+        "weak_win": "precise option-space + which experiments bite",
+        "strong_win": "often unavailable",
+        "open_math_parallel": "Foundations debates, not Hilbert tickets",
+        "culture": "foundations",
+        "citation_ready": true,
+        "publish_now": "clarify-only"
       }
     },
     {
@@ -3911,6 +5796,22 @@
         "harness": [],
         "why": "Deep math; formal AI systems may help bridges.",
         "viral_hook": "Geometric Langlands and physics"
+      },
+      "epistemology": {
+        "refutability": "formal",
+        "closure_rung": 5,
+        "possibility": "mathematical",
+        "nature_vote": "none",
+        "publish_shape": "proof / reduction / capacity formula / dictionary theorem",
+        "math_analogue": "complexity / crypto / Langlands",
+        "acceptance_path": "peer review + (ideally) formalization",
+        "agent_publishable": true,
+        "weak_win": "conditional results, barriers, audit one scheme/channel",
+        "strong_win": "named open result closed",
+        "open_math_parallel": "arXiv proof culture \u2014 the paper IS the solve",
+        "culture": "open-math-like",
+        "citation_ready": true,
+        "publish_now": "program-papers"
       }
     }
   ],

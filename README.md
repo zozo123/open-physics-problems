@@ -8,7 +8,11 @@
 
 **https://zozo123.github.io/open-physics-problems/**
 
-Sprint-first UI: formalization, virality ethics, filterable board with success criteria per card.
+**Open math → open physics:** every problem tagged with publication culture
+(`open-math-like` · `polymath-data` · `program` · `discovery` · `foundations`),
+refutability, closure rung, weak/strong wins, and 10-day agentic scores.
+Inspired by how people actually *publish* solutions to open math problems
+(fixed statements, proofs, Polymath, Lean) — adapted for nature’s vote.
 
 ```
                     needs new experiment / facility
@@ -249,6 +253,8 @@ python3 -m http.server 8000
 | [`maps/landscape.md`](maps/landscape.md) | Multi-axis landscape + mermaid graphs |
 | [`maps/ai-tractability.md`](maps/ai-tractability.md) | Full AI/LLM split |
 | [`maps/agentic-10day.md`](maps/agentic-10day.md) | ≤10-day agentic sprint formalization |
+| [`maps/open-math-to-physics.md`](maps/open-math-to-physics.md) | Math publication culture → physics |
+| [`maps/epistemology-full.md`](maps/epistemology-full.md) | All 112 problems × culture/rung/wins |
 | [`maps/e2e-research-path.md`](maps/e2e-research-path.md) | How problem classes get closed |
 | [`SOURCES.md`](SOURCES.md) | Deep source knowledge graph |
 | [`TAXONOMY.md`](TAXONOMY.md) | Community classification schemes |
