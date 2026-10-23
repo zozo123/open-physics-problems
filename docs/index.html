@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Open Physics Problems — Publish-grade map for agentic science</title>
-  <meta name="description" content="112 open physics problems mapped like open math: publication cultures, refutability, weak/strong wins, and 10-day agentic sprints." />
-  <meta property="og:title" content="Open Physics Problems — From open math culture to physics" />
-  <meta property="og:description" content="Math solved open problems with fixed statements and published proofs. Physics needs the same machine — with nature's vote." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0a101c" />
-  <meta name="color-scheme" content="dark" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Physics Problems Map · Yossi Eliaz</title>
+  <meta name="description" content="Catalog of 112 open physics problems tagged by publication culture, refutability and agent tractability, with a sprint protocol and a live board. By Yossi Eliaz.">
+  <meta name="author" content="Yossi Eliaz">
+  <link rel="canonical" href="https://zozo123.github.io/open-physics-problems/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Physics Problems Map: 112 open problems, tagged for checkable progress">
+  <meta property="og:description" content="A catalog of 112 open physics problems, each tagged by publication culture, refutability and whether an AI-agent team could make checkable progress in 10 days. By Yossi Eliaz.">
+  <meta property="og:url" content="https://zozo123.github.io/open-physics-problems/">
+  <meta property="og:image" content="https://zozo123.github.io/open-physics-problems/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Open Physics Problems Map: 112 open problems, by Yossi Eliaz">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0a101c">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "Open Physics Problems Map",
+    "description": "Catalog of 112 open physics problems tagged by publication culture, refutability and agent tractability, with a sprint protocol and a live board.",
+    "url": "https://zozo123.github.io/open-physics-problems/",
+    "sameAs": "https://github.com/zozo123/open-physics-problems",
+    "version": "1.0.0",
+    "datePublished": "2026-07-24",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "keywords": ["physics", "open problems", "quantum gravity", "cosmology", "condensed matter", "mathematical physics", "AI for science"],
+    "creator": {
+      "@type": "Person",
+      "name": "Yossi Eliaz",
+      "url": "https://yossieliaz.netlify.app/",
+      "sameAs": ["https://github.com/zozo123", "https://www.linkedin.com/in/yossi-eliaz/"]
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Yossi Eliaz",
+      "url": "https://yossieliaz.netlify.app/",
+      "sameAs": ["https://github.com/zozo123", "https://www.linkedin.com/in/yossi-eliaz/"]
+    },
+    "distribution": [
+      {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://zozo123.github.io/open-physics-problems/data/problems.json"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="ambient" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
@@ -30,7 +72,7 @@
         <a href="#formalize">Formalize</a>
         <a href="#fields">Fields</a>
         <a href="#playbook">Playbook</a>
-        <a href="#board">Board</a>
+        <a href="#board" class="nav-keep">Board</a>
         <a href="#honesty">Honesty</a>
         <a href="https://github.com/zozo123/open-physics-problems" target="_blank" rel="noopener noreferrer" class="gh-btn">GitHub ↗</a>
       </div>
@@ -39,14 +81,21 @@
 
   <main id="main">
   <header class="hero wrap">
-    <div class="kicker">v1.0 · AlphaProof · Erdős Nexus · physics board</div>
+    <div class="kicker">v1.0 · physics board</div>
     <h1>Math just got papers that <em>closed</em> open problems. Physics needs the same board.</h1>
+    <p class="lede">
+      Open Physics Problems Map is a catalog of <span id="stat-total">112</span> open problems in physics,
+      compiled by <a href="https://zozo123.github.io/">Yossi Eliaz</a> (v1.0, July 2026).
+      Each problem is tagged with the kind of publication that would change its status, how refutable it is,
+      and whether an AI-agent team could make checkable progress in 10 days.
+      13 are tagged 10-day sprints and 36 are tagged not agentic alone.
+    </p>
     <p class="lead">
       <b>AlphaProof</b> (IMO silver, <a href="https://www.nature.com/articles/s41586-025-09833-y" target="_blank" rel="noopener">Nature 2025</a>)
       and <b>AlphaProof Nexus</b> (<a href="https://arxiv.org/abs/2605.22763" target="_blank" rel="noopener">arXiv:2605.22763</a> —
       9 open Erdős problems, 44 OEIS conjectures) showed the loop:
       <b>catalog → formal claim → agentic search → verified artifact → public log</b>.
-      We mapped <span id="stat-total">112</span> open <b>physics</b> problems so that loop can target physics —
+      This catalog points that loop at <b>physics</b> —
       with the hard caveat that <b>nature often must vote</b>.
     </p>
     <div class="cta-row">
@@ -460,9 +509,10 @@
       <div>
         <h4>Open Physics Problems Map <span class="version-chip" translate="no">v1.0</span></h4>
         <p>
-          Publication-grade catalog: open-math culture, epistemology, and agentic sprints.
+          Catalog of open physics problems with a sprint protocol.
           CC BY 4.0 · source of truth <code translate="no">data/problems.json</code>.
         </p>
+        <p class="byline">By <a href="https://zozo123.github.io/">Yossi Eliaz</a> · <a href="https://yossieliaz.netlify.app/">yossieliaz.netlify.app</a> · v1.0, July 2026</p>
         <p class="tagline">solve the scoreboard, not the mythology</p>
       </div>
       <div>

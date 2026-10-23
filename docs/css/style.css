@@ -385,6 +385,16 @@ input:focus-visible {
 .lead a {
   font-weight: 500;
 }
+.lede {
+  max-width: 62ch;
+  color: var(--text);
+  font-size: 1.12rem;
+  margin: 0 0 var(--space-3);
+  text-wrap: pretty;
+}
+.lede a {
+  font-weight: 600;
+}
 
 .cta-row {
   display: flex;
@@ -1249,5 +1259,12 @@ code {
   .controls-dock {
     top: var(--nav-h);
     padding: var(--space-2);
+  }
+}
+
+/* Phones: keep the header to one row (brand + Board + GitHub) */
+@media (max-width: 600px) {
+  .nav-links a:not(.gh-btn):not(.nav-keep) {
+    display: none;
   }
 }

@@ -1,6 +1,6 @@
 # Open Physics Problems Map
 
-**v1.0** — A publication-grade map of **112 open problems in physics**, built for the same game that recent AI–math papers just won: **close open claims with checkable artifacts**.
+**v1.0** (July 2026) — a catalog of **112 open problems in physics**, each tagged with a publication culture, a refutability class and a 10-day agentic-tractability score, for researchers and agent teams looking for checkable targets. Compiled by [Yossi Eliaz](https://zozo123.github.io/).
 
 ### Live board
 
@@ -39,8 +39,6 @@ Deep dive: [`maps/recent-ai-math-publications.md`](maps/recent-ai-math-publicati
 | Agent + Lean kernel | Agent + proof **or** public data pipeline **or** experiment |
 | erdosproblems / Tao wiki log | Sprint issues + `sprints/LEDGER.md` |
 | Not every problem falls | `not-agentic` / discovery / foundations tags |
-
-Physics lists are usually **prestige museums**. This is a **race track + courthouse**: what can be published and checked — including by multi-agent harnesses — without fake trophies on dark matter or TOE.
 
 ---
 
@@ -146,11 +144,12 @@ Full graph: [`SOURCES.md`](SOURCES.md) · [`TAXONOMY.md`](TAXONOMY.md)
 
 ```bibtex
 @misc{openphysicsproblemsmap2026,
+  author = {Eliaz, Yossi},
   title  = {Open Physics Problems Map},
   year   = {2026},
   version = {1.0.0},
   url    = {https://github.com/zozo123/open-physics-problems},
-  note   = {Publication-grade catalog of open problems in physics with agentic sprint protocol}
+  note   = {Catalog of open problems in physics with an agentic sprint protocol}
 }
 ```
 

@@ -1,6 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this catalog, please cite it."
 title: "Open Physics Problems Map"
+authors:
+  - family-names: Eliaz
+    given-names: Yossi
 version: "1.0.0"
 date-released: "2026-07-24"
 url: "https://github.com/zozo123/open-physics-problems"
